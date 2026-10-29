@@ -135,9 +135,7 @@ When multiple packs contain the same recording, SoftSpoken automatically priorit
 
 SoftSpoken is a free project, but developing and maintaining it takes a considerable amount of time and effort.
 
-If you're enjoying SoftSpoken and would like to see its continued development, **please consider [supporting my work on Buy Me a Coffee](https://buymeacoffee.com/zaxl)**.
-
-Your support helps me dedicate more time to improving the addon, fixing bugs, and developing new features. Every contribution is genuinely appreciated!
+If you'd like to support my work, consider [buying me a coffee](https://buymeacoffee.com/zaxl).
 
 ## Credits and licensing
 
