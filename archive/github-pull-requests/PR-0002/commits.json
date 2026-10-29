@@ -1,0 +1,44 @@
+[
+    {
+        "sha":  "1aca93c47384b1708a72e257518d3428bb50a99b",
+        "node_id":  "C_kwDOVOzNm9oAKDFhY2E5M2M0NzM4NGIxNzA4YTcyZTI1NzUxOGQzNDI4YmI1MGE5OWI",
+        "commit":  {
+                       "author":  {
+                                      "name":  "z1xel",
+                                      "email":  "ramirezthiago@71gmail.com",
+                                      "date":  "2026-10-22T20:40:15Z"
+                                  },
+                       "committer":  {
+                                         "name":  "z1xel",
+                                         "email":  "ramirezthiago@71gmail.com",
+                                         "date":  "2026-10-22T20:40:15Z"
+                                     },
+                       "message":  "Add location-based book discovery tracking",
+                       "tree":  {
+                                    "sha":  "36b298a9fa121132f2f2ba4f866fcfac4626bd97",
+                                    "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/trees/36b298a9fa121132f2f2ba4f866fcfac4626bd97"
+                                },
+                       "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/1aca93c47384b1708a72e257518d3428bb50a99b",
+                       "comment_count":  0,
+                       "verification":  {
+                                            "verified":  false,
+                                            "reason":  "unsigned",
+                                            "signature":  null,
+                                            "payload":  null,
+                                            "verified_at":  null
+                                        }
+                   },
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/commits/1aca93c47384b1708a72e257518d3428bb50a99b",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/commit/1aca93c47384b1708a72e257518d3428bb50a99b",
+        "comments_url":  "https://api.github.com/repos/z1xel/SoftSpoken/commits/1aca93c47384b1708a72e257518d3428bb50a99b/comments",
+        "author":  null,
+        "committer":  null,
+        "parents":  [
+                        {
+                            "sha":  "5a428a12e4ed270a625107136615ea674e973a18",
+                            "url":  "https://api.github.com/repos/z1xel/SoftSpoken/commits/5a428a12e4ed270a625107136615ea674e973a18",
+                            "html_url":  "https://github.com/z1xel/SoftSpoken/commit/5a428a12e4ed270a625107136615ea674e973a18"
+                        }
+                    ]
+    }
+]

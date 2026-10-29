@@ -1,0 +1,133 @@
+[
+    {
+        "sha":  "aaba70a78620117ffcbd82bceeb6b12d235e07ce",
+        "node_id":  "C_kwDOVOzNm9oAKGFhYmE3MGE3ODYyMDExN2ZmY2JkODJiY2VlYjZiMTJkMjM1ZTA3Y2U",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/aaba70a78620117ffcbd82bceeb6b12d235e07ce",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/commit/aaba70a78620117ffcbd82bceeb6b12d235e07ce",
+        "author":  {
+                       "name":  "z1xel",
+                       "email":  "121463840+z1xel@users.noreply.github.com",
+                       "date":  "2026-10-23T18:04:42Z"
+                   },
+        "committer":  {
+                          "name":  "GitHub",
+                          "email":  "noreply@github.com",
+                          "date":  "2026-10-23T18:04:42Z"
+                      },
+        "tree":  {
+                     "sha":  "ef8cb2ee0899a72631f5f3a20db200bdfd13e9bc",
+                     "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/trees/ef8cb2ee0899a72631f5f3a20db200bdfd13e9bc"
+                 },
+        "message":  "refactor(quests): integrate quest catalog and dialogue data (#7)",
+        "parents":  [
+                        {
+                            "sha":  "088289b3af4b301eb4595619931bf6f30fe55dd3",
+                            "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/088289b3af4b301eb4595619931bf6f30fe55dd3",
+                            "html_url":  "https://github.com/z1xel/SoftSpoken/commit/088289b3af4b301eb4595619931bf6f30fe55dd3"
+                        }
+                    ],
+        "verification":  {
+                             "verified":  true,
+                             "reason":  "valid",
+                             "signature":  "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJq26G6CRC1aQ7uu5UhlAAAWGMQAAVQ+PkLwUc33ZxC38Cj0RSa\n9dhrY6w95gcar6Soy15Rzg+4mLM+3TK3SL1n9lADogFG1MApatBR/UiyCLoQRklp\nlxk8pTwgxKruLPY7jY6Ls0rlz8OyQ/eV3OXZuhYgogwIUyRbhZO9sNtsw1KyNdVy\nTPW4qAnZvXQaIIdB6nxORCHqgh0XqoGORkOeszrMSlJLidLYQ6gGhU6aUKdMw53q\n6laups24YqsgTVq2MWtiRicmllUXNRCaUwmzS/y/MZRFbeb++e6g5PemVv1HW8Kf\nYqbxIGI6kKF+RV6N7LROqHUM7vzES65qWRxvSVcMnNZrmNN28mwOXMHSd3Ekhf03\nND2B+pQR6br8hk/q/+pe3rq8v9w30w8wth0KixP8f+YCsKkaV14UFhw55Ivek5dc\nkoE7zHCAOfjEkZpfo+A8E9ZBwh4vHA0BXIgWchqRVzU0Pl+TDzqr3UAg9sAzGtvT\naFH7uYFcVE+CrYcRgGqr0zAJ86rnVgYfvMetQ5plM2MlFFYo+lBeN6rdE7GA9Ntu\nnIRXsAF6QY5kDUEmqSgAAfGyA3ZRIj3aN760aPA7v/8CSHyLK8wVxva8n83MBLpl\nLL0AbAB1jgLWFEmKHRNRcfp3UtHuCfHs+9pxaImLoo+wfRnbeB0x1yyIaBg7r6Ve\nPLcJNVouADTw2RlQVwc0\n=LaFI\n-----END PGP SIGNATURE-----\n",
+                             "payload":  "tree ef8cb2ee0899a72631f5f3a20db200bdfd13e9bc\nparent 088289b3af4b301eb4595619931bf6f30fe55dd3\nauthor z1xel \u003c121463840+z1xel@users.noreply.github.com\u003e 1792778682 -0400\ncommitter GitHub \u003cnoreply@github.com\u003e 1792778682 -0400\n\nrefactor(quests): integrate quest catalog and dialogue data (#7)",
+                             "verified_at":  "2026-10-23T18:04:43Z"
+                         },
+        "event":  "committed"
+    },
+    {
+        "id":  34079377473,
+        "node_id":  "ME_lADOVOzNm88AAAABZdBFLc8AAAAH70oIQQ",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/issues/events/34079377473",
+        "actor":  {
+                      "login":  "z1xel",
+                      "id":  121463840,
+                      "node_id":  "U_kgDOBz1kIA",
+                      "avatar_url":  "https://avatars.githubusercontent.com/u/121463840?v=4",
+                      "gravatar_id":  "",
+                      "url":  "https://api.github.com/users/z1xel",
+                      "html_url":  "https://github.com/z1xel",
+                      "followers_url":  "https://api.github.com/users/z1xel/followers",
+                      "following_url":  "https://api.github.com/users/z1xel/following{/other_user}",
+                      "gists_url":  "https://api.github.com/users/z1xel/gists{/gist_id}",
+                      "starred_url":  "https://api.github.com/users/z1xel/starred{/owner}{/repo}",
+                      "subscriptions_url":  "https://api.github.com/users/z1xel/subscriptions",
+                      "organizations_url":  "https://api.github.com/users/z1xel/orgs",
+                      "repos_url":  "https://api.github.com/users/z1xel/repos",
+                      "events_url":  "https://api.github.com/users/z1xel/events{/privacy}",
+                      "received_events_url":  "https://api.github.com/users/z1xel/received_events",
+                      "type":  "User",
+                      "user_view_type":  "public",
+                      "site_admin":  false
+                  },
+        "event":  "merged",
+        "commit_id":  "181d9493095d7c81d273c27d5c394d9375614dc3",
+        "commit_url":  "https://api.github.com/repos/z1xel/SoftSpoken/commits/181d9493095d7c81d273c27d5c394d9375614dc3",
+        "created_at":  "2026-10-23T18:13:30Z",
+        "performed_via_github_app":  null
+    },
+    {
+        "id":  34079377602,
+        "node_id":  "CE_lADOVOzNm88AAAABZdBFLc8AAAAH70oIwg",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/issues/events/34079377602",
+        "actor":  {
+                      "login":  "z1xel",
+                      "id":  121463840,
+                      "node_id":  "U_kgDOBz1kIA",
+                      "avatar_url":  "https://avatars.githubusercontent.com/u/121463840?v=4",
+                      "gravatar_id":  "",
+                      "url":  "https://api.github.com/users/z1xel",
+                      "html_url":  "https://github.com/z1xel",
+                      "followers_url":  "https://api.github.com/users/z1xel/followers",
+                      "following_url":  "https://api.github.com/users/z1xel/following{/other_user}",
+                      "gists_url":  "https://api.github.com/users/z1xel/gists{/gist_id}",
+                      "starred_url":  "https://api.github.com/users/z1xel/starred{/owner}{/repo}",
+                      "subscriptions_url":  "https://api.github.com/users/z1xel/subscriptions",
+                      "organizations_url":  "https://api.github.com/users/z1xel/orgs",
+                      "repos_url":  "https://api.github.com/users/z1xel/repos",
+                      "events_url":  "https://api.github.com/users/z1xel/events{/privacy}",
+                      "received_events_url":  "https://api.github.com/users/z1xel/received_events",
+                      "type":  "User",
+                      "user_view_type":  "public",
+                      "site_admin":  false
+                  },
+        "event":  "closed",
+        "commit_id":  null,
+        "commit_url":  null,
+        "created_at":  "2026-10-23T18:13:30Z",
+        "state_reason":  null,
+        "intent":  null,
+        "performed_via_github_app":  null
+    },
+    {
+        "id":  34079532432,
+        "node_id":  "REFE_lADOVOzNm88AAAABZdBFLc8AAAAH70xlkA",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/issues/events/34079532432",
+        "actor":  {
+                      "login":  "z1xel",
+                      "id":  121463840,
+                      "node_id":  "U_kgDOBz1kIA",
+                      "avatar_url":  "https://avatars.githubusercontent.com/u/121463840?v=4",
+                      "gravatar_id":  "",
+                      "url":  "https://api.github.com/users/z1xel",
+                      "html_url":  "https://github.com/z1xel",
+                      "followers_url":  "https://api.github.com/users/z1xel/followers",
+                      "following_url":  "https://api.github.com/users/z1xel/following{/other_user}",
+                      "gists_url":  "https://api.github.com/users/z1xel/gists{/gist_id}",
+                      "starred_url":  "https://api.github.com/users/z1xel/starred{/owner}{/repo}",
+                      "subscriptions_url":  "https://api.github.com/users/z1xel/subscriptions",
+                      "organizations_url":  "https://api.github.com/users/z1xel/orgs",
+                      "repos_url":  "https://api.github.com/users/z1xel/repos",
+                      "events_url":  "https://api.github.com/users/z1xel/events{/privacy}",
+                      "received_events_url":  "https://api.github.com/users/z1xel/received_events",
+                      "type":  "User",
+                      "user_view_type":  "public",
+                      "site_admin":  false
+                  },
+        "event":  "referenced",
+        "commit_id":  "6f01cc4fd013bb90dc9e2b1260af49aa3f241bcd",
+        "commit_url":  "https://api.github.com/repos/z1xel/SoftSpoken/commits/6f01cc4fd013bb90dc9e2b1260af49aa3f241bcd",
+        "created_at":  "2026-10-23T18:15:29Z",
+        "performed_via_github_app":  null
+    }
+]

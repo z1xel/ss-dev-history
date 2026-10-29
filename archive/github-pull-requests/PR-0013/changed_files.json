@@ -1,0 +1,14 @@
+[
+    {
+        "sha":  "ea7b77f73f634f8ea8ff2dd4b7bbd5de124f12a7",
+        "filename":  "SoftSpoken_Quests/VoiceOver.lua",
+        "status":  "modified",
+        "additions":  22,
+        "deletions":  2,
+        "changes":  24,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/1dd912245beefd5868d152ffd8923fb7aedce74c/SoftSpoken_Quests%2FVoiceOver.lua",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/1dd912245beefd5868d152ffd8923fb7aedce74c/SoftSpoken_Quests%2FVoiceOver.lua",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/SoftSpoken_Quests%2FVoiceOver.lua?ref=1dd912245beefd5868d152ffd8923fb7aedce74c",
+        "patch":  "@@ -793,9 +793,29 @@ function Addon:OnInitialize()\n     local directEventLookup = {}\n     local lastDispatch = {}\n     local dispatching = {}\n+\n+    -- Several frame/event hooks can report the same interaction. Only let a\n+    -- different quest through the short duplicate window when its positive ID\n+    -- and current title can actually be resolved. Unknown IDs (and gossip)\n+    -- keep the previous conservative, event-only suppression.\n+    local function DispatchQuestID(event)\n+        if not QUEST_EVENTS[event] then return nil end\n+        local ok, id, title = pcall(function()\n+            return QuestIDFor(event), QuestTitle()\n+        end)\n+        if ok and type(id) == \"number\" and id \u003e 0 and\n+           type(title) == \"string\" and title ~= \"\" then\n+            return id\n+        end\n+    end\n+\n     local function DispatchDirectEvent(event, source)\n         local now = GetTime()\n-        if dispatching[event] or lastDispatch[event] and now - lastDispatch[event] \u003c 0.5 then\n+        local questID = DispatchQuestID(event)\n+        local previous = lastDispatch[event]\n+        if dispatching[event] or\n+           (previous and now - previous.time \u003c 0.5 and\n+            (not questID or not previous.questID or questID == previous.questID)) then\n             return\n         end\n \n@@ -822,7 +842,7 @@ function Addon:OnInitialize()\n         -- with unpopulated quest globals must be allowed to retry.\n         local stage = Debug.runtime and Debug.runtime.stage\n         if stage == \"queued\" or stage == \"queue-paused\" or stage == \"playing\" then\n-            lastDispatch[event] = GetTime()\n+            lastDispatch[event] = { time = GetTime(), questID = questID }\n         else\n             lastDispatch[event] = nil\n         end"
+    }
+]

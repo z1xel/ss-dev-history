@@ -1,0 +1,38 @@
+[
+    {
+        "sha":  "08f265dd8f177e3646f7a77be273e3181ba1771e",
+        "filename":  "LICENSE",
+        "status":  "modified",
+        "additions":  2,
+        "deletions":  1,
+        "changes":  3,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/650c54feb9870fba5d3953f85642851592bb0e5d/LICENSE",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/650c54feb9870fba5d3953f85642851592bb0e5d/LICENSE",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/LICENSE?ref=650c54feb9870fba5d3953f85642851592bb0e5d",
+        "patch":  "@@ -1,7 +1,8 @@\n MIT License\n \n Copyright (c) 2026 Rusty Key\n-Copyright (c) 2026 SoftSpoken contributors (their original contributions)\n+Copyright (c) 2026 z1xel (SoftSpoken port, modifications and original contributions)\n+Copyright (c) 2026 other SoftSpoken contributors (their original contributions)\n \n Permission is hereby granted, free of charge, to any person obtaining a copy\n of this software and associated documentation files (the \"Software\"), to deal"
+    },
+    {
+        "sha":  "414eee3af165fcea6475172472b6124d362f241d",
+        "filename":  "README.md",
+        "status":  "modified",
+        "additions":  6,
+        "deletions":  2,
+        "changes":  8,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/650c54feb9870fba5d3953f85642851592bb0e5d/README.md",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/650c54feb9870fba5d3953f85642851592bb0e5d/README.md",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/README.md?ref=650c54feb9870fba5d3953f85642851592bb0e5d",
+        "patch":  "@@ -1,6 +1,9 @@\n # SoftSpoken v0.8.0 ╬▓eta\n *Voiced dialogue, lore, and text for World of Warcraft Vanilla.*\n \n+Developed and maintained by **[z1xel](https://github.com/z1xel)**, based on\n+[Spoken](https://github.com/rusty-key/spoken-wow) by Rusty Key.\n+\n \u003cp align=\"center\"\u003e\n   \u003cimg src=\"docs/images/softspoken-icon-320.png\" width=\"320\" height=\"320\" alt=\"SoftSpoken icon\"\u003e\n \u003c/p\u003e\n@@ -143,8 +146,9 @@ Your existing voice packs can remain installed. Do not delete your `WTF` directo\n \n ## Credits and licensing\n \n-SoftSpoken is based on [Spoken](https://github.com/rusty-key/spoken-wow) by\n-Rusty Key, with earlier quest-narration roots in\n+**SoftSpoken is developed and maintained by [z1xel](https://github.com/z1xel).**\n+It builds upon [Spoken](https://github.com/rusty-key/spoken-wow) by Rusty Key,\n+with earlier quest-narration roots in\n [AI VoiceOver](https://github.com/mrthinger/wow-voiceover).\n \n See [LICENSE](LICENSE) for the source-code license and"
+    },
+    {
+        "sha":  "a8946b96a16d32ad5b138b00982a892593b4ce9b",
+        "filename":  "THIRD_PARTY.md",
+        "status":  "modified",
+        "additions":  6,
+        "deletions":  3,
+        "changes":  9,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/650c54feb9870fba5d3953f85642851592bb0e5d/THIRD_PARTY.md",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/650c54feb9870fba5d3953f85642851592bb0e5d/THIRD_PARTY.md",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/THIRD_PARTY.md?ref=650c54feb9870fba5d3953f85642851592bb0e5d",
+        "patch":  "@@ -1,6 +1,7 @@\n # Credits and third-party content\n \n-SoftSpoken is a free, fan-made addon for World of Warcraft 1.12. It adapts\n+SoftSpoken is a free, fan-made addon for World of Warcraft 1.12, **developed\n+and maintained by [z1xel](https://github.com/z1xel)**. It adapts\n [Spoken](https://github.com/rusty-key/spoken-wow) for Vanilla clients,\n including Turtle WoW. Thank you to the people and projects whose work makes\n this possible.\n@@ -15,8 +16,10 @@ this possible.\n   and other contributors: an earlier foundation for the quest narration\n   system and audio-data formats. Its source-code notice is preserved in\n   [LICENSES/AI-VoiceOver-UNLICENSE.txt](LICENSES/AI-VoiceOver-UNLICENSE.txt).\n-- **SoftSpoken contributors**: the Vanilla 1.12 port, integrations,\n-  interface adaptations, and additional development.\n+- **[z1xel](https://github.com/z1xel)**: creator and maintainer of SoftSpoken,\n+  responsible for the Vanilla 1.12 port, unified Compendium, interface\n+  adaptations, integrations and continued development. Thanks also to\n+  other SoftSpoken contributors.\n \n ## Bundled Lua libraries\n "
+    }
+]

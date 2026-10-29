@@ -1,0 +1,50 @@
+[
+    {
+        "sha":  "d260b0ae1ae598bd7cbfc9bfb59d1e978287430e",
+        "filename":  "SoftSpoken/Compendium/UI/Compendium.lua",
+        "status":  "modified",
+        "additions":  41,
+        "deletions":  3,
+        "changes":  44,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/d8a31287f024ef831c55cb13a5986fce94c6bd6d/SoftSpoken%2FCompendium%2FUI%2FCompendium.lua",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/d8a31287f024ef831c55cb13a5986fce94c6bd6d/SoftSpoken%2FCompendium%2FUI%2FCompendium.lua",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/SoftSpoken%2FCompendium%2FUI%2FCompendium.lua?ref=d8a31287f024ef831c55cb13a5986fce94c6bd6d",
+        "patch":  "@@ -460,7 +460,7 @@ end\n -- Upstream\u0027s public tab interfaces retained, instead of bespoke zone-window calls.\n function C:Register(key,def)\n     C.tabs[key]=def\n-    if window then LayOutTabs();PaintTabs() end\n+    if window then self:Relayout() end\n end\n function C:Tab(key) return C.tabs[key] end\n function C:Window()\n@@ -488,6 +488,10 @@ function C:Select(key)\n     return panel\n end\n function C:Open(key,areaKey)\n+    -- Refuse direct opens of disabled tabs *before* expanding the window or\n+    -- modifying the current map/selection. This covers /ssz and module buttons.\n+    local requested=(type(key)==\"number\" or key==nil) and \"places\" or key\n+    if not C.tabs[requested] or not Enabled(C.tabs[requested]) then return nil end\n     -- Preserve the existing Turtle-specific callers C:Open(mapID, areaKey),\n     -- while also exposing the upstream C:Open(\"places\") API.\n     if type(key)==\"number\" or key==nil then\n@@ -517,8 +521,32 @@ function C:Available()\n end\n function C:Relayout()\n     if not window then return end\n-    LayOutTabs();PaintTabs()\n-    if active and C.tabs[active] and not Enabled(C.tabs[active]) then window:Hide() end\n+    local selected=active and C.tabs[active]\n+    if not (selected and Enabled(selected)) then\n+        -- When the active module is disabled, move to the next available\n+        -- Compendium page rather than closing the whole window.\n+        local fallback\n+        for _,def in ipairs(Ordered()) do\n+            if Enabled(def) then fallback=def;break end\n+        end\n+        if fallback then\n+            self:Select(fallback.key)\n+        else\n+            -- Every module is off: leave no page visible and close the\n+            -- Compendium. No saved history or per-tab state is altered.\n+            active=nil\n+            for _,def in pairs(C.tabs) do\n+                if def.panel then def.panel:Hide() end\n+            end\n+            LayOutTabs()\n+            PaintTabs()\n+            if window:IsShown() then window:Hide() end\n+        end\n+    else\n+        -- Adding or removing a non-active tab only changes the tab bar.\n+        LayOutTabs()\n+        PaintTabs()\n+    end\n end\n function C:Toggle()\n     if window and window:IsShown() then window:Hide();return end\n@@ -538,6 +566,16 @@ function C:Refresh()\n     if tab and tab.panel and tab.panel.Refresh then tab.panel:Refresh() end\n end\n \n+-- Home\u0027s module toggles fire PART_SWITCHED synchronously; keep the Compendium\n+-- navigation in step whether a module was switched off or back on.\n+if Spoken and Spoken.RegisterCallback then\n+    Spoken:RegisterCallback(\"PART_SWITCHED\",function(key)\n+        if key==\"quests\" or key==\"books\" or key==\"zones\" then\n+            C:Relayout()\n+        end\n+    end)\n+end\n+\n -- Virtualized list renderer: a fixed pool of 42 rows for the 1.12 client.\n -- Multiple tabs create their own dropdowns; WoW requires unique global names.\n local filterMenuSerial=0"
+    },
+    {
+        "sha":  "8f73ea5238948299ecdb3299613064fd48a0d4d9",
+        "filename":  "SoftSpoken_Books/UI/Readables.lua",
+        "status":  "modified",
+        "additions":  2,
+        "deletions":  0,
+        "changes":  2,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/d8a31287f024ef831c55cb13a5986fce94c6bd6d/SoftSpoken_Books%2FUI%2FReadables.lua",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/d8a31287f024ef831c55cb13a5986fce94c6bd6d/SoftSpoken_Books%2FUI%2FReadables.lua",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/SoftSpoken_Books%2FUI%2FReadables.lua?ref=d8a31287f024ef831c55cb13a5986fce94c6bd6d",
+        "patch":  "@@ -586,6 +586,8 @@ function B:ShowReadables()\n         self:Print(\"Books browsing requires SoftSpoken (shared Compendium)\")\n         return\n     end\n+    -- Opening through /ssb or a module button must not unfold a hidden tab.\n+    if not self:IsPartOn() then return end\n     search=\"\"\n     if list then list:ClearSearch() end\n     C:Open(\"readables\")"
+    },
+    {
+        "sha":  "16e70a4ead07481ea1224eab6fc660f7d3cb69d1",
+        "filename":  "SoftSpoken_Quests/Compendium/QuestsTab_112.lua",
+        "status":  "modified",
+        "additions":  3,
+        "deletions":  1,
+        "changes":  4,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/d8a31287f024ef831c55cb13a5986fce94c6bd6d/SoftSpoken_Quests%2FCompendium%2FQuestsTab_112.lua",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/d8a31287f024ef831c55cb13a5986fce94c6bd6d/SoftSpoken_Quests%2FCompendium%2FQuestsTab_112.lua",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/SoftSpoken_Quests%2FCompendium%2FQuestsTab_112.lua?ref=d8a31287f024ef831c55cb13a5986fce94c6bd6d",
+        "patch":  "@@ -223,6 +223,8 @@ if C and C.Register and not C:Tab(\"quests\") then\n         label=\"Quests\",order=0,title=\"Azeroth\u0027s Compendium\",\n         build=Build,\n         onShow=function() S:ReadLog() end,\n-        enabled=function() return true end,\n+        -- The Quests module switch governs both audio and its Compendium page.\n+        -- Gossip has its own independent narration switch.\n+        enabled=function() return Spoken and Spoken.IsPartOn and Spoken:IsPartOn(\"quests\") end,\n     })\n end"
+    },
+    {
+        "sha":  "dae3ec1cfe66630faf0d2368097b19bcd336022b",
+        "filename":  "SoftSpoken_Zones/UI/LoreWindow.lua",
+        "status":  "modified",
+        "additions":  6,
+        "deletions":  3,
+        "changes":  9,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/d8a31287f024ef831c55cb13a5986fce94c6bd6d/SoftSpoken_Zones%2FUI%2FLoreWindow.lua",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/d8a31287f024ef831c55cb13a5986fce94c6bd6d/SoftSpoken_Zones%2FUI%2FLoreWindow.lua",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/SoftSpoken_Zones%2FUI%2FLoreWindow.lua?ref=d8a31287f024ef831c55cb13a5986fce94c6bd6d",
+        "patch":  "@@ -496,10 +496,11 @@ function M.OpenSelectionFromPlayer(mapID,areaKey)\n end\n -- Match the original\u0027s explicit ShowLoreFor/ToggleLoreWindow affordances.\n function M.ToggleLoreWindow()\n+    if Spoken and Spoken.IsPartOn and not Spoken:IsPartOn(\"zones\") then return end\n     C:Toggle()\n end\n function M.ShowLoreFor(mapID,areaKey)\n-    if not mapID then return end\n+    if not mapID or (Spoken and Spoken.IsPartOn and not Spoken:IsPartOn(\"zones\")) then return end\n     M.OpenSelectionFromPlayer(mapID,areaKey)\n     C:Open(\"places\")\n     -- Upstream: an explicit request for lore unfolds a collapsed Compendium.\n@@ -520,8 +521,10 @@ function M.SetupLoreWindow()\n             get=function(key) return Settings()[\"compendium\"..key] end,\n             set=function(key,value) Settings()[\"compendium\"..key]=value end,\n         },\n-        open=function() M.OpenSelectionFromPlayer();C:Open(\"places\") end,\n-        enabled=function() return true end,\n+        open=function() if Spoken and Spoken.IsPartOn and Spoken:IsPartOn(\"zones\") then\n+            M.OpenSelectionFromPlayer();C:Open(\"places\")\n+        end end,\n+        enabled=function() return Spoken and Spoken.IsPartOn and Spoken:IsPartOn(\"zones\") end,\n         unlock={\n             get=function() return Settings().compendiumUnlockUndiscovered==true end,\n             set=function(on) M.SetUnlockUndiscovered(on) end,"
+    }
+]

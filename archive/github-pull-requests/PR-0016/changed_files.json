@@ -1,0 +1,26 @@
+[
+    {
+        "sha":  "d862c07cd775762dc84c28b045fd694d192e6750",
+        "filename":  "SoftSpoken/Compendium/UI/Compendium.lua",
+        "status":  "modified",
+        "additions":  6,
+        "deletions":  1,
+        "changes":  7,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/6622e434ad86fc8b7b7a2d4e2aafddec530cb62b/SoftSpoken%2FCompendium%2FUI%2FCompendium.lua",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/6622e434ad86fc8b7b7a2d4e2aafddec530cb62b/SoftSpoken%2FCompendium%2FUI%2FCompendium.lua",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/SoftSpoken%2FCompendium%2FUI%2FCompendium.lua?ref=6622e434ad86fc8b7b7a2d4e2aafddec530cb62b",
+        "patch":  "@@ -617,7 +617,11 @@ function C.NewList(panel,opts)\n     end\n     -- Make callbacks with arguments captured per function call for Lua 5.0.\n     local function ToggleCheck(check)\n-        return function() check.set(not check.get());Changed() end\n+        return function()\n+            if check.disabled and check.disabled() then return end\n+            check.set(not check.get())\n+            Changed()\n+        end\n     end\n     filterMenuSerial=filterMenuSerial+1\n     local menuName=NAME..\"FilterMenu\"..filterMenuSerial\n@@ -636,6 +640,7 @@ function C.NewList(panel,opts)\n                 local info=UIDropDownMenu_CreateInfo()\n                 info.text=check.label;info.isNotRadio=1;info.keepShownOnClick=1\n                 info.checked=check.get() and 1 or nil\n+                info.disabled=check.disabled and check.disabled() and 1 or nil\n                 info.func=ToggleCheck(check)\n                 UIDropDownMenu_AddButton(info)\n             end"
+    },
+    {
+        "sha":  "0dd85d103d137e3489b638e692dd1c888bc94b00",
+        "filename":  "SoftSpoken_Books/UI/Readables.lua",
+        "status":  "modified",
+        "additions":  24,
+        "deletions":  1,
+        "changes":  25,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/6622e434ad86fc8b7b7a2d4e2aafddec530cb62b/SoftSpoken_Books%2FUI%2FReadables.lua",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/6622e434ad86fc8b7b7a2d4e2aafddec530cb62b/SoftSpoken_Books%2FUI%2FReadables.lua",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/SoftSpoken_Books%2FUI%2FReadables.lua?ref=6622e434ad86fc8b7b7a2d4e2aafddec530cb62b",
+        "patch":  "@@ -125,7 +125,25 @@ local function FirstVoiced(id)\n end\n local function Voiced(id) return FirstVoiced(id)~=nil end\n local function OnlyFound() return Settings().compendiumFoundOnly==true end\n-local function OnlyVoiced() return Settings().compendiumVoicedOnly==true end\n+-- The writings and their text are bundled locally; sound packs are optional.\n+-- When none are present, an old \"Voiced Only\" preference must not make the\n+-- entire Books Compendium disappear. Keep the saved choice for when audio returns.\n+local hasVoicePacks\n+local function HasVoicePacks()\n+    if hasVoicePacks == nil then\n+        hasVoicePacks = false\n+        for _, pack in ipairs(B:GetAudioPacks()) do\n+            if next(pack.pages) then\n+                hasVoicePacks = true\n+                break\n+            end\n+        end\n+    end\n+    return hasVoicePacks\n+end\n+local function OnlyVoiced()\n+    return Settings().compendiumVoicedOnly==true and HasVoicePacks()\n+end\n local function Unlocked() return Settings().unlockUnfound==true end\n local function ByZone() return Settings().compendiumByZone~=false end\n local function Visible(id)\n@@ -506,6 +524,9 @@ end\n \n function B:RefreshReadablesPlayback()\n     voiced={}\n+    hasVoicePacks=nil\n+    -- This also runs for routine audio events: do not rebuild the entire\n+    -- catalogue on every play/stop. The next list refresh checks packs again.\n     if page and page.play and page.play.Refresh then page.play:Refresh() end\n end\n local function Build(panelFrame)\n@@ -516,6 +537,7 @@ local function Build(panelFrame)\n         onlySet=function(on) Settings().compendiumFoundOnly=on end,\n         checks={\n             {label=\"Voiced Only\",get=OnlyVoiced,\n+                disabled=function() return not HasVoicePacks() end,\n                 set=function(on) Settings().compendiumVoicedOnly=on end},\n             {label=\"Unlock Unfound\",get=Unlocked,\n                 set=function(on) Settings().unlockUnfound=on end},\n@@ -577,6 +599,7 @@ end\n function B:RefreshReadables(scrollToSelection)\n     if not list then return end\n     voiced={}\n+    hasVoicePacks=nil\n     local items=list:Render()\n     if scrollToSelection then list:ScrollToSelection(items) end\n     ShowEntry()"
+    }
+]

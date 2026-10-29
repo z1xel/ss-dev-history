@@ -1,0 +1,26 @@
+[
+    {
+        "sha":  "5eff08138ecabe4e399a5106b211f59078efef4e",
+        "filename":  "SoftSpoken/Compendium/UI/LorePage.lua",
+        "status":  "modified",
+        "additions":  16,
+        "deletions":  2,
+        "changes":  18,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/586ccb0c33cd1b9fb8a6811cb726d70b95272a6e/SoftSpoken%2FCompendium%2FUI%2FLorePage.lua",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/586ccb0c33cd1b9fb8a6811cb726d70b95272a6e/SoftSpoken%2FCompendium%2FUI%2FLorePage.lua",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/SoftSpoken%2FCompendium%2FUI%2FLorePage.lua?ref=586ccb0c33cd1b9fb8a6811cb726d70b95272a6e",
+        "patch":  "@@ -110,7 +110,13 @@ function Page:Resize(resetScroll)\n     if self.expandSubtitle and self.sub and self.sub.text and self.sub:IsShown() then\n         local width=self.sub:GetWidth() or 0\n         if width\u003e50 then\n-            local height=self.sub.text:GetStringHeight() or 16\n+            -- A real 1.12 FontString has no GetStringHeight(). The map\n+            -- subtitle uses an auto-height FontString, so GetHeight()\n+            -- reports its wrapped content rather than its button height.\n+            local height=self.sub.text:GetHeight() or 16\n+            if self.sub.text.GetStringHeight then\n+                height=self.sub.text:GetStringHeight() or height\n+            end\n             self.sub:SetHeight(height\u003e18 and math.ceil(height)+2 or 16)\n         end\n     end\n@@ -226,7 +232,15 @@ function P.CreateLorePage(parent,style,left,options)\n     sub:SetPoint(\"TOPLEFT\",title,\"BOTTOMLEFT\",0,-2)\n     sub:SetPoint(\"RIGHT\",frame,\"RIGHT\",-page.inset.right,0)\n     local subtitle=sub:CreateFontString(nil,\"ARTWORK\",\"GameFontNormal\")\n-    subtitle:SetAllPoints(sub)\n+    if page.expandSubtitle then\n+        -- Don\u0027t pin the FontString to the button\u0027s bottom: on 1.12 that\n+        -- forces GetHeight() to stay at 16 even when the subtitle wraps.\n+        subtitle:SetPoint(\"TOPLEFT\",sub,\"TOPLEFT\",0,0)\n+        subtitle:SetPoint(\"RIGHT\",sub,\"RIGHT\",0,0)\n+        subtitle:SetJustifyV(\"TOP\")\n+    else\n+        subtitle:SetAllPoints(sub)\n+    end\n     subtitle:SetJustifyH(\"LEFT\")\n     sub.text=subtitle\n     sub:SetScript(\"OnClick\",function(self)"
+    },
+    {
+        "sha":  "63e76ed23dd72d8dd9ba0efe62c87ddf87ff1e75",
+        "filename":  "SoftSpoken/Compendium/UI/TextView.lua",
+        "status":  "modified",
+        "additions":  14,
+        "deletions":  1,
+        "changes":  15,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/586ccb0c33cd1b9fb8a6811cb726d70b95272a6e/SoftSpoken%2FCompendium%2FUI%2FTextView.lua",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/586ccb0c33cd1b9fb8a6811cb726d70b95272a6e/SoftSpoken%2FCompendium%2FUI%2FTextView.lua",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/SoftSpoken%2FCompendium%2FUI%2FTextView.lua?ref=586ccb0c33cd1b9fb8a6811cb726d70b95272a6e",
+        "patch":  "@@ -26,6 +26,16 @@ local function Clamp(n,low,high)\n     return n\n end\n \n+-- GetStringHeight was added in WoW 2.3, so native 1.12 FontStrings\n+-- must use their auto-sized region height instead. The lore body has\n+-- an explicit width, but deliberately has no fixed height.\n+local function MeasuredTextHeight(fontString)\n+    if fontString.GetStringHeight then\n+        return fontString:GetStringHeight() or 0\n+    end\n+    return fontString:GetHeight() or 0\n+end\n+\n -- Keep the current scroll offset across geometry-only changes. A new story,\n -- unlike a resize, starts at the top.\n function View:ScrollTo(value)\n@@ -62,9 +72,12 @@ function View:Reflow(resetScroll)\n     end\n     body:ClearAllPoints()\n     body:SetPoint(\"TOPLEFT\",child,\"TOPLEFT\",0,-TEXT_PAD_TOP-pictureRoom)\n-    local height=(body:GetStringHeight() or 0)+pictureRoom+\n+    local height=MeasuredTextHeight(body)+pictureRoom+\n         TEXT_PAD_TOP+TEXT_PAD_BOTTOM\n     child:SetHeight(math.max(height,scroll:GetHeight() or 1))\n+    -- On 1.12 the scroll rectangle is not refreshed automatically after a\n+    -- child resize. Do this before restoring the offset or painting the bar.\n+    if scroll.UpdateScrollChildRect then scroll:UpdateScrollChildRect() end\n     local maximum=U.ScrollMax(scroll,child)\n     if slider then\n         slider:SetMinMaxValues(0,maximum)"
+    }
+]

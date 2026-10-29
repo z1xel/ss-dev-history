@@ -1,0 +1,277 @@
+[
+    {
+        "sha":  "a6cadbee78a4ac9893eb9422fc68c9ad67637ca4",
+        "node_id":  "C_kwDOVOzNm9oAKGE2Y2FkYmVlNzhhNGFjOTg5M2ViOTQyMmZjNjhjOWFkNjc2MzdjYTQ",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/a6cadbee78a4ac9893eb9422fc68c9ad67637ca4",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/commit/a6cadbee78a4ac9893eb9422fc68c9ad67637ca4",
+        "author":  {
+                       "name":  "z1xel",
+                       "email":  "121463840+z1xel@users.noreply.github.com",
+                       "date":  "2026-10-29T06:03:37Z"
+                   },
+        "committer":  {
+                          "name":  "z1xel",
+                          "email":  "121463840+z1xel@users.noreply.github.com",
+                          "date":  "2026-10-29T06:03:37Z"
+                      },
+        "tree":  {
+                     "sha":  "3c2826ef0d63f884983872937be093b4284a229e",
+                     "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/trees/3c2826ef0d63f884983872937be093b4284a229e"
+                 },
+        "message":  "Share recorded discovery location summaries with Compendium and narrator",
+        "parents":  [
+                        {
+                            "sha":  "40433174a4c8a1f28912d4ab978459e02691c3fc",
+                            "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/40433174a4c8a1f28912d4ab978459e02691c3fc",
+                            "html_url":  "https://github.com/z1xel/SoftSpoken/commit/40433174a4c8a1f28912d4ab978459e02691c3fc"
+                        }
+                    ],
+        "verification":  {
+                             "verified":  false,
+                             "reason":  "unsigned",
+                             "signature":  null,
+                             "payload":  null,
+                             "verified_at":  null
+                         },
+        "event":  "committed"
+    },
+    {
+        "sha":  "679763987e538b8853af8d8047ee9b4ee9efd718",
+        "node_id":  "C_kwDOVOzNm9oAKDY3OTc2Mzk4N2U1MzhiODg1M2FmOGQ4MDQ3ZWU5YjRlZTllZmQ3MTg",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/679763987e538b8853af8d8047ee9b4ee9efd718",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/commit/679763987e538b8853af8d8047ee9b4ee9efd718",
+        "author":  {
+                       "name":  "z1xel",
+                       "email":  "121463840+z1xel@users.noreply.github.com",
+                       "date":  "2026-10-29T06:03:40Z"
+                   },
+        "committer":  {
+                          "name":  "z1xel",
+                          "email":  "121463840+z1xel@users.noreply.github.com",
+                          "date":  "2026-10-29T06:03:40Z"
+                      },
+        "tree":  {
+                     "sha":  "7b65e0b21f1826f071bd4fbe66a75e1a2af11a7a",
+                     "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/trees/7b65e0b21f1826f071bd4fbe66a75e1a2af11a7a"
+                 },
+        "message":  "Reuse Writings shared discovery summary on Compendium pages",
+        "parents":  [
+                        {
+                            "sha":  "a6cadbee78a4ac9893eb9422fc68c9ad67637ca4",
+                            "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/a6cadbee78a4ac9893eb9422fc68c9ad67637ca4",
+                            "html_url":  "https://github.com/z1xel/SoftSpoken/commit/a6cadbee78a4ac9893eb9422fc68c9ad67637ca4"
+                        }
+                    ],
+        "verification":  {
+                             "verified":  false,
+                             "reason":  "unsigned",
+                             "signature":  null,
+                             "payload":  null,
+                             "verified_at":  null
+                         },
+        "event":  "committed"
+    },
+    {
+        "sha":  "67a17ca8f78452746135eef67810ce9b53f22899",
+        "node_id":  "C_kwDOVOzNm9oAKDY3YTE3Y2E4Zjc4NDUyNzQ2MTM1ZWVmNjc4MTBjZTliNTNmMjI4OTk",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/67a17ca8f78452746135eef67810ce9b53f22899",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/commit/67a17ca8f78452746135eef67810ce9b53f22899",
+        "author":  {
+                       "name":  "z1xel",
+                       "email":  "121463840+z1xel@users.noreply.github.com",
+                       "date":  "2026-10-29T06:03:43Z"
+                   },
+        "committer":  {
+                          "name":  "z1xel",
+                          "email":  "121463840+z1xel@users.noreply.github.com",
+                          "date":  "2026-10-29T06:03:43Z"
+                      },
+        "tree":  {
+                     "sha":  "7b7cd92803addc07cee58769da03f5f3b5cf0a58",
+                     "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/trees/7b7cd92803addc07cee58769da03f5f3b5cf0a58"
+                 },
+        "message":  "Include recorded book discovery location in Writings narrator heading",
+        "parents":  [
+                        {
+                            "sha":  "679763987e538b8853af8d8047ee9b4ee9efd718",
+                            "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/679763987e538b8853af8d8047ee9b4ee9efd718",
+                            "html_url":  "https://github.com/z1xel/SoftSpoken/commit/679763987e538b8853af8d8047ee9b4ee9efd718"
+                        }
+                    ],
+        "verification":  {
+                             "verified":  false,
+                             "reason":  "unsigned",
+                             "signature":  null,
+                             "payload":  null,
+                             "verified_at":  null
+                         },
+        "event":  "committed"
+    },
+    {
+        "sha":  "13b92d8a1fae152984b939e0af970377d053e60f",
+        "node_id":  "C_kwDOVOzNm9oAKDEzYjkyZDhhMWZhZTE1Mjk4NGI5MzllMGFmOTcwMzc3ZDA1M2U2MGY",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/13b92d8a1fae152984b939e0af970377d053e60f",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/commit/13b92d8a1fae152984b939e0af970377d053e60f",
+        "author":  {
+                       "name":  "z1xel",
+                       "email":  "121463840+z1xel@users.noreply.github.com",
+                       "date":  "2026-10-29T06:04:29Z"
+                   },
+        "committer":  {
+                          "name":  "z1xel",
+                          "email":  "121463840+z1xel@users.noreply.github.com",
+                          "date":  "2026-10-29T06:04:29Z"
+                      },
+        "tree":  {
+                     "sha":  "aadb838ddc96822c548be5bf923394a063661a81",
+                     "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/trees/aadb838ddc96822c548be5bf923394a063661a81"
+                 },
+        "message":  "Test book narrator titles using recorded discovery sites",
+        "parents":  [
+                        {
+                            "sha":  "67a17ca8f78452746135eef67810ce9b53f22899",
+                            "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/67a17ca8f78452746135eef67810ce9b53f22899",
+                            "html_url":  "https://github.com/z1xel/SoftSpoken/commit/67a17ca8f78452746135eef67810ce9b53f22899"
+                        }
+                    ],
+        "verification":  {
+                             "verified":  false,
+                             "reason":  "unsigned",
+                             "signature":  null,
+                             "payload":  null,
+                             "verified_at":  null
+                         },
+        "event":  "committed"
+    },
+    {
+        "sha":  "4c7b35c2c41a65c87c94dbe74bee33ef4b4e84f2",
+        "node_id":  "C_kwDOVOzNm9oAKDRjN2IzNWMyYzQxYTY1Yzg3Yzk0ZGJlNzRiZWUzM2VmNGI0ZTg0ZjI",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/4c7b35c2c41a65c87c94dbe74bee33ef4b4e84f2",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/commit/4c7b35c2c41a65c87c94dbe74bee33ef4b4e84f2",
+        "author":  {
+                       "name":  "z1xel",
+                       "email":  "121463840+z1xel@users.noreply.github.com",
+                       "date":  "2026-10-29T06:04:46Z"
+                   },
+        "committer":  {
+                          "name":  "z1xel",
+                          "email":  "121463840+z1xel@users.noreply.github.com",
+                          "date":  "2026-10-29T06:04:46Z"
+                      },
+        "tree":  {
+                     "sha":  "4a59258154e197caab4713cfd3125aaf78ac1269",
+                     "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/trees/4a59258154e197caab4713cfd3125aaf78ac1269"
+                 },
+        "message":  "Run Writings narrator discovery location regressions in CI",
+        "parents":  [
+                        {
+                            "sha":  "13b92d8a1fae152984b939e0af970377d053e60f",
+                            "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/13b92d8a1fae152984b939e0af970377d053e60f",
+                            "html_url":  "https://github.com/z1xel/SoftSpoken/commit/13b92d8a1fae152984b939e0af970377d053e60f"
+                        }
+                    ],
+        "verification":  {
+                             "verified":  false,
+                             "reason":  "unsigned",
+                             "signature":  null,
+                             "payload":  null,
+                             "verified_at":  null
+                         },
+        "event":  "committed"
+    },
+    {
+        "id":  34553825997,
+        "node_id":  "ME_lADOVOzNm88AAAABazq4a88AAAAIC5GKzQ",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/issues/events/34553825997",
+        "actor":  {
+                      "login":  "z1xel",
+                      "id":  121463840,
+                      "node_id":  "U_kgDOBz1kIA",
+                      "avatar_url":  "https://avatars.githubusercontent.com/u/121463840?v=4",
+                      "gravatar_id":  "",
+                      "url":  "https://api.github.com/users/z1xel",
+                      "html_url":  "https://github.com/z1xel",
+                      "followers_url":  "https://api.github.com/users/z1xel/followers",
+                      "following_url":  "https://api.github.com/users/z1xel/following{/other_user}",
+                      "gists_url":  "https://api.github.com/users/z1xel/gists{/gist_id}",
+                      "starred_url":  "https://api.github.com/users/z1xel/starred{/owner}{/repo}",
+                      "subscriptions_url":  "https://api.github.com/users/z1xel/subscriptions",
+                      "organizations_url":  "https://api.github.com/users/z1xel/orgs",
+                      "repos_url":  "https://api.github.com/users/z1xel/repos",
+                      "events_url":  "https://api.github.com/users/z1xel/events{/privacy}",
+                      "received_events_url":  "https://api.github.com/users/z1xel/received_events",
+                      "type":  "User",
+                      "user_view_type":  "public",
+                      "site_admin":  false
+                  },
+        "event":  "merged",
+        "commit_id":  "7060281eaa35335667e36160babef0cc02980897",
+        "commit_url":  "https://api.github.com/repos/z1xel/SoftSpoken/commits/7060281eaa35335667e36160babef0cc02980897",
+        "created_at":  "2026-10-29T06:12:24Z",
+        "performed_via_github_app":  null
+    },
+    {
+        "id":  34553826091,
+        "node_id":  "CE_lADOVOzNm88AAAABazq4a88AAAAIC5GLKw",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/issues/events/34553826091",
+        "actor":  {
+                      "login":  "z1xel",
+                      "id":  121463840,
+                      "node_id":  "U_kgDOBz1kIA",
+                      "avatar_url":  "https://avatars.githubusercontent.com/u/121463840?v=4",
+                      "gravatar_id":  "",
+                      "url":  "https://api.github.com/users/z1xel",
+                      "html_url":  "https://github.com/z1xel",
+                      "followers_url":  "https://api.github.com/users/z1xel/followers",
+                      "following_url":  "https://api.github.com/users/z1xel/following{/other_user}",
+                      "gists_url":  "https://api.github.com/users/z1xel/gists{/gist_id}",
+                      "starred_url":  "https://api.github.com/users/z1xel/starred{/owner}{/repo}",
+                      "subscriptions_url":  "https://api.github.com/users/z1xel/subscriptions",
+                      "organizations_url":  "https://api.github.com/users/z1xel/orgs",
+                      "repos_url":  "https://api.github.com/users/z1xel/repos",
+                      "events_url":  "https://api.github.com/users/z1xel/events{/privacy}",
+                      "received_events_url":  "https://api.github.com/users/z1xel/received_events",
+                      "type":  "User",
+                      "user_view_type":  "public",
+                      "site_admin":  false
+                  },
+        "event":  "closed",
+        "commit_id":  null,
+        "commit_url":  null,
+        "created_at":  "2026-10-29T06:12:24Z",
+        "state_reason":  null,
+        "intent":  null,
+        "performed_via_github_app":  null
+    },
+    {
+        "id":  34554279871,
+        "node_id":  "HRDE_lADOVOzNm88AAAABazq4a88AAAAIC5h3vw",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/issues/events/34554279871",
+        "actor":  {
+                      "login":  "z1xel",
+                      "id":  121463840,
+                      "node_id":  "U_kgDOBz1kIA",
+                      "avatar_url":  "https://avatars.githubusercontent.com/u/121463840?v=4",
+                      "gravatar_id":  "",
+                      "url":  "https://api.github.com/users/z1xel",
+                      "html_url":  "https://github.com/z1xel",
+                      "followers_url":  "https://api.github.com/users/z1xel/followers",
+                      "following_url":  "https://api.github.com/users/z1xel/following{/other_user}",
+                      "gists_url":  "https://api.github.com/users/z1xel/gists{/gist_id}",
+                      "starred_url":  "https://api.github.com/users/z1xel/starred{/owner}{/repo}",
+                      "subscriptions_url":  "https://api.github.com/users/z1xel/subscriptions",
+                      "organizations_url":  "https://api.github.com/users/z1xel/orgs",
+                      "repos_url":  "https://api.github.com/users/z1xel/repos",
+                      "events_url":  "https://api.github.com/users/z1xel/events{/privacy}",
+                      "received_events_url":  "https://api.github.com/users/z1xel/received_events",
+                      "type":  "User",
+                      "user_view_type":  "public",
+                      "site_admin":  false
+                  },
+        "event":  "head_ref_deleted",
+        "commit_id":  null,
+        "commit_url":  null,
+        "created_at":  "2026-10-29T06:19:51Z",
+        "performed_via_github_app":  null
+    }
+]

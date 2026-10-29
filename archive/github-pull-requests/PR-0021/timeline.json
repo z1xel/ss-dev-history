@@ -1,0 +1,318 @@
+[
+    {
+        "sha":  "5fc9c222775af6dc3f41780832328f7c4af59cdb",
+        "node_id":  "C_kwDOVOzNm9oAKDVmYzljMjIyNzc1YWY2ZGMzZjQxNzgwODMyMzI4ZjdjNGFmNTljZGI",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/5fc9c222775af6dc3f41780832328f7c4af59cdb",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/commit/5fc9c222775af6dc3f41780832328f7c4af59cdb",
+        "author":  {
+                       "name":  "z1xel",
+                       "email":  "121463840+z1xel@users.noreply.github.com",
+                       "date":  "2026-10-26T22:06:27Z"
+                   },
+        "committer":  {
+                          "name":  "z1xel",
+                          "email":  "121463840+z1xel@users.noreply.github.com",
+                          "date":  "2026-10-26T22:06:27Z"
+                      },
+        "tree":  {
+                     "sha":  "9ea07f2dea18eca90b7822ff9a94b03b080a5867",
+                     "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/trees/9ea07f2dea18eca90b7822ff9a94b03b080a5867"
+                 },
+        "message":  "Prototype native Spellbook side-tab housing and map-edge alignment",
+        "parents":  [
+                        {
+                            "sha":  "32c12fc7a5b358050070423273e3592f814af803",
+                            "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/32c12fc7a5b358050070423273e3592f814af803",
+                            "html_url":  "https://github.com/z1xel/SoftSpoken/commit/32c12fc7a5b358050070423273e3592f814af803"
+                        }
+                    ],
+        "verification":  {
+                             "verified":  false,
+                             "reason":  "unsigned",
+                             "signature":  null,
+                             "payload":  null,
+                             "verified_at":  null
+                         },
+        "event":  "committed"
+    },
+    {
+        "sha":  "c708fde142ded6a77b5dcbac2c796df83a054e6f",
+        "node_id":  "C_kwDOVOzNm9oAKGM3MDhmZGUxNDJkZWQ2YTc3YjVkY2JhYzJjNzk2ZGY4M2EwNTRlNmY",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/c708fde142ded6a77b5dcbac2c796df83a054e6f",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/commit/c708fde142ded6a77b5dcbac2c796df83a054e6f",
+        "author":  {
+                       "name":  "z1xel",
+                       "email":  "121463840+z1xel@users.noreply.github.com",
+                       "date":  "2026-10-26T22:56:10Z"
+                   },
+        "committer":  {
+                          "name":  "z1xel",
+                          "email":  "121463840+z1xel@users.noreply.github.com",
+                          "date":  "2026-10-26T22:56:10Z"
+                      },
+        "tree":  {
+                     "sha":  "a1eead5ae4dd90c5e540e3875a8ee7c8c3242cb5",
+                     "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/trees/a1eead5ae4dd90c5e540e3875a8ee7c8c3242cb5"
+                 },
+        "message":  "Align Spellbook-style map toggle with outer frame and parchment seam",
+        "parents":  [
+                        {
+                            "sha":  "5fc9c222775af6dc3f41780832328f7c4af59cdb",
+                            "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/5fc9c222775af6dc3f41780832328f7c4af59cdb",
+                            "html_url":  "https://github.com/z1xel/SoftSpoken/commit/5fc9c222775af6dc3f41780832328f7c4af59cdb"
+                        }
+                    ],
+        "verification":  {
+                             "verified":  false,
+                             "reason":  "unsigned",
+                             "signature":  null,
+                             "payload":  null,
+                             "verified_at":  null
+                         },
+        "event":  "committed"
+    },
+    {
+        "sha":  "9444db6b61de4c3b6e3ebb82d882013c07b8c0e2",
+        "node_id":  "C_kwDOVOzNm9oAKDk0NDRkYjZiNjFkZTRjM2I2ZTNlYmI4MmQ4ODIwMTNjMDdiOGMwZTI",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/9444db6b61de4c3b6e3ebb82d882013c07b8c0e2",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/commit/9444db6b61de4c3b6e3ebb82d882013c07b8c0e2",
+        "author":  {
+                       "name":  "z1xel",
+                       "email":  "121463840+z1xel@users.noreply.github.com",
+                       "date":  "2026-10-26T23:04:33Z"
+                   },
+        "committer":  {
+                          "name":  "z1xel",
+                          "email":  "121463840+z1xel@users.noreply.github.com",
+                          "date":  "2026-10-26T23:04:33Z"
+                      },
+        "tree":  {
+                     "sha":  "733eb3871205d7e37e78407ac357daf9e70a87ea",
+                     "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/trees/733eb3871205d7e37e78407ac357daf9e70a87ea"
+                 },
+        "message":  "Shift native map side-tab 16px left to meet frame edge",
+        "parents":  [
+                        {
+                            "sha":  "c708fde142ded6a77b5dcbac2c796df83a054e6f",
+                            "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/c708fde142ded6a77b5dcbac2c796df83a054e6f",
+                            "html_url":  "https://github.com/z1xel/SoftSpoken/commit/c708fde142ded6a77b5dcbac2c796df83a054e6f"
+                        }
+                    ],
+        "verification":  {
+                             "verified":  false,
+                             "reason":  "unsigned",
+                             "signature":  null,
+                             "payload":  null,
+                             "verified_at":  null
+                         },
+        "event":  "committed"
+    },
+    {
+        "sha":  "5bd92ca04defd6fa66695b70308be145466b7adc",
+        "node_id":  "C_kwDOVOzNm9oAKDViZDkyY2EwNGRlZmQ2ZmE2NjY5NWI3MDMwOGJlMTQ1NDY2YjdhZGM",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/5bd92ca04defd6fa66695b70308be145466b7adc",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/commit/5bd92ca04defd6fa66695b70308be145466b7adc",
+        "author":  {
+                       "name":  "z1xel",
+                       "email":  "121463840+z1xel@users.noreply.github.com",
+                       "date":  "2026-10-26T23:09:52Z"
+                   },
+        "committer":  {
+                          "name":  "z1xel",
+                          "email":  "121463840+z1xel@users.noreply.github.com",
+                          "date":  "2026-10-26T23:09:52Z"
+                      },
+        "tree":  {
+                     "sha":  "afac76d716b6be9b42a4688aa8158b40231b1874",
+                     "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/trees/afac76d716b6be9b42a4688aa8158b40231b1874"
+                 },
+        "message":  "Nudge Places map tab four pixels right",
+        "parents":  [
+                        {
+                            "sha":  "9444db6b61de4c3b6e3ebb82d882013c07b8c0e2",
+                            "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/9444db6b61de4c3b6e3ebb82d882013c07b8c0e2",
+                            "html_url":  "https://github.com/z1xel/SoftSpoken/commit/9444db6b61de4c3b6e3ebb82d882013c07b8c0e2"
+                        }
+                    ],
+        "verification":  {
+                             "verified":  false,
+                             "reason":  "unsigned",
+                             "signature":  null,
+                             "payload":  null,
+                             "verified_at":  null
+                         },
+        "event":  "committed"
+    },
+    {
+        "sha":  "fbcfef9c090f86dad060fa4d42efbc4e0e6272ee",
+        "node_id":  "C_kwDOVOzNm9oAKGZiY2ZlZjljMDkwZjg2ZGFkMDYwZmE0ZDQyZWZiYzRlMGU2MjcyZWU",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/fbcfef9c090f86dad060fa4d42efbc4e0e6272ee",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/commit/fbcfef9c090f86dad060fa4d42efbc4e0e6272ee",
+        "author":  {
+                       "name":  "z1xel",
+                       "email":  "121463840+z1xel@users.noreply.github.com",
+                       "date":  "2026-10-26T23:16:04Z"
+                   },
+        "committer":  {
+                          "name":  "z1xel",
+                          "email":  "121463840+z1xel@users.noreply.github.com",
+                          "date":  "2026-10-26T23:16:04Z"
+                      },
+        "tree":  {
+                     "sha":  "751e9dd87b2185e1c3cfdf4a29e495af2527bd15",
+                     "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/trees/751e9dd87b2185e1c3cfdf4a29e495af2527bd15"
+                 },
+        "message":  "Nudge Places map side tab two pixels right",
+        "parents":  [
+                        {
+                            "sha":  "5bd92ca04defd6fa66695b70308be145466b7adc",
+                            "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/5bd92ca04defd6fa66695b70308be145466b7adc",
+                            "html_url":  "https://github.com/z1xel/SoftSpoken/commit/5bd92ca04defd6fa66695b70308be145466b7adc"
+                        }
+                    ],
+        "verification":  {
+                             "verified":  false,
+                             "reason":  "unsigned",
+                             "signature":  null,
+                             "payload":  null,
+                             "verified_at":  null
+                         },
+        "event":  "committed"
+    },
+    {
+        "sha":  "19a04814271695ffd4e9290b465bb1e4c5e092e1",
+        "node_id":  "C_kwDOVOzNm9oAKDE5YTA0ODE0MjcxNjk1ZmZkNGU5MjkwYjQ2NWJiMWU0YzVlMDkyZTE",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/19a04814271695ffd4e9290b465bb1e4c5e092e1",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/commit/19a04814271695ffd4e9290b465bb1e4c5e092e1",
+        "author":  {
+                       "name":  "z1xel",
+                       "email":  "121463840+z1xel@users.noreply.github.com",
+                       "date":  "2026-10-26T23:27:28Z"
+                   },
+        "committer":  {
+                          "name":  "z1xel",
+                          "email":  "121463840+z1xel@users.noreply.github.com",
+                          "date":  "2026-10-26T23:27:28Z"
+                      },
+        "tree":  {
+                     "sha":  "7553df4fa846953ecb1e4ba4809678e3428c2b43",
+                     "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/trees/7553df4fa846953ecb1e4ba4809678e3428c2b43"
+                 },
+        "message":  "Merge main into Spellbook map side-tab branch preserving Zone Lore compact frame",
+        "parents":  [
+                        {
+                            "sha":  "fbcfef9c090f86dad060fa4d42efbc4e0e6272ee",
+                            "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/fbcfef9c090f86dad060fa4d42efbc4e0e6272ee",
+                            "html_url":  "https://github.com/z1xel/SoftSpoken/commit/fbcfef9c090f86dad060fa4d42efbc4e0e6272ee"
+                        },
+                        {
+                            "sha":  "119fd528205f356bcacba80e6a939b3f724dd2e3",
+                            "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/119fd528205f356bcacba80e6a939b3f724dd2e3",
+                            "html_url":  "https://github.com/z1xel/SoftSpoken/commit/119fd528205f356bcacba80e6a939b3f724dd2e3"
+                        }
+                    ],
+        "verification":  {
+                             "verified":  false,
+                             "reason":  "unsigned",
+                             "signature":  null,
+                             "payload":  null,
+                             "verified_at":  null
+                         },
+        "event":  "committed"
+    },
+    {
+        "id":  34314954619,
+        "node_id":  "ME_lADOVOzNm88AAAABaJskQc8AAAAH_VSnew",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/issues/events/34314954619",
+        "actor":  {
+                      "login":  "z1xel",
+                      "id":  121463840,
+                      "node_id":  "U_kgDOBz1kIA",
+                      "avatar_url":  "https://avatars.githubusercontent.com/u/121463840?v=4",
+                      "gravatar_id":  "",
+                      "url":  "https://api.github.com/users/z1xel",
+                      "html_url":  "https://github.com/z1xel",
+                      "followers_url":  "https://api.github.com/users/z1xel/followers",
+                      "following_url":  "https://api.github.com/users/z1xel/following{/other_user}",
+                      "gists_url":  "https://api.github.com/users/z1xel/gists{/gist_id}",
+                      "starred_url":  "https://api.github.com/users/z1xel/starred{/owner}{/repo}",
+                      "subscriptions_url":  "https://api.github.com/users/z1xel/subscriptions",
+                      "organizations_url":  "https://api.github.com/users/z1xel/orgs",
+                      "repos_url":  "https://api.github.com/users/z1xel/repos",
+                      "events_url":  "https://api.github.com/users/z1xel/events{/privacy}",
+                      "received_events_url":  "https://api.github.com/users/z1xel/received_events",
+                      "type":  "User",
+                      "user_view_type":  "public",
+                      "site_admin":  false
+                  },
+        "event":  "merged",
+        "commit_id":  "57dd204ebd92933a2641f90f2ffd1d7c35c07dab",
+        "commit_url":  "https://api.github.com/repos/z1xel/SoftSpoken/commits/57dd204ebd92933a2641f90f2ffd1d7c35c07dab",
+        "created_at":  "2026-10-26T23:28:16Z",
+        "performed_via_github_app":  null
+    },
+    {
+        "id":  34314954698,
+        "node_id":  "CE_lADOVOzNm88AAAABaJskQc8AAAAH_VSnyg",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/issues/events/34314954698",
+        "actor":  {
+                      "login":  "z1xel",
+                      "id":  121463840,
+                      "node_id":  "U_kgDOBz1kIA",
+                      "avatar_url":  "https://avatars.githubusercontent.com/u/121463840?v=4",
+                      "gravatar_id":  "",
+                      "url":  "https://api.github.com/users/z1xel",
+                      "html_url":  "https://github.com/z1xel",
+                      "followers_url":  "https://api.github.com/users/z1xel/followers",
+                      "following_url":  "https://api.github.com/users/z1xel/following{/other_user}",
+                      "gists_url":  "https://api.github.com/users/z1xel/gists{/gist_id}",
+                      "starred_url":  "https://api.github.com/users/z1xel/starred{/owner}{/repo}",
+                      "subscriptions_url":  "https://api.github.com/users/z1xel/subscriptions",
+                      "organizations_url":  "https://api.github.com/users/z1xel/orgs",
+                      "repos_url":  "https://api.github.com/users/z1xel/repos",
+                      "events_url":  "https://api.github.com/users/z1xel/events{/privacy}",
+                      "received_events_url":  "https://api.github.com/users/z1xel/received_events",
+                      "type":  "User",
+                      "user_view_type":  "public",
+                      "site_admin":  false
+                  },
+        "event":  "closed",
+        "commit_id":  null,
+        "commit_url":  null,
+        "created_at":  "2026-10-26T23:28:16Z",
+        "state_reason":  null,
+        "intent":  null,
+        "performed_via_github_app":  null
+    },
+    {
+        "id":  34315344476,
+        "node_id":  "HRDE_lADOVOzNm88AAAABaJskQc8AAAAH_VqaXA",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/issues/events/34315344476",
+        "actor":  {
+                      "login":  "z1xel",
+                      "id":  121463840,
+                      "node_id":  "U_kgDOBz1kIA",
+                      "avatar_url":  "https://avatars.githubusercontent.com/u/121463840?v=4",
+                      "gravatar_id":  "",
+                      "url":  "https://api.github.com/users/z1xel",
+                      "html_url":  "https://github.com/z1xel",
+                      "followers_url":  "https://api.github.com/users/z1xel/followers",
+                      "following_url":  "https://api.github.com/users/z1xel/following{/other_user}",
+                      "gists_url":  "https://api.github.com/users/z1xel/gists{/gist_id}",
+                      "starred_url":  "https://api.github.com/users/z1xel/starred{/owner}{/repo}",
+                      "subscriptions_url":  "https://api.github.com/users/z1xel/subscriptions",
+                      "organizations_url":  "https://api.github.com/users/z1xel/orgs",
+                      "repos_url":  "https://api.github.com/users/z1xel/repos",
+                      "events_url":  "https://api.github.com/users/z1xel/events{/privacy}",
+                      "received_events_url":  "https://api.github.com/users/z1xel/received_events",
+                      "type":  "User",
+                      "user_view_type":  "public",
+                      "site_admin":  false
+                  },
+        "event":  "head_ref_deleted",
+        "commit_id":  null,
+        "commit_url":  null,
+        "created_at":  "2026-10-26T23:34:34Z",
+        "performed_via_github_app":  null
+    }
+]

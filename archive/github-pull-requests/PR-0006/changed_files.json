@@ -1,0 +1,48 @@
+[
+    {
+        "sha":  "6122df3d46b0887f1f81ccbc8e941f92025a950f",
+        "filename":  "SoftSpoken_QuestData/Compendium.lua",
+        "status":  "added",
+        "additions":  4888,
+        "deletions":  0,
+        "changes":  4888,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/0947f5b0a67482742eecdb384f2b922dd54f5090/SoftSpoken_QuestData%2FCompendium.lua",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/0947f5b0a67482742eecdb384f2b922dd54f5090/SoftSpoken_QuestData%2FCompendium.lua",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/SoftSpoken_QuestData%2FCompendium.lua?ref=0947f5b0a67482742eecdb384f2b922dd54f5090"
+    },
+    {
+        "sha":  "6e352cabfc32850fb6e4b02fc67c6bc3122acbce",
+        "filename":  "SoftSpoken_QuestData/SoftSpoken_QuestData.toc",
+        "status":  "added",
+        "additions":  8,
+        "deletions":  0,
+        "changes":  8,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/0947f5b0a67482742eecdb384f2b922dd54f5090/SoftSpoken_QuestData%2FSoftSpoken_QuestData.toc",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/0947f5b0a67482742eecdb384f2b922dd54f5090/SoftSpoken_QuestData%2FSoftSpoken_QuestData.toc",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/SoftSpoken_QuestData%2FSoftSpoken_QuestData.toc?ref=0947f5b0a67482742eecdb384f2b922dd54f5090",
+        "patch":  "@@ -0,0 +1,8 @@\n+## Interface: 11200\n+## Title: SoftSpoken Quest Catalog\n+## Notes: Lazy-loaded upstream Spoken quest compendium metadata for Turtle WoW.\n+## Version: 0.1\n+## Dependencies: SoftSpoken_Quests\n+## LoadOnDemand: 1\n+\n+Compendium.lua"
+    },
+    {
+        "sha":  "543ebe66fd648e625699d6d8cd78d26359578d92",
+        "filename":  "SoftSpoken_QuestText/QuestText.lua",
+        "status":  "added",
+        "additions":  18413,
+        "deletions":  0,
+        "changes":  18413,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/0947f5b0a67482742eecdb384f2b922dd54f5090/SoftSpoken_QuestText%2FQuestText.lua",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/0947f5b0a67482742eecdb384f2b922dd54f5090/SoftSpoken_QuestText%2FQuestText.lua",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/SoftSpoken_QuestText%2FQuestText.lua?ref=0947f5b0a67482742eecdb384f2b922dd54f5090"
+    },
+    {
+        "sha":  "ef858a2319ba73d1677bb6a95f1ea16314bc69b7",
+        "filename":  "SoftSpoken_QuestText/SoftSpoken_QuestText.toc",
+        "status":  "added",
+        "additions":  8,
+        "deletions":  0,
+        "changes":  8,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/0947f5b0a67482742eecdb384f2b922dd54f5090/SoftSpoken_QuestText%2FSoftSpoken_QuestText.toc",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/0947f5b0a67482742eecdb384f2b922dd54f5090/SoftSpoken_QuestText%2FSoftSpoken_QuestText.toc",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/SoftSpoken_QuestText%2FSoftSpoken_QuestText.toc?ref=0947f5b0a67482742eecdb384f2b922dd54f5090",
+        "patch":  "@@ -0,0 +1,8 @@\n+## Interface: 11200\n+## Title: SoftSpoken Quest Dialogue\n+## Notes: Lazy-loaded original Spoken quest dialogue text for Azeroth\u0027s Compendium.\n+## Version: 0.2\n+## Dependencies: SoftSpoken_Quests\n+## LoadOnDemand: 1\n+\n+QuestText.lua"
+    }
+]

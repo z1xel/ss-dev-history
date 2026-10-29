@@ -1,0 +1,107 @@
+[
+    {
+        "sha":  "ab4635860a9843e252522606b02e3ddfca6f9661",
+        "node_id":  "C_kwDOVOzNm9oAKGFiNDYzNTg2MGE5ODQzZTI1MjUyMjYwNmIwMmUzZGRmY2E2Zjk2NjE",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/ab4635860a9843e252522606b02e3ddfca6f9661",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/commit/ab4635860a9843e252522606b02e3ddfca6f9661",
+        "author":  {
+                       "name":  "z1xel",
+                       "email":  "121463840+z1xel@users.noreply.github.com",
+                       "date":  "2026-10-26T18:37:33Z"
+                   },
+        "committer":  {
+                          "name":  "z1xel",
+                          "email":  "121463840+z1xel@users.noreply.github.com",
+                          "date":  "2026-10-26T18:37:33Z"
+                      },
+        "tree":  {
+                     "sha":  "2cfb258cbcc685bbca49036926285f9f6e4afb53",
+                     "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/trees/2cfb258cbcc685bbca49036926285f9f6e4afb53"
+                 },
+        "message":  "fix(ui): show SoftSpoken in minimap hover tooltip",
+        "parents":  [
+                        {
+                            "sha":  "d2961b8dc2a423c9d3cc9e9cede9efbceeede793",
+                            "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/d2961b8dc2a423c9d3cc9e9cede9efbceeede793",
+                            "html_url":  "https://github.com/z1xel/SoftSpoken/commit/d2961b8dc2a423c9d3cc9e9cede9efbceeede793"
+                        }
+                    ],
+        "verification":  {
+                             "verified":  false,
+                             "reason":  "unsigned",
+                             "signature":  null,
+                             "payload":  null,
+                             "verified_at":  null
+                         },
+        "event":  "committed"
+    },
+    {
+        "sha":  "e1e54a09377f8f7b2ca8e40d5ab6befdb0db47f8",
+        "node_id":  "C_kwDOVOzNm9oAKGUxZTU0YTA5Mzc3ZjhmN2IyY2E4ZTQwZDVhYjZiZWZkYjBkYjQ3Zjg",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/e1e54a09377f8f7b2ca8e40d5ab6befdb0db47f8",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/commit/e1e54a09377f8f7b2ca8e40d5ab6befdb0db47f8",
+        "author":  {
+                       "name":  "z1xel",
+                       "email":  "121463840+z1xel@users.noreply.github.com",
+                       "date":  "2026-10-26T19:25:16Z"
+                   },
+        "committer":  {
+                          "name":  "z1xel",
+                          "email":  "121463840+z1xel@users.noreply.github.com",
+                          "date":  "2026-10-26T19:25:16Z"
+                      },
+        "tree":  {
+                     "sha":  "1981c50e33ee1eade2510a115dbe2a22661c84d3",
+                     "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/trees/1981c50e33ee1eade2510a115dbe2a22661c84d3"
+                 },
+        "message":  "fix(compendium): use discovered count for Stories branch toggle state",
+        "parents":  [
+                        {
+                            "sha":  "ab4635860a9843e252522606b02e3ddfca6f9661",
+                            "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/ab4635860a9843e252522606b02e3ddfca6f9661",
+                            "html_url":  "https://github.com/z1xel/SoftSpoken/commit/ab4635860a9843e252522606b02e3ddfca6f9661"
+                        }
+                    ],
+        "verification":  {
+                             "verified":  false,
+                             "reason":  "unsigned",
+                             "signature":  null,
+                             "payload":  null,
+                             "verified_at":  null
+                         },
+        "event":  "committed"
+    },
+    {
+        "id":  34301688124,
+        "node_id":  "CE_lADOVOzNm88AAAABaHY74s8AAAAH_Io5PA",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/issues/events/34301688124",
+        "actor":  {
+                      "login":  "z1xel",
+                      "id":  121463840,
+                      "node_id":  "U_kgDOBz1kIA",
+                      "avatar_url":  "https://avatars.githubusercontent.com/u/121463840?v=4",
+                      "gravatar_id":  "",
+                      "url":  "https://api.github.com/users/z1xel",
+                      "html_url":  "https://github.com/z1xel",
+                      "followers_url":  "https://api.github.com/users/z1xel/followers",
+                      "following_url":  "https://api.github.com/users/z1xel/following{/other_user}",
+                      "gists_url":  "https://api.github.com/users/z1xel/gists{/gist_id}",
+                      "starred_url":  "https://api.github.com/users/z1xel/starred{/owner}{/repo}",
+                      "subscriptions_url":  "https://api.github.com/users/z1xel/subscriptions",
+                      "organizations_url":  "https://api.github.com/users/z1xel/orgs",
+                      "repos_url":  "https://api.github.com/users/z1xel/repos",
+                      "events_url":  "https://api.github.com/users/z1xel/events{/privacy}",
+                      "received_events_url":  "https://api.github.com/users/z1xel/received_events",
+                      "type":  "User",
+                      "user_view_type":  "public",
+                      "site_admin":  false
+                  },
+        "event":  "closed",
+        "commit_id":  null,
+        "commit_url":  null,
+        "created_at":  "2026-10-26T20:25:17Z",
+        "state_reason":  null,
+        "intent":  null,
+        "performed_via_github_app":  null
+    }
+]

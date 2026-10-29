@@ -1,0 +1,14 @@
+[
+    {
+        "sha":  "f2e322930a04319280e26906ef8f1d380edc0c29",
+        "filename":  "README.md",
+        "status":  "modified",
+        "additions":  10,
+        "deletions":  3,
+        "changes":  13,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/1624356875e3534cf8a0ac8b643c45672d3e488a/README.md",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/1624356875e3534cf8a0ac8b643c45672d3e488a/README.md",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/README.md?ref=1624356875e3534cf8a0ac8b643c45672d3e488a",
+        "patch":  "@@ -131,9 +131,16 @@ I\u0027ve also prepared **SSS_VOFallback** (SoftSpoken Stories VoiceOver Fallback), a\n \n When multiple packs contain the same recording, SoftSpoken automatically prioritizes **Spoken ΓåÆ SSS_VOFallback ΓåÆ Turtle WoW**, without requiring manual edits to audio priorities.\n \n+## Support SoftSpoken\n+\n+SoftSpoken is a free project, but developing and maintaining it takes a considerable amount of time and effort.\n+\n+If you\u0027re enjoying SoftSpoken and would like to see its continued development, **please consider [supporting my work on Buy Me a Coffee](https://buymeacoffee.com/zaxl)**.\n+\n+Your support helps me dedicate more time to improving the addon, fixing bugs, and developing new features. Every contribution is genuinely appreciated!\n+\n ## Credits and licensing\n \n-**SoftSpoken is developed and maintained by [z1xel](https://github.com/z1xel).**\n-It builds upon [Spoken](https://github.com/rusty-key/spoken-wow) by Rusty Key.\n+**SoftSpoken is developed and maintained by [z1xel](https://github.com/z1xel).** It builds upon [Spoken](https://github.com/rusty-key/spoken-wow) by Rusty Key.\n \n-If you want to support my work consider [buying me a coffee](https://buymeacoffee.com/zaxl).\n+For licensing information and third-party acknowledgments, see [LICENSE](LICENSE) and [THIRD_PARTY.md](THIRD_PARTY.md)."
+    }
+]

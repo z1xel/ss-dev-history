@@ -1,0 +1,62 @@
+[
+    {
+        "sha":  "6ff075da84bb331311b4b6a0e7bedc972e78cd61",
+        "filename":  "SoftSpoken/Version.lua",
+        "status":  "modified",
+        "additions":  4,
+        "deletions":  0,
+        "changes":  4,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/a6c7a74c3b61f8cd6428675be6fb0d5b07a82b34/SoftSpoken%2FVersion.lua",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/a6c7a74c3b61f8cd6428675be6fb0d5b07a82b34/SoftSpoken%2FVersion.lua",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/SoftSpoken%2FVersion.lua?ref=a6c7a74c3b61f8cd6428675be6fb0d5b07a82b34",
+        "patch":  "@@ -18,3 +18,7 @@ end\n function Version:IsRetailOrAboveLegacyVersion(version)\n     return self.Interface \u003e= version or nil\n end\n+\n+-- Core is the authoritative version service for all SoftSpoken modules.\n+-- This describes the target 1.12 runtime; module-specific addons reuse it.\n+Spoken.Version = Version"
+    },
+    {
+        "sha":  "09b2f69a070613b0c2e5381a931a52875afc9b5e",
+        "filename":  "SoftSpoken_Quests/DataModules.lua",
+        "status":  "modified",
+        "additions":  4,
+        "deletions":  15,
+        "changes":  19,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/a6c7a74c3b61f8cd6428675be6fb0d5b07a82b34/SoftSpoken_Quests%2FDataModules.lua",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/a6c7a74c3b61f8cd6428675be6fb0d5b07a82b34/SoftSpoken_Quests%2FDataModules.lua",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/SoftSpoken_Quests%2FDataModules.lua?ref=a6c7a74c3b61f8cd6428675be6fb0d5b07a82b34",
+        "patch":  "@@ -262,7 +262,7 @@ end\n ---@param loadModules? boolean Whether LoadOnDemand data modules should be loaded during enumeration\n function DataModules:EnumerateAddons(loadModules)\n     assert(GetNumAddOns and GetAddOnMetadata and GetAddOnInfo,\n-        \"No compatible AddOn-management API was found (expected C_AddOns on current clients)\")\n+        \"The 1.12 AddOn-management globals are unavailable\")\n \n     for i = 1, GetNumAddOns() do\n         local moduleVersion = ModuleNumber(i, \"Version\")\n@@ -358,33 +358,22 @@ function DataModules:LoadPresentModules()\n     return self:HasRegisteredModules()\n end\n \n--- We deliberately use a high ##Interface version in TOC to ensure that all clients will load it.\n--- Otherwise pre-classic-rerelease clients will refuse to load addons with version \u003c 20000.\n--- Here we temporarily enable \"Load out of date AddOns\" to load the module, and restore the user\u0027s setting afterwards.\n--- These cvars can be nil, so have to store the fact of them being changed in a separate variable.\n+-- A data pack may need the 1.12 \"Load out of date AddOns\" switch\n+-- temporarily disabled before LoadAddOn. Restore its previous value afterward.\n+-- The 5.x+ lastAddonVersion CVar does not exist on our target client.\n local prev_checkAddonVersion, changed_checkAddonVersion\n-local prev_lastAddonVersion, changed_lastAddonVersion -- Added in 5.x\n local function EnableOutOfDate(addon)\n     if not changed_checkAddonVersion then\n         prev_checkAddonVersion = GetCVar(\"checkAddonVersion\")\n         SetCVar(\"checkAddonVersion\", 0)\n         changed_checkAddonVersion = true\n     end\n-    if not changed_lastAddonVersion and Version:IsRetailOrAboveLegacyVersion(50000) then\n-        prev_lastAddonVersion = GetCVar(\"lastAddonVersion\")\n-        SetCVar(\"lastAddonVersion\", Version.Interface)\n-        changed_lastAddonVersion = true\n-    end\n end\n local function RestoreOutOfDate(addon)\n     if changed_checkAddonVersion then\n         SetCVar(\"checkAddonVersion\", prev_checkAddonVersion)\n         changed_checkAddonVersion = nil\n     end\n-    if changed_lastAddonVersion and Version:IsRetailOrAboveLegacyVersion(50000) then\n-        SetCVar(\"lastAddonVersion\", prev_lastAddonVersion)\n-        changed_lastAddonVersion = nil\n-    end\n end\n \n ---@param module DataModuleMetadata"
+    },
+    {
+        "sha":  "2c4619b3e444a976a7019e73ffbb4024d8ad2add",
+        "filename":  "SoftSpoken_Quests/Options.lua",
+        "status":  "modified",
+        "additions":  0,
+        "deletions":  4,
+        "changes":  4,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/a6c7a74c3b61f8cd6428675be6fb0d5b07a82b34/SoftSpoken_Quests%2FOptions.lua",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/a6c7a74c3b61f8cd6428675be6fb0d5b07a82b34/SoftSpoken_Quests%2FOptions.lua",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/SoftSpoken_Quests%2FOptions.lua?ref=a6c7a74c3b61f8cd6428675be6fb0d5b07a82b34",
+        "patch":  "@@ -101,9 +101,6 @@ local GeneralTab =\n     }\n }\n \n--- The 2.4.3/3.3.5 music-channel and HD-model settings are the Spoken player\u0027s now.\n-local LegacyWrathTab = nil\n-\n ---@type AceConfigOptionsTable\n local DataModulesTab =\n {\n@@ -204,7 +201,6 @@ Options.table = {\n     childGroups = \"tab\",\n     args = {\n         General = GeneralTab,\n-        LegacyWrath = LegacyWrathTab,\n         DataModules = DataModulesTab,\n         Profiles = nil, -- Filled in Options:OnInitialize, order is implicitly 100\n "
+    },
+    {
+        "sha":  "da01d1387ca9b505065bb01388819e7e0bcb59d4",
+        "filename":  "SoftSpoken_Quests/Player.lua",
+        "status":  "modified",
+        "additions":  6,
+        "deletions":  14,
+        "changes":  20,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/a6c7a74c3b61f8cd6428675be6fb0d5b07a82b34/SoftSpoken_Quests%2FPlayer.lua",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/a6c7a74c3b61f8cd6428675be6fb0d5b07a82b34/SoftSpoken_Quests%2FPlayer.lua",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/SoftSpoken_Quests%2FPlayer.lua?ref=a6c7a74c3b61f8cd6428675be6fb0d5b07a82b34",
+        "patch":  "@@ -99,24 +99,16 @@ end\n -- Presentation\n --------------------------------------------------------------------------------\n \n--- The creature to draw, or nil for the book. The book for Items, GameObjects, players,\n--- a missing GUID, and 2.4.3, which cannot show an arbitrary creature -- what\n--- ShouldShowBookFor used to decide inside the frame, decided here instead and handed\n--- over as a fallback.\n+-- Creature portrait fallback for Turtle 1.12. When an optional extension\n+-- provides GUIDs, use its creature ID; otherwise retain the Vanilla \"npc\"\n+-- model fallback. Objects and items intentionally have no creature portrait.\n local function CreatureFor(soundData)\n-    if soundData.unitIsObjectOrItem or Version.IsLegacyBurningCrusade then\n-        return nil\n-    end\n+    if soundData.unitIsObjectOrItem then return nil end\n     local guid = soundData.unitGUID\n     if guid and Utils.GetGUIDType and Utils.GetIDFromGUID then\n         return Utils:GetCreatureIDFromGUID(guid)\n     end\n-    -- 1.12 has no GUIDs; the pooled model shows the \"npc\" unit and this is only what\n-    -- tells one clip\u0027s portrait from the next.\n-    if Version.IsLegacyVanilla then\n-        return soundData.questID or soundData.name\n-    end\n-    return nil\n+    return soundData.questID or soundData.name\n end\n \n -- Give ClassicAPI a real creature ID even for quest-log replay away from an NPC.\n@@ -191,7 +183,7 @@ local function PortraitFor(soundData)\n     }\n     -- Rendering is strictly optional and cannot block an audio clip.\n     -- Emergency switch: /run SoftSpokenClassicPortraits=false\n-    if Version.IsLegacyVanilla and rawget(_G, \"SoftSpokenClassicPortraits\") ~= false then\n+    if rawget(_G, \"SoftSpokenClassicPortraits\") ~= false then\n         local ok, creatureID, displayID, fromQuestDatabase = pcall(ClassicCreatureFor, soundData)\n         if ok and creatureID then\n             return {"
+    },
+    {
+        "sha":  "1daddf04fe045ff25a829597f2fb6b428ae661d1",
+        "filename":  "SoftSpoken_Quests/Version.lua",
+        "status":  "modified",
+        "additions":  4,
+        "deletions":  16,
+        "changes":  20,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/a6c7a74c3b61f8cd6428675be6fb0d5b07a82b34/SoftSpoken_Quests%2FVersion.lua",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/a6c7a74c3b61f8cd6428675be6fb0d5b07a82b34/SoftSpoken_Quests%2FVersion.lua",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/SoftSpoken_Quests%2FVersion.lua?ref=a6c7a74c3b61f8cd6428675be6fb0d5b07a82b34",
+        "patch":  "@@ -1,18 +1,6 @@\n setfenv(1, VoiceOver)\n \n--- Dedicated Turtle WoW 1.12 port: Quests shares Core\u0027s single target client.\n--- Preserve the flags read by the Quest player, but not unreachable client modes.\n-Version={}\n-local client,build,_,interface=GetBuildInfo()\n-Version.Client=client\n-Version.Build=build\n-Version.Interface=interface or 0\n-Version.IsAnyLegacy=true\n-Version.IsLegacyVanilla=true\n-\n-function Version:IsBelowLegacyVersion(target)\n-    return self.Interface\u003ctarget or nil\n-end\n-function Version:IsRetailOrAboveLegacyVersion(target)\n-    return nil\n-end\n+-- Shared 1.12 client definition from mandatory SoftSpoken Core.\n+-- Keep this small binding here so existing Quests load order stays unchanged.\n+Version = assert(Spoken and Spoken.Version,\n+    \"SoftSpoken Core 1.12 version service is required\")"
+    }
+]

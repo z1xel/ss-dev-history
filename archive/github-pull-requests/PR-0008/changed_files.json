@@ -1,0 +1,122 @@
+[
+    {
+        "sha":  "6e352cabfc32850fb6e4b02fc67c6bc3122acbce",
+        "filename":  "SoftSpoken_QuestData/SoftSpoken_QuestData.toc",
+        "status":  "removed",
+        "additions":  0,
+        "deletions":  8,
+        "changes":  8,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/088289b3af4b301eb4595619931bf6f30fe55dd3/SoftSpoken_QuestData%2FSoftSpoken_QuestData.toc",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/088289b3af4b301eb4595619931bf6f30fe55dd3/SoftSpoken_QuestData%2FSoftSpoken_QuestData.toc",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/SoftSpoken_QuestData%2FSoftSpoken_QuestData.toc?ref=088289b3af4b301eb4595619931bf6f30fe55dd3",
+        "patch":  "@@ -1,8 +0,0 @@\n-## Interface: 11200\n-## Title: SoftSpoken Quest Catalog\n-## Notes: Lazy-loaded upstream Spoken quest compendium metadata for Turtle WoW.\n-## Version: 0.1\n-## Dependencies: SoftSpoken_Quests\n-## LoadOnDemand: 1\n-\n-Compendium.lua"
+    },
+    {
+        "sha":  "ef858a2319ba73d1677bb6a95f1ea16314bc69b7",
+        "filename":  "SoftSpoken_QuestText/SoftSpoken_QuestText.toc",
+        "status":  "removed",
+        "additions":  0,
+        "deletions":  8,
+        "changes":  8,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/088289b3af4b301eb4595619931bf6f30fe55dd3/SoftSpoken_QuestText%2FSoftSpoken_QuestText.toc",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/088289b3af4b301eb4595619931bf6f30fe55dd3/SoftSpoken_QuestText%2FSoftSpoken_QuestText.toc",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/SoftSpoken_QuestText%2FSoftSpoken_QuestText.toc?ref=088289b3af4b301eb4595619931bf6f30fe55dd3",
+        "patch":  "@@ -1,8 +0,0 @@\n-## Interface: 11200\n-## Title: SoftSpoken Quest Dialogue\n-## Notes: Lazy-loaded original Spoken quest dialogue text for Azeroth\u0027s Compendium.\n-## Version: 0.2\n-## Dependencies: SoftSpoken_Quests\n-## LoadOnDemand: 1\n-\n-QuestText.lua"
+    },
+    {
+        "sha":  "497d13026dc356beef85a2198aec8bd7921239b9",
+        "filename":  "SoftSpoken_Quests/Compatibility.lua",
+        "status":  "modified",
+        "additions":  9,
+        "deletions":  8,
+        "changes":  17,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/8ce176829965a74fc59e1039f2463d0b53368b28/SoftSpoken_Quests%2FCompatibility.lua",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/8ce176829965a74fc59e1039f2463d0b53368b28/SoftSpoken_Quests%2FCompatibility.lua",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/SoftSpoken_Quests%2FCompatibility.lua?ref=8ce176829965a74fc59e1039f2463d0b53368b28",
+        "patch":  "@@ -1,11 +1,8 @@\n setfenv(1, VoiceOver)\n \n--- SoftSpoken Quests targets Turtle WoW 1.12 only.\n--- Core supplies the shared Lua/FrameXML client shims, while this module owns\n--- quest and gossip behavior. VoiceOver remains a private Lua environment.\n-assert(Spoken and Spoken.Compat and Spoken.Compat.InstallClientShims,\n-    \"SoftSpoken Core 1.12 compatibility services are required\")\n-Spoken.Compat.InstallClientShims(VoiceOver)\n+-- Quest-specific Turtle WoW 1.12 adapters. Shared Lua/FrameXML primitives\n+-- are installed in Environment.lua before any other Quests implementation\n+-- files load, so top-level frames also receive the Core wrappers.\n \n if not GetQuestID then\n     local source, text\n@@ -114,8 +111,12 @@ else\n     end\n end\n \n--- WoW 1.12 QuestLogTitle has no real quest ID or suggested-group field.\n--- Use ClassicAPI when available, then the original DataModules/title history.\n+-- Native WoW 1.12 GetQuestLogTitle returns exactly six values:\n+-- title, level, questTag, isHeader, isCollapsed, isComplete.\n+-- There is no suggestedGroup or isDaily return in this client. The normalized\n+-- frequency is therefore always 1, exactly as the previous 1.12 adapter\n+-- returned; do not infer daily status from questTag or later-client APIs.\n+-- Recover IDs via ClassicAPI, then existing DataModules/title history.\n -- A stable negative ID is only a UI placeholder for an unresolved quest.\n local dummyQuestIDMap={NEXT=-1}\n local oldGetQuestLogTitle=GetQuestLogTitle -- Capture before EQL3 changes the quest-log UI."
+    },
+    {
+        "sha":  "41fe6109111b64354e403e5fcfbc7d83d28ef846",
+        "filename":  "SoftSpoken_Quests/Compendium/QuestPage_112.lua",
+        "status":  "modified",
+        "additions":  0,
+        "deletions":  5,
+        "changes":  5,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/8ce176829965a74fc59e1039f2463d0b53368b28/SoftSpoken_Quests%2FCompendium%2FQuestPage_112.lua",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/8ce176829965a74fc59e1039f2463d0b53368b28/SoftSpoken_Quests%2FCompendium%2FQuestPage_112.lua",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/SoftSpoken_Quests%2FCompendium%2FQuestPage_112.lua?ref=8ce176829965a74fc59e1039f2463d0b53368b28",
+        "patch":  "@@ -24,12 +24,7 @@ end\n local function Data()\n     return VoiceOver and VoiceOver.DataModules\n end\n-local function LoadText()\n-    if _G.SpokenQuestsText then return end\n-    if type(LoadAddOn)==\"function\" then pcall(LoadAddOn,\"SoftSpoken_QuestText\") end\n-end\n local function Database(id)\n-    LoadText()\n     return _G.SpokenQuestsText and _G.SpokenQuestsText[id] or nil\n end\n local function Fill(text)"
+    },
+    {
+        "sha":  "73b336810182dbcc2c537a7655b6be65566a6f32",
+        "filename":  "SoftSpoken_Quests/Compendium/QuestsTab_112.lua",
+        "status":  "modified",
+        "additions":  5,
+        "deletions":  6,
+        "changes":  11,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/8ce176829965a74fc59e1039f2463d0b53368b28/SoftSpoken_Quests%2FCompendium%2FQuestsTab_112.lua",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/8ce176829965a74fc59e1039f2463d0b53368b28/SoftSpoken_Quests%2FCompendium%2FQuestsTab_112.lua",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/SoftSpoken_Quests%2FCompendium%2FQuestsTab_112.lua?ref=8ce176829965a74fc59e1039f2463d0b53368b28",
+        "patch":  "@@ -33,13 +33,12 @@ local function Settings(key,value)\n     return S:Setting(key,value)\n end\n local function EnsureCatalog()\n-    if not _G.SpokenQuestsCompendium and type(LoadAddOn)==\"function\" then\n-        local ok,loaded=pcall(LoadAddOn,\"SoftSpoken_QuestData\")\n-        if not ok or loaded==false then\n-            Q.loadError=\"Could not load SoftSpoken_QuestData. Enable the companion addon in AddOns.\"\n-        end\n+    if not _G.SpokenQuestsCompendium then\n+        Q.loadError=\"Quest catalog data is unavailable. Reinstall SoftSpoken_Quests.\"\n+        return nil\n     end\n-    if _G.SpokenQuestsCompendium and (not tree or treeRevision~=S.revision) then\n+    Q.loadError=nil\n+    if not tree or treeRevision~=S.revision then\n         tree=M:BuildTree()\n         S:SeedActive(tree.idSet)\n         -- Newly seeded collapsed quests may extend the tree with custom IDs."
+    },
+    {
+        "sha":  "6122df3d46b0887f1f81ccbc8e941f92025a950f",
+        "filename":  "SoftSpoken_Quests/Data/Compendium.lua",
+        "status":  "renamed",
+        "additions":  0,
+        "deletions":  0,
+        "changes":  0,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/8ce176829965a74fc59e1039f2463d0b53368b28/SoftSpoken_Quests%2FData%2FCompendium.lua",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/8ce176829965a74fc59e1039f2463d0b53368b28/SoftSpoken_Quests%2FData%2FCompendium.lua",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/SoftSpoken_Quests%2FData%2FCompendium.lua?ref=8ce176829965a74fc59e1039f2463d0b53368b28",
+        "previous_filename":  "SoftSpoken_QuestData/Compendium.lua"
+    },
+    {
+        "sha":  "543ebe66fd648e625699d6d8cd78d26359578d92",
+        "filename":  "SoftSpoken_Quests/Data/QuestText.lua",
+        "status":  "renamed",
+        "additions":  0,
+        "deletions":  0,
+        "changes":  0,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/8ce176829965a74fc59e1039f2463d0b53368b28/SoftSpoken_Quests%2FData%2FQuestText.lua",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/8ce176829965a74fc59e1039f2463d0b53368b28/SoftSpoken_Quests%2FData%2FQuestText.lua",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/SoftSpoken_Quests%2FData%2FQuestText.lua?ref=8ce176829965a74fc59e1039f2463d0b53368b28",
+        "previous_filename":  "SoftSpoken_QuestText/QuestText.lua"
+    },
+    {
+        "sha":  "4e75bb41576ecfb8032b8e1f1e11884c2968249b",
+        "filename":  "SoftSpoken_Quests/Environment.lua",
+        "status":  "modified",
+        "additions":  8,
+        "deletions":  0,
+        "changes":  8,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/8ce176829965a74fc59e1039f2463d0b53368b28/SoftSpoken_Quests%2FEnvironment.lua",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/8ce176829965a74fc59e1039f2463d0b53368b28/SoftSpoken_Quests%2FEnvironment.lua",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/SoftSpoken_Quests%2FEnvironment.lua?ref=8ce176829965a74fc59e1039f2463d0b53368b28",
+        "patch":  "@@ -38,3 +38,11 @@ VoiceOver = setmetatable({\n     -- A value the game hides from addons in some situations comes back as nil, not an error.\n     NotSecret = Spoken and Spoken.NotSecret or function(value) return value end,\n }, { __index = _G })\n+\n+-- Core is a required addon. Install shared 1.12 Lua and FrameXML methods now,\n+-- before subsequent Quests files construct their frames and event handlers.\n+-- Compatibility.lua still loads later for quest-specific adapters.\n+assert(Spoken and Spoken.Compat and\n+    type(Spoken.Compat.InstallClientShims) == \"function\",\n+    \"SoftSpoken Core 1.12 compatibility services are required\")\n+Spoken.Compat.InstallClientShims(VoiceOver)"
+    },
+    {
+        "sha":  "a9d9893de2be6753485222d038108e182084d706",
+        "filename":  "SoftSpoken_Quests/addon.xml",
+        "status":  "modified",
+        "additions":  3,
+        "deletions":  0,
+        "changes":  3,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/8ce176829965a74fc59e1039f2463d0b53368b28/SoftSpoken_Quests%2Faddon.xml",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/8ce176829965a74fc59e1039f2463d0b53368b28/SoftSpoken_Quests%2Faddon.xml",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/SoftSpoken_Quests%2Faddon.xml?ref=8ce176829965a74fc59e1039f2463d0b53368b28",
+        "patch":  "@@ -21,6 +21,9 @@\n     \u003cInclude file=\"Followup.lua\"/\u003e\n \n     \u003cInclude file=\"Compatibility.lua\"/\u003e\n+    \u003c!-- Static Compendium datasets load with Quests before its UI adapters. --\u003e\n+    \u003cInclude file=\"Data\\Compendium.lua\"/\u003e\n+    \u003cInclude file=\"Data\\QuestText.lua\"/\u003e\n     \u003c!-- Phase 1: ClassicAPI quest state and upstream quest hierarchy. --\u003e\n     \u003cInclude file=\"Compendium\\QuestState_112.lua\"/\u003e\n     \u003cInclude file=\"Compendium\\QuestCatalog_112.lua\"/\u003e"
+    },
+    {
+        "sha":  "a2a48c1b9757a2ea90ad8a61845e7c021bc88bd5",
+        "filename":  "docs/ARCHITECTURE.md",
+        "status":  "modified",
+        "additions":  3,
+        "deletions":  0,
+        "changes":  3,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/8ce176829965a74fc59e1039f2463d0b53368b28/docs%2FARCHITECTURE.md",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/8ce176829965a74fc59e1039f2463d0b53368b28/docs%2FARCHITECTURE.md",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/docs%2FARCHITECTURE.md?ref=8ce176829965a74fc59e1039f2463d0b53368b28",
+        "patch":  "@@ -72,6 +72,9 @@ state.\n - 1.12 runs Lua 5.0. Preserve event/arg global fallbacks and legacy widget APIs.\n - The feature .toc files hard-depend on SoftSpoken. The core\u0027s common Ace/LibStub\n   libraries load first; Quests keeps its own AceAddon/AceGUI/config libraries.\n+- Quests includes its Compendium metadata and dialogue databases under\n+  SoftSpoken_Quests/Data/ at startup; no separate QuestData/QuestText addons\n+  or LoadAddOn calls are required.\n - Core internals use SpokenEnv; Quests uses its own VoiceOver environment.\n   VoiceOver must not be renamed because shipped voice packs reference it.\n - Quests and gossip have separate sources sharing one global queue."
+    }
+]

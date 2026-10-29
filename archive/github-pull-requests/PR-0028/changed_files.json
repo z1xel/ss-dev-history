@@ -1,0 +1,110 @@
+[
+    {
+        "sha":  "6468c2262aea21aaa6b0667bda3157d634d26fd7",
+        "filename":  ".github/workflows/audio-pack-regression.yml",
+        "status":  "added",
+        "additions":  32,
+        "deletions":  0,
+        "changes":  32,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/eaba4918d337d6f19b385b8a05513a5f31b6a784/.github%2Fworkflows%2Faudio-pack-regression.yml",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/eaba4918d337d6f19b385b8a05513a5f31b6a784/.github%2Fworkflows%2Faudio-pack-regression.yml",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/.github%2Fworkflows%2Faudio-pack-regression.yml?ref=eaba4918d337d6f19b385b8a05513a5f31b6a784",
+        "patch":  "@@ -0,0 +1,32 @@\n+name: Audio pack regression\n+\n+on:\n+  push:\n+    paths:\n+      - \"SoftSpoken_Places/**\"\n+      - \"SoftSpoken_Writings/**\"\n+      - \"SoftSpoken_Stories/DataModules.lua\"\n+      - \"tests/audio_pack_*.lua\"\n+      - \".github/workflows/audio-pack-regression.yml\"\n+  pull_request:\n+    paths:\n+      - \"SoftSpoken_Places/**\"\n+      - \"SoftSpoken_Writings/**\"\n+      - \"SoftSpoken_Stories/DataModules.lua\"\n+      - \"tests/audio_pack_*.lua\"\n+      - \".github/workflows/audio-pack-regression.yml\"\n+\n+jobs:\n+  lua51:\n+    name: Lua 5.1 audio pack checks\n+    runs-on: ubuntu-latest\n+    steps:\n+      - uses: actions/checkout@v4\n+      - name: Install Lua 5.1\n+        run: |\n+          sudo apt-get update -qq\n+          sudo apt-get install -y lua5.1\n+      - name: Check official pack priority and fallback\n+        run: lua5.1 tests/audio_pack_priority_guardrails.lua\n+      - name: Check legacy and current voice pack registries\n+        run: lua5.1 tests/audio_pack_registry_compatibility.lua"
+    },
+    {
+        "sha":  "39acf8108b21c65ebd60364cd56e15fd798552f6",
+        "filename":  "README.md",
+        "status":  "modified",
+        "additions":  2,
+        "deletions":  0,
+        "changes":  2,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/eaba4918d337d6f19b385b8a05513a5f31b6a784/README.md",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/eaba4918d337d6f19b385b8a05513a5f31b6a784/README.md",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/README.md?ref=eaba4918d337d6f19b385b8a05513a5f31b6a784",
+        "patch":  "@@ -117,6 +117,8 @@ These packs are developed for the original [Spoken](https://github.com/rusty-key\n \n **Installing voice packs:** Download and extract the desired archives, then place their audio-pack folders directly alongside the SoftSpoken modules in `Interface\\AddOns`. Each pack should retain its original folder name and `.toc` file.\n \n+**Vanilla 1.12 compatibility:** The upstream audio packs are built for newer WoW clients, so they may appear as *Out of Date* in the 1.12 AddOns menu. Enable **Load out of date AddOns** if necessary. ClassicAPI\u0027s Lua compatibility support is needed for newer Places and Writings pack loaders. You should not need to rename pack folders or edit their `.toc` files. After login, open `/softspoken` and check the **Voice Packs** section of each module to confirm it detected your installation.\n+\n For Stories, the complete GitHub audio archive is a large download. Alternatively, the individual [Alliance](https://www.curseforge.com/wow/addons/spoken-audio-quests-alliance), [Horde](https://www.curseforge.com/wow/addons/spoken-audio-quests-horde), [Shared Quests](https://www.curseforge.com/wow/addons/spoken-audio-quests-shared), and [Gossip](https://www.curseforge.com/wow/addons/spoken-audio-gossip) packs can be downloaded separately.\n \n The **Spoken Audio: Quests ΓÇô All** package on CurseForge is intended for addon managers and does not contain the recordings itself. For manual installation, use the GitHub archive or download the individual packs."
+    },
+    {
+        "sha":  "1cadb7470c0ff9296c4167b6f19b7772d795edc6",
+        "filename":  "SoftSpoken_Places/Audio.lua",
+        "status":  "modified",
+        "additions":  4,
+        "deletions":  1,
+        "changes":  5,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/eaba4918d337d6f19b385b8a05513a5f31b6a784/SoftSpoken_Places%2FAudio.lua",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/eaba4918d337d6f19b385b8a05513a5f31b6a784/SoftSpoken_Places%2FAudio.lua",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/SoftSpoken_Places%2FAudio.lua?ref=eaba4918d337d6f19b385b8a05513a5f31b6a784",
+        "patch":  "@@ -54,6 +54,7 @@ function R.AudioPackDetails()\n     end\n     -- These are independent optional registries; a missing one must never\n     -- hide another, especially with Lua 5.0\u0027s nil-terminating ipairs.\n+    AddRegistry(SpokenPlacesAudioPacks)\n     AddRegistry(SpokenZonesAudioPacks)\n     AddRegistry(ZoneLoreAudioPacks)\n     if type(ZoneLoreAudioData) == \"table\" then\n@@ -76,7 +77,9 @@ function R.AudioPackNames()\n end\n \n local function FindRecording(mapID, areaKey)\n-    local pack, recording = FindInRegistry(SpokenZonesAudioPacks, mapID, areaKey)\n+    local pack, recording = FindInRegistry(SpokenPlacesAudioPacks, mapID, areaKey)\n+    if pack then return pack, recording end\n+    pack, recording = FindInRegistry(SpokenZonesAudioPacks, mapID, areaKey)\n     if pack then return pack, recording end\n     pack, recording = FindInRegistry(ZoneLoreAudioPacks, mapID, areaKey)\n     if pack then return pack, recording end"
+    },
+    {
+        "sha":  "55002200a7061516783a503fbfc102da98959166",
+        "filename":  "SoftSpoken_Places/SoftSpoken_Places.toc",
+        "status":  "modified",
+        "additions":  1,
+        "deletions":  1,
+        "changes":  2,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/eaba4918d337d6f19b385b8a05513a5f31b6a784/SoftSpoken_Places%2FSoftSpoken_Places.toc",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/eaba4918d337d6f19b385b8a05513a5f31b6a784/SoftSpoken_Places%2FSoftSpoken_Places.toc",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/SoftSpoken_Places%2FSoftSpoken_Places.toc?ref=eaba4918d337d6f19b385b8a05513a5f31b6a784",
+        "patch":  "@@ -3,7 +3,7 @@\n ## Notes: Turtle WoW lore narration, discovery, persistent history, captions, compendium\n ## Version: v0.8.0\n ## Dependencies: SoftSpoken\n-## OptionalDeps: SpokenZonesAudio\n+## OptionalDeps: SpokenPlacesAudio, SpokenZonesAudio\n ## SavedVariablesPerCharacter: SSZCharacter\n LoreBridge.lua\n Data\\Zones.lua"
+    },
+    {
+        "sha":  "125ebfc2bad98aef144b693514465d2df20e960b",
+        "filename":  "SoftSpoken_Places/UI/LoreWindow.lua",
+        "status":  "modified",
+        "additions":  1,
+        "deletions":  1,
+        "changes":  2,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/eaba4918d337d6f19b385b8a05513a5f31b6a784/SoftSpoken_Places%2FUI%2FLoreWindow.lua",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/eaba4918d337d6f19b385b8a05513a5f31b6a784/SoftSpoken_Places%2FUI%2FLoreWindow.lua",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/SoftSpoken_Places%2FUI%2FLoreWindow.lua?ref=eaba4918d337d6f19b385b8a05513a5f31b6a784",
+        "patch":  "@@ -36,7 +36,7 @@ local function HasVoice(id,key)\n     if SSZBridge and SSZBridge.HasVoice then\n         return SSZBridge:HasVoice(id,key)\n     end\n-    local registries={SpokenZonesAudioPacks,ZoneLoreAudioPacks}\n+    local registries={SpokenPlacesAudioPacks,SpokenZonesAudioPacks,ZoneLoreAudioPacks}\n     for _,registry in pairs(registries) do\n         if type(registry)==\"table\" then\n             for _,pack in pairs(registry) do"
+    },
+    {
+        "sha":  "890ff8f44068c8113cfd77f50be90a6c0c46851b",
+        "filename":  "SoftSpoken_Writings/Audio.lua",
+        "status":  "modified",
+        "additions":  15,
+        "deletions":  5,
+        "changes":  20,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/eaba4918d337d6f19b385b8a05513a5f31b6a784/SoftSpoken_Writings%2FAudio.lua",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/eaba4918d337d6f19b385b8a05513a5f31b6a784/SoftSpoken_Writings%2FAudio.lua",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/SoftSpoken_Writings%2FAudio.lua?ref=eaba4918d337d6f19b385b8a05513a5f31b6a784",
+        "patch":  "@@ -83,13 +83,23 @@ end\n \n --- Every installed pack this version can read, newest format first.\n function SpokenBooks:GetAudioPacks()\n-\tlocal packs = {}\n-\tfor name, pack in pairs(_G.SpokenBooksAudioPacks or {}) do\n-\t\tif type(pack) == \"table\" and pack.version == PACK_FORMAT and type(pack.pages) == \"table\" then\n-\t\t\tpack.addon = pack.addon or name\n-\t\t\ttable.insert(packs, pack)\n+\tlocal packs, seen = {}, {}\n+\tlocal function AddRegistry(registry)\n+\t\tif type(registry) ~= \"table\" then return end\n+\t\tfor name, pack in pairs(registry) do\n+\t\t\tif type(pack) == \"table\" and pack.version == PACK_FORMAT and type(pack.pages) == \"table\" then\n+\t\t\t\tlocal addon = pack.addon or name\n+\t\t\t\tif type(addon) == \"string\" and addon ~= \"\" and not seen[addon] then\n+\t\t\t\t\tseen[addon] = true\n+\t\t\t\t\tpack.addon = addon\n+\t\t\t\t\ttable.insert(packs, pack)\n+\t\t\t\tend\n+\t\t\tend\n \t\tend\n \tend\n+\t-- Upstream renamed Books to Readables; accept either pack registry.\n+\tAddRegistry(_G.SpokenReadablesAudioPacks)\n+\tAddRegistry(_G.SpokenBooksAudioPacks)\n \ttable.sort(packs, function(a, b) return (a.addon or \"\") \u003c (b.addon or \"\") end)\n \treturn packs\n end"
+    },
+    {
+        "sha":  "55161d7e95364ffde4660ed4b874ab0e5e967e9f",
+        "filename":  "SoftSpoken_Writings/SoftSpoken_Writings.toc",
+        "status":  "modified",
+        "additions":  1,
+        "deletions":  1,
+        "changes":  2,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/eaba4918d337d6f19b385b8a05513a5f31b6a784/SoftSpoken_Writings%2FSoftSpoken_Writings.toc",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/eaba4918d337d6f19b385b8a05513a5f31b6a784/SoftSpoken_Writings%2FSoftSpoken_Writings.toc",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/SoftSpoken_Writings%2FSoftSpoken_Writings.toc?ref=eaba4918d337d6f19b385b8a05513a5f31b6a784",
+        "patch":  "@@ -3,7 +3,7 @@\n ## Notes: Turtle WoW book, note, letter and plaque narration using Spoken\n ## Version: v0.8.0\n ## Dependencies: SoftSpoken\n-## OptionalDeps: SpokenBooksAudio\n+## OptionalDeps: SpokenReadablesAudio, SpokenBooksAudio\n ## SavedVariables: SSBSettings\n ## SavedVariablesPerCharacter: SSBCharacter\n Data\\Books.lua"
+    },
+    {
+        "sha":  "4bdfc90330ffe8744947d26ecfecccaa3f78c766",
+        "filename":  "tests/audio_pack_priority_guardrails.lua",
+        "status":  "modified",
+        "additions":  6,
+        "deletions":  0,
+        "changes":  6,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/eaba4918d337d6f19b385b8a05513a5f31b6a784/tests%2Faudio_pack_priority_guardrails.lua",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/eaba4918d337d6f19b385b8a05513a5f31b6a784/tests%2Faudio_pack_priority_guardrails.lua",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/tests%2Faudio_pack_priority_guardrails.lua?ref=eaba4918d337d6f19b385b8a05513a5f31b6a784",
+        "patch":  "@@ -1,5 +1,11 @@\n -- Run from the repo root: lua5.1 tests/audio_pack_priority_guardrails.lua\n -- Tests the actual SoftSpoken_Stories/DataModules.lua with stubbed WoW APIs.\n+-- The data-module file builds its sound-event dispatch table at load time.\n+-- This harness tests pack priority, not gameplay event lookup, so stub those\n+-- symbolic event IDs before executing the real loader.\n+local soundEvent = {QuestAccept=1, QuestProgress=2, QuestComplete=3, QuestGreeting=4, Gossip=5}\n+Enums = {SoundEvent = soundEvent}\n+\n VoiceOver = setmetatable({\n     format = string.format,\n     Version = { Interface = 11200 },"
+    },
+    {
+        "sha":  "4343988893f5038b3023f973d6a8b4ecb3068a2c",
+        "filename":  "tests/audio_pack_registry_compatibility.lua",
+        "status":  "added",
+        "additions":  82,
+        "deletions":  0,
+        "changes":  82,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/eaba4918d337d6f19b385b8a05513a5f31b6a784/tests%2Faudio_pack_registry_compatibility.lua",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/eaba4918d337d6f19b385b8a05513a5f31b6a784/tests%2Faudio_pack_registry_compatibility.lua",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/tests%2Faudio_pack_registry_compatibility.lua?ref=eaba4918d337d6f19b385b8a05513a5f31b6a784",
+        "patch":  "@@ -0,0 +1,82 @@\n+-- Run from the repository root: lua5.1 tests/audio_pack_registry_compatibility.lua\n+-- Exercise actual Places and Writings playback discovery with both pre-rename\n+-- and current upstream sound-pack registries. No WoW client required.\n+\n+local function expect(actual, wanted, label)\n+    assert(actual == wanted, (label or \"value\") .. \": expected \" ..\n+        tostring(wanted) .. \", got \" .. tostring(actual))\n+end\n+\n+-- Places: current upstream name and legacy installed pack names.\n+local runtime = {\n+    Normalise = function(s) return string.lower(s or \"\") end,\n+    AudioID = function() return 1438 end,\n+    HeardKey = function() return \"z:1438\" end,\n+    WasHeard = function() return false end,\n+    CharDB = function() return {heard={}} end,\n+    Say = function() end,\n+}\n+SSZZonesRuntime = runtime\n+SpokenPlacesAudioPacks = {\n+    SpokenPlacesAudio = {\n+        version=1, addon=\"SpokenPlacesAudio\",\n+        zones={[1438]={file=\"1438\\\\zone\",len=12}},\n+        subzones={[1438]={shadowglen={file=\"1438\\\\shadowglen\",len=8}}},\n+    },\n+}\n+SpokenZonesAudioPacks = nil\n+ZoneLoreAudioPacks = nil\n+ZoneLoreAudioData = nil\n+dofile(\"SoftSpoken_Places/Audio.lua\")\n+local pack, clip = runtime.FindRecording(1438)\n+expect(pack.addon,\"SpokenPlacesAudio\",\"new Places registry\")\n+expect(clip.len,12,\"new Places recording\")\n+expect(runtime.FindRecording(1438, \"shadowglen\") ~= nil,true,\"new Places subzone\")\n+local details = runtime.AudioPackDetails()\n+expect(table.getn(details),1,\"new Places inventory\")\n+expect(details[1].addon,\"SpokenPlacesAudio\",\"new Places inventory name\")\n+local placeClip = runtime.MakeClip(1438,\"Teldrassil\",\"Teldrassil\",true,false)\n+expect(placeClip.path,\n+    \"Interface\\\\AddOns\\\\SpokenPlacesAudio\\\\Sounds\\\\1438\\\\zone.mp3\",\n+    \"new Places audio path\")\n+\n+-- Old packs remain playable; multiple registries remain independently visible.\n+SpokenZonesAudioPacks = {\n+    SpokenZonesAudio = {version=1,addon=\"SpokenZonesAudio\",\n+        zones={[1413]={file=\"1413\\\\zone\",len=10}}},\n+}\n+expect(runtime.FindRecording(1413) ~= nil,true,\"legacy Places recording\")\n+expect(table.getn(runtime.AudioPackDetails()),2,\"both Places pack generations\")\n+\n+-- Writings: current Readables registry alongside legacy Books packs.\n+SSB = { L = {} }\n+SSB.BASE_LANGUAGE = \"enUS\"\n+function SSB:Data() return SSBData end\n+function SSB:LanguageOrder() return {\"enUS\"} end\n+function SSB:PackLanguage(pack) return pack.language or \"enUS\" end\n+SSBData = {pages={[15]={book=1,text=\"Hello\",number=1}},\n+           books={[1]={title=\"A Book\",pages={15}}}}\n+SpokenReadablesAudioPacks = {\n+    SpokenReadablesAudio = {\n+        version=1,addon=\"SpokenReadablesAudio\",language=\"enUS\",\n+        pages={[15]={file=\"15\",len=21}},\n+    },\n+}\n+SpokenBooksAudioPacks = nil\n+dofile(\"SoftSpoken_Writings/Audio.lua\")\n+expect(table.getn(SSB:GetAudioPacks()),1,\"new Readables inventory\")\n+expect(SSB:GetAudioPacks()[1].addon,\"SpokenReadablesAudio\",\"new Readables registry\")\n+expect(SSB:HasAudio(15),true,\"new Readables audio availability\")\n+expect(SSB:PageLength(15),21,\"new Readables duration\")\n+\n+-- Legacy packs still work, and a duplicate pack registered under both names\n+-- must not double-count inventory entries.\n+SpokenBooksAudioPacks = {\n+    SpokenBooksAudio = {version=1,addon=\"SpokenBooksAudio\",language=\"enUS\",\n+        pages={[16]={file=\"16\",len=9}}},\n+}\n+expect(table.getn(SSB:GetAudioPacks()),2,\"both Writings generations\")\n+SpokenBooksAudioPacks.SpokenReadablesAudio = SpokenReadablesAudioPacks.SpokenReadablesAudio\n+expect(table.getn(SSB:GetAudioPacks()),2,\"deduplicated Readables registry\")\n+\n+print(\"PASS: current and legacy Places/Writings pack registries\")"
+    }
+]

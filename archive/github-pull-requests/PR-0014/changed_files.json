@@ -1,0 +1,62 @@
+[
+    {
+        "sha":  "3c05504d587007136eff73db00d095cac27ef712",
+        "filename":  "SoftSpoken/API.lua",
+        "status":  "modified",
+        "additions":  77,
+        "deletions":  0,
+        "changes":  77,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/6855a4c13c01fb581d25c1be4130896be143994b/SoftSpoken%2FAPI.lua",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/6855a4c13c01fb581d25c1be4130896be143994b/SoftSpoken%2FAPI.lua",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/SoftSpoken%2FAPI.lua?ref=6855a4c13c01fb581d25c1be4130896be143994b",
+        "patch":  "@@ -345,6 +345,83 @@ function Spoken:SetLanguageChoice(which, value)\n     return true\n end\n \n+-- One startup warning for ALL installed narration modules. The player knows\n+-- sources and their pack availability; Quests, Books and Zones should never\n+-- create competing missing-pack popups of their own.\n+local missingVoicePacksWarned = false\n+local packModuleNames = {\n+    quests = \"Quests\",\n+    books = \"Books\",\n+    zones = \"Zones\",\n+}\n+\n+--- Check after login and deferred load-on-demand packs. Returns false while a\n+--- module is still loading, so the caller can retry without a false warning.\n+--- Disabled modules and addons that were not installed are not errors.\n+function Spoken:CheckMissingVoicePacks()\n+    if missingVoicePacksWarned then return true end\n+\n+    -- Never warn before a pending pack loader has had a chance to register data.\n+    for _, key in ipairs({ \"quests\", \"books\", \"zones\" }) do\n+        local source = Sources:Get(key)\n+        if source and not Sources:IsTurnedOff(source) and\n+           type(source.voicePacksPending) == \"function\" then\n+            local ok, pending = pcall(source.voicePacksPending)\n+            if ok and pending then return false end\n+        end\n+    end\n+\n+    local missing, checked = {}, 0\n+    for _, key in ipairs({ \"quests\", \"books\", \"zones\" }) do\n+        local source = Sources:Get(key)\n+        if source and not Sources:IsTurnedOff(source) then\n+            local hasPacks\n+            if type(source.hasUsablePacks) == \"function\" then\n+                local ok, result = pcall(source.hasUsablePacks)\n+                if ok and type(result) == \"boolean\" then hasPacks = result end\n+            elseif type(source.packs) == \"function\" then\n+                local ok, packs = pcall(source.packs)\n+                if ok and type(packs) == \"table\" then\n+                    hasPacks = getn(packs) \u003e 0\n+                end\n+            end\n+            -- A failing provider is not evidence of missing audio. Its own\n+            -- diagnostic output is the appropriate place for that failure.\n+            if hasPacks ~= nil then\n+                checked = checked + 1\n+                if not hasPacks then\n+                    table.insert(missing, packModuleNames[key])\n+                end\n+            end\n+        end\n+    end\n+\n+    if checked == 0 or getn(missing) == 0 then return true end\n+    missingVoicePacksWarned = true\n+    local modules = table.concat(missing, \", \")\n+    local message = \"No compatible voice packs are loaded for: \" .. modules ..\n+        \". Install or enable the corresponding voice-pack addons and /reload.\" ..\n+        \" You can check each module\u0027s Voice Packs section in SoftSpoken Settings.\"\n+\n+    -- On the gamepad UI a popup can taint protected bindings and hang the\n+    -- client; print instead, matching the existing Quests safety workaround.\n+    local ok, style = pcall(GetCVar, \"InputDeviceInterfaceStyle\")\n+    if ok and style == \"1\" then\n+        if DEFAULT_CHAT_FRAME then\n+            DEFAULT_CHAT_FRAME:AddMessage(\"|cff66bbffSoftSpoken:|r \" .. message)\n+        end\n+    else\n+        StaticPopupDialogs[\"SOFTSPOKEN_MISSING_VOICE_PACKS\"] = {\n+            text = \"SoftSpoken|n|n\" .. message,\n+            button1 = OKAY,\n+            timeout = 0,\n+            whileDead = 1,\n+        }\n+        StaticPopup_Show(\"SOFTSPOKEN_MISSING_VOICE_PACKS\")\n+    end\n+    return true\n+end\n+\n -- Data packs are installed by feature modules; one notification lets all\n -- consumers discard any derived voice-availability results.\n function Spoken:NotifyVoicePacksChanged()"
+    },
+    {
+        "sha":  "34348b29fed48d7805f34f1acdb0130f158ddbb1",
+        "filename":  "SoftSpoken/Core.lua",
+        "status":  "modified",
+        "additions":  12,
+        "deletions":  0,
+        "changes":  12,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/6855a4c13c01fb581d25c1be4130896be143994b/SoftSpoken%2FCore.lua",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/6855a4c13c01fb581d25c1be4130896be143994b/SoftSpoken%2FCore.lua",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/SoftSpoken%2FCore.lua?ref=6855a4c13c01fb581d25c1be4130896be143994b",
+        "patch":  "@@ -287,6 +287,18 @@ function Addon:Enable()\n     Minimap:Setup()\n     Options:Setup()\n \n+    -- Wait until feature addons have registered their sources and Quests\u0027\n+    -- deferred load-on-demand packs have finished. Only SoftSpoken decides\n+    -- whether to show the one missing-voice-pack warning for this login.\n+    local voicePackCheckAttempts = 0\n+    local function CheckVoicePacksAfterLogin()\n+        voicePackCheckAttempts = voicePackCheckAttempts + 1\n+        if Spoken:CheckMissingVoicePacks() == false and voicePackCheckAttempts \u003c 6 then\n+            Addon:ScheduleTimer(CheckVoicePacksAfterLogin, 2)\n+        end\n+    end\n+    self:ScheduleTimer(CheckVoicePacksAfterLogin, 3)\n+\n     -- Through _G, not bare. Every file here runs inside a private environment whose\n     -- metatable falls back to _G: reads fall through, writes do not. A bare assignment\n     -- lands in the environment, and the client never hears of the command."
+    },
+    {
+        "sha":  "1ab0a385b378dbfc40cc672c4a2e01e10eceb69b",
+        "filename":  "SoftSpoken/Sources.lua",
+        "status":  "modified",
+        "additions":  4,
+        "deletions":  0,
+        "changes":  4,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/6855a4c13c01fb581d25c1be4130896be143994b/SoftSpoken%2FSources.lua",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/6855a4c13c01fb581d25c1be4130896be143994b/SoftSpoken%2FSources.lua",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/SoftSpoken%2FSources.lua?ref=6855a4c13c01fb581d25c1be4130896be143994b",
+        "patch":  "@@ -23,6 +23,8 @@ SourceMethods.__index = SourceMethods\n ---@field onQueueEnter? fun()\n ---@field onQueueEmpty? fun()\n ---@field packs? fun():string[] -- the voice packs this source found installed, by name\n+---@field hasUsablePacks? fun():boolean -- registered audio, not just pack metadata\n+---@field voicePacksPending? fun():boolean -- initial deferred pack loading not complete\n \n ---@param key string\n ---@param info SpokenSourceInfo\n@@ -43,6 +45,8 @@ function Sources:Register(key, info)\n         onQueueEnter = info.onQueueEnter,\n         onQueueEmpty = info.onQueueEmpty,\n         packs = info.packs,\n+        hasUsablePacks = info.hasUsablePacks,\n+        voicePacksPending = info.voicePacksPending,\n         -- A part\u0027s settings kept in AceDB profiles: a function returning its AceDB object, so\n         -- Spoken\u0027s own Profiles section switches it with the player\u0027s (Options:ProfileDBs).\n         profiles = info.profiles,"
+    },
+    {
+        "sha":  "26540cb8c5e8456a23c652a4829f0335a9e12141",
+        "filename":  "SoftSpoken_Quests/Player.lua",
+        "status":  "modified",
+        "additions":  5,
+        "deletions":  0,
+        "changes":  5,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/6855a4c13c01fb581d25c1be4130896be143994b/SoftSpoken_Quests%2FPlayer.lua",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/6855a4c13c01fb581d25c1be4130896be143994b/SoftSpoken_Quests%2FPlayer.lua",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/SoftSpoken_Quests%2FPlayer.lua?ref=6855a4c13c01fb581d25c1be4130896be143994b",
+        "patch":  "@@ -503,6 +503,11 @@ function Player:Setup()\n         profiles = function() return Addon.db end,\n         -- Printed after Spoken\u0027s own by its Show Diagnostics.\n         diagnostics = function() Options:PrintDiagnostics() end,\n+        -- Quests\u0027 installed-pack inventory can include load-on-demand addons\n+        -- whose recordings failed to register. The core\u0027s startup warning\n+        -- must use the registered data, not the merely installed list.\n+        hasUsablePacks = function() return DataModules:HasRegisteredModules() end,\n+        voicePacksPending = function() return Addon.dataModulesPending end,\n         -- What Spoken\u0027s settings show on this part\u0027s card: which voice packs are installed.\n         packs = function()\n             local names = {}"
+    },
+    {
+        "sha":  "ac74c132724cc7eeca8fd244983e0eca6f4288a2",
+        "filename":  "SoftSpoken_Quests/VoiceOver.lua",
+        "status":  "modified",
+        "additions":  0,
+        "deletions":  44,
+        "changes":  44,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/6855a4c13c01fb581d25c1be4130896be143994b/SoftSpoken_Quests%2FVoiceOver.lua",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/6855a4c13c01fb581d25c1be4130896be143994b/SoftSpoken_Quests%2FVoiceOver.lua",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/SoftSpoken_Quests%2FVoiceOver.lua?ref=6855a4c13c01fb581d25c1be4130896be143994b",
+        "patch":  "@@ -167,49 +167,6 @@ local function GetVisibleQuestEvent()\n     return lastQuestEvent\n end\n \n--- The Forever client\u0027s gamepad UI takes over every popup as it opens, inside the code that\n--- opened it. Opened by an addon, that taints the gamepad\u0027s bindings: the next close is blocked,\n--- and the \"blocked from an action\" dialog it raises hangs the client (#165). What this addon\n--- would pop up unasked goes to chat there instead. A copy of Spoken\u0027s own (Core.lua), because\n--- the player may be the addon that is missing. pcall, because 1.12 raises on a CVar it has never\n--- heard of.\n-local function IsGamepadUI()\n-    local ok, style = pcall(GetCVar, \"InputDeviceInterfaceStyle\")\n-    return ok and style == \"1\"\n-end\n-\n-local function Say(text)\n-    DEFAULT_CHAT_FRAME:AddMessage(\"|cff66bbffSpoken Quests:|r \" .. text)\n-end\n-\n-function Addon:ShowMissingDataModulePopup()\n-    if DataModules:HasRegisteredModules() then\n-        return\n-    end\n-\n-    local loadDetails = {}\n-    for _, module in DataModules:GetPresentModules() do\n-        local reason = DataModules:GetModuleLoadError(module.AddonName)\n-        if reason then\n-            table.insert(loadDetails, format(\"%s: %s\", module.AddonName, reason))\n-        end\n-    end\n-    local details = next(loadDetails) and (\"|n|nDetected but not loaded:|n\" .. table.concat(loadDetails, \"|n\")) or \"\"\n-    local text = [[No usable sound packs were loaded.|n|nKeep a sound pack installed beside this addon - \"Spoken Audio: Quests\", or the older \"AI_VoiceOverData_Vanilla\". Run \"/spq diagnostics\" for details.]] .. details\n-    if IsGamepadUI() then\n-        Say(text)\n-        return\n-    end\n-    StaticPopupDialogs[\"VOICEOVER_NO_REGISTERED_DATA_MODULES\"] =\n-    {\n-        text = \"Spoken Quests|n|n\" .. text,\n-        button1 = OKAY,\n-        timeout = 0,\n-        whileDead = 1,\n-    }\n-    StaticPopup_Show(\"VOICEOVER_NO_REGISTERED_DATA_MODULES\")\n-end\n-\n --- Every read goes through here, automatic or not. `manual` is a player asking for this\n --- line - the Play button, /spq read - rather than the client reporting a dialog, so it reads\n --- whatever autoplay and the greeting frequency say.\n@@ -550,7 +507,6 @@ function Addon:OnInitialize()\n         end\n         -- The settings pages were built before this, with every pack still to register.\n         Spoken:NotifyVoicePacksChanged()\n-        self:ShowMissingDataModulePopup()\n     end\n     local function ScheduleDeferredDataLoad()\n         if C_Timer and C_Timer.After then"
+    }
+]

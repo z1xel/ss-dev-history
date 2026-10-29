@@ -1,0 +1,26 @@
+[
+    {
+        "sha":  "d0e267907ef76d7e7afc4a745b2564c9a6407c97",
+        "filename":  "SoftSpoken/Compendium/UI/Compendium.lua",
+        "status":  "modified",
+        "additions":  5,
+        "deletions":  1,
+        "changes":  6,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/e1e54a09377f8f7b2ca8e40d5ab6befdb0db47f8/SoftSpoken%2FCompendium%2FUI%2FCompendium.lua",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/e1e54a09377f8f7b2ca8e40d5ab6befdb0db47f8/SoftSpoken%2FCompendium%2FUI%2FCompendium.lua",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/SoftSpoken%2FCompendium%2FUI%2FCompendium.lua?ref=e1e54a09377f8f7b2ca8e40d5ab6befdb0db47f8",
+        "patch":  "@@ -904,8 +904,12 @@ function List:DrawRows()\n                 b.toggle:SetPoint(\"LEFT\",b,\"LEFT\",8+indent,0)\n                 local count=item.count or 0\n                 local onlyFound=self.opts.onlyGet and self.opts.onlyGet()\n+                -- Stories displays completions but tracks discoveries separately.\n+                -- When filtering to discovered entries, use discovery progress\n+                -- to decide whether a branch has an active expand/collapse icon.\n+                local discovered=item.found or count\n                 if ((item.total or count)\u003e0) and not item.locked and\n-                   not (onlyFound and count==0) then\n+                   not (onlyFound and discovered==0) then\n                     b.toggle:SetTexture(item.open and\n                         \"Interface\\\\Buttons\\\\UI-MinusButton-Up\" or\n                         \"Interface\\\\Buttons\\\\UI-PlusButton-Up\")"
+    },
+    {
+        "sha":  "c676ed69930d82d50126343b1fb2e438777ef231",
+        "filename":  "SoftSpoken/UI/MinimapButton.lua",
+        "status":  "modified",
+        "additions":  2,
+        "deletions":  2,
+        "changes":  4,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/e1e54a09377f8f7b2ca8e40d5ab6befdb0db47f8/SoftSpoken%2FUI%2FMinimapButton.lua",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/e1e54a09377f8f7b2ca8e40d5ab6befdb0db47f8/SoftSpoken%2FUI%2FMinimapButton.lua",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/SoftSpoken%2FUI%2FMinimapButton.lua?ref=e1e54a09377f8f7b2ca8e40d5ab6befdb0db47f8",
+        "patch":  "@@ -312,7 +312,7 @@ function Minimap:Setup()\n \n     ldbObject = LibDataBroker:NewDataObject(\"Spoken\", {\n         type = \"launcher\",\n-        text = \"Spoken\",\n+        text = \"SoftSpoken\",\n         icon = ICON,\n         OnClick = function(button, mouseButton)\n             -- Blizzard\u0027s compartment calls the registered entry with its own menu frame,\n@@ -347,7 +347,7 @@ function Minimap:Setup()\n                 tooltip:Hide()\n                 return\n             end\n-            tooltip:SetText(\"Spoken\")\n+            tooltip:SetText(\"SoftSpoken\")\n             local head = SoundQueue:GetCurrentSound()\n             if head and head.present then\n                 tooltip:AddLine(head.present.header or \"\", 1, 0.82, 0)"
+    }
+]

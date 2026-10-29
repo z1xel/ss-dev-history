@@ -1,0 +1,133 @@
+[
+    {
+        "sha":  "3fa42b9a733dec96f33102abccda2ea8c1210fbb",
+        "node_id":  "C_kwDOVOzNm9oAKDNmYTQyYjlhNzMzZGVjOTZmMzMxMDJhYmNjZGEyZWE4YzEyMTBmYmI",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/3fa42b9a733dec96f33102abccda2ea8c1210fbb",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/commit/3fa42b9a733dec96f33102abccda2ea8c1210fbb",
+        "author":  {
+                       "name":  "z1xel",
+                       "email":  "121463840+z1xel@users.noreply.github.com",
+                       "date":  "2026-10-29T05:46:46Z"
+                   },
+        "committer":  {
+                          "name":  "z1xel",
+                          "email":  "121463840+z1xel@users.noreply.github.com",
+                          "date":  "2026-10-29T05:46:46Z"
+                      },
+        "tree":  {
+                     "sha":  "45e5bc5665f5f8638fe4bde8698a4132565ebaea",
+                     "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/trees/45e5bc5665f5f8638fe4bde8698a4132565ebaea"
+                 },
+        "message":  "docs: preserve upstream licenses and audit third-party attribution",
+        "parents":  [
+                        {
+                            "sha":  "a4ac154bbfaa5ff99cce4ae2e8ac02692dbcd726",
+                            "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/a4ac154bbfaa5ff99cce4ae2e8ac02692dbcd726",
+                            "html_url":  "https://github.com/z1xel/SoftSpoken/commit/a4ac154bbfaa5ff99cce4ae2e8ac02692dbcd726"
+                        }
+                    ],
+        "verification":  {
+                             "verified":  false,
+                             "reason":  "unsigned",
+                             "signature":  null,
+                             "payload":  null,
+                             "verified_at":  null
+                         },
+        "event":  "committed"
+    },
+    {
+        "id":  34552377343,
+        "node_id":  "ME_lADOVOzNm88AAAABazdIEc8AAAAIC3tv_w",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/issues/events/34552377343",
+        "actor":  {
+                      "login":  "z1xel",
+                      "id":  121463840,
+                      "node_id":  "U_kgDOBz1kIA",
+                      "avatar_url":  "https://avatars.githubusercontent.com/u/121463840?v=4",
+                      "gravatar_id":  "",
+                      "url":  "https://api.github.com/users/z1xel",
+                      "html_url":  "https://github.com/z1xel",
+                      "followers_url":  "https://api.github.com/users/z1xel/followers",
+                      "following_url":  "https://api.github.com/users/z1xel/following{/other_user}",
+                      "gists_url":  "https://api.github.com/users/z1xel/gists{/gist_id}",
+                      "starred_url":  "https://api.github.com/users/z1xel/starred{/owner}{/repo}",
+                      "subscriptions_url":  "https://api.github.com/users/z1xel/subscriptions",
+                      "organizations_url":  "https://api.github.com/users/z1xel/orgs",
+                      "repos_url":  "https://api.github.com/users/z1xel/repos",
+                      "events_url":  "https://api.github.com/users/z1xel/events{/privacy}",
+                      "received_events_url":  "https://api.github.com/users/z1xel/received_events",
+                      "type":  "User",
+                      "user_view_type":  "public",
+                      "site_admin":  false
+                  },
+        "event":  "merged",
+        "commit_id":  "40433174a4c8a1f28912d4ab978459e02691c3fc",
+        "commit_url":  "https://api.github.com/repos/z1xel/SoftSpoken/commits/40433174a4c8a1f28912d4ab978459e02691c3fc",
+        "created_at":  "2026-10-29T05:48:08Z",
+        "performed_via_github_app":  null
+    },
+    {
+        "id":  34552377425,
+        "node_id":  "CE_lADOVOzNm88AAAABazdIEc8AAAAIC3twUQ",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/issues/events/34552377425",
+        "actor":  {
+                      "login":  "z1xel",
+                      "id":  121463840,
+                      "node_id":  "U_kgDOBz1kIA",
+                      "avatar_url":  "https://avatars.githubusercontent.com/u/121463840?v=4",
+                      "gravatar_id":  "",
+                      "url":  "https://api.github.com/users/z1xel",
+                      "html_url":  "https://github.com/z1xel",
+                      "followers_url":  "https://api.github.com/users/z1xel/followers",
+                      "following_url":  "https://api.github.com/users/z1xel/following{/other_user}",
+                      "gists_url":  "https://api.github.com/users/z1xel/gists{/gist_id}",
+                      "starred_url":  "https://api.github.com/users/z1xel/starred{/owner}{/repo}",
+                      "subscriptions_url":  "https://api.github.com/users/z1xel/subscriptions",
+                      "organizations_url":  "https://api.github.com/users/z1xel/orgs",
+                      "repos_url":  "https://api.github.com/users/z1xel/repos",
+                      "events_url":  "https://api.github.com/users/z1xel/events{/privacy}",
+                      "received_events_url":  "https://api.github.com/users/z1xel/received_events",
+                      "type":  "User",
+                      "user_view_type":  "public",
+                      "site_admin":  false
+                  },
+        "event":  "closed",
+        "commit_id":  null,
+        "commit_url":  null,
+        "created_at":  "2026-10-29T05:48:08Z",
+        "state_reason":  null,
+        "intent":  null,
+        "performed_via_github_app":  null
+    },
+    {
+        "id":  34553649951,
+        "node_id":  "HRDE_lADOVOzNm88AAAABazdIEc8AAAAIC47bHw",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/issues/events/34553649951",
+        "actor":  {
+                      "login":  "z1xel",
+                      "id":  121463840,
+                      "node_id":  "U_kgDOBz1kIA",
+                      "avatar_url":  "https://avatars.githubusercontent.com/u/121463840?v=4",
+                      "gravatar_id":  "",
+                      "url":  "https://api.github.com/users/z1xel",
+                      "html_url":  "https://github.com/z1xel",
+                      "followers_url":  "https://api.github.com/users/z1xel/followers",
+                      "following_url":  "https://api.github.com/users/z1xel/following{/other_user}",
+                      "gists_url":  "https://api.github.com/users/z1xel/gists{/gist_id}",
+                      "starred_url":  "https://api.github.com/users/z1xel/starred{/owner}{/repo}",
+                      "subscriptions_url":  "https://api.github.com/users/z1xel/subscriptions",
+                      "organizations_url":  "https://api.github.com/users/z1xel/orgs",
+                      "repos_url":  "https://api.github.com/users/z1xel/repos",
+                      "events_url":  "https://api.github.com/users/z1xel/events{/privacy}",
+                      "received_events_url":  "https://api.github.com/users/z1xel/received_events",
+                      "type":  "User",
+                      "user_view_type":  "public",
+                      "site_admin":  false
+                  },
+        "event":  "head_ref_deleted",
+        "commit_id":  null,
+        "commit_url":  null,
+        "created_at":  "2026-10-29T06:09:33Z",
+        "performed_via_github_app":  null
+    }
+]

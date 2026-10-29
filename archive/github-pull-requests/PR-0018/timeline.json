@@ -1,0 +1,1620 @@
+[
+    {
+        "sha":  "0068bcc0fea5b56c7419ba5ad05616cb53b3b2aa",
+        "node_id":  "C_kwDOVOzNm9oAKDAwNjhiY2MwZmVhNWI1NmM3NDE5YmE1YWQwNTYxNmNiNTNiM2IyYWE",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/0068bcc0fea5b56c7419ba5ad05616cb53b3b2aa",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/commit/0068bcc0fea5b56c7419ba5ad05616cb53b3b2aa",
+        "author":  {
+                       "name":  "z1xel",
+                       "email":  "121463840+z1xel@users.noreply.github.com",
+                       "date":  "2026-10-26T18:27:02Z"
+                   },
+        "committer":  {
+                          "name":  "z1xel",
+                          "email":  "121463840+z1xel@users.noreply.github.com",
+                          "date":  "2026-10-26T18:27:02Z"
+                      },
+        "tree":  {
+                     "sha":  "10d6ffeacf1d4d2cb03bc7d44a06f1b0507cd974",
+                     "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/trees/10d6ffeacf1d4d2cb03bc7d44a06f1b0507cd974"
+                 },
+        "message":  "Share Compendium parchment page construction with standalone map reader",
+        "parents":  [
+                        {
+                            "sha":  "d2961b8dc2a423c9d3cc9e9cede9efbceeede793",
+                            "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/d2961b8dc2a423c9d3cc9e9cede9efbceeede793",
+                            "html_url":  "https://github.com/z1xel/SoftSpoken/commit/d2961b8dc2a423c9d3cc9e9cede9efbceeede793"
+                        }
+                    ],
+        "verification":  {
+                             "verified":  false,
+                             "reason":  "unsigned",
+                             "signature":  null,
+                             "payload":  null,
+                             "verified_at":  null
+                         },
+        "event":  "committed"
+    },
+    {
+        "sha":  "fa67ad091f9a9e24bc0138562b44af0f89c980ac",
+        "node_id":  "C_kwDOVOzNm9oAKGZhNjdhZDA5MWY5YTllMjRiYzAxMzg1NjJiNDRhZjBmODljOTgwYWM",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/fa67ad091f9a9e24bc0138562b44af0f89c980ac",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/commit/fa67ad091f9a9e24bc0138562b44af0f89c980ac",
+        "author":  {
+                       "name":  "z1xel",
+                       "email":  "121463840+z1xel@users.noreply.github.com",
+                       "date":  "2026-10-26T18:27:17Z"
+                   },
+        "committer":  {
+                          "name":  "z1xel",
+                          "email":  "121463840+z1xel@users.noreply.github.com",
+                          "date":  "2026-10-26T18:27:17Z"
+                      },
+        "tree":  {
+                     "sha":  "ab7afef5aaf635360d7c5fc0db24f418597b5ba9",
+                     "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/trees/ab7afef5aaf635360d7c5fc0db24f418597b5ba9"
+                 },
+        "message":  "Allow standalone book-style lore pages to retain Compendium shortcut",
+        "parents":  [
+                        {
+                            "sha":  "0068bcc0fea5b56c7419ba5ad05616cb53b3b2aa",
+                            "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/0068bcc0fea5b56c7419ba5ad05616cb53b3b2aa",
+                            "html_url":  "https://github.com/z1xel/SoftSpoken/commit/0068bcc0fea5b56c7419ba5ad05616cb53b3b2aa"
+                        }
+                    ],
+        "verification":  {
+                             "verified":  false,
+                             "reason":  "unsigned",
+                             "signature":  null,
+                             "payload":  null,
+                             "verified_at":  null
+                         },
+        "event":  "committed"
+    },
+    {
+        "sha":  "c265e0c1de57a842d1eb69f495e018f03043a300",
+        "node_id":  "C_kwDOVOzNm9oAKGMyNjVlMGMxZGU1N2E4NDJkMWViNjlmNDk1ZTAxOGYwMzA0M2EzMDA",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/c265e0c1de57a842d1eb69f495e018f03043a300",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/commit/c265e0c1de57a842d1eb69f495e018f03043a300",
+        "author":  {
+                       "name":  "z1xel",
+                       "email":  "121463840+z1xel@users.noreply.github.com",
+                       "date":  "2026-10-26T18:28:02Z"
+                   },
+        "committer":  {
+                          "name":  "z1xel",
+                          "email":  "121463840+z1xel@users.noreply.github.com",
+                          "date":  "2026-10-26T18:28:02Z"
+                      },
+        "tree":  {
+                     "sha":  "34fcdbb1577172a4c80dfe40df7620b42ad92a4a",
+                     "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/trees/34fcdbb1577172a4c80dfe40df7620b42ad92a4a"
+                 },
+        "message":  "Render World Map lore attachment with shared Compendium page skin",
+        "parents":  [
+                        {
+                            "sha":  "fa67ad091f9a9e24bc0138562b44af0f89c980ac",
+                            "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/fa67ad091f9a9e24bc0138562b44af0f89c980ac",
+                            "html_url":  "https://github.com/z1xel/SoftSpoken/commit/fa67ad091f9a9e24bc0138562b44af0f89c980ac"
+                        }
+                    ],
+        "verification":  {
+                             "verified":  false,
+                             "reason":  "unsigned",
+                             "signature":  null,
+                             "payload":  null,
+                             "verified_at":  null
+                         },
+        "event":  "committed"
+    },
+    {
+        "sha":  "0d467708c584a567598c8513f6fc281b210d6a53",
+        "node_id":  "C_kwDOVOzNm9oAKDBkNDY3NzA4YzU4NGE1Njc1OThjODUxM2Y2ZmMyODFiMjEwZDZhNTM",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/0d467708c584a567598c8513f6fc281b210d6a53",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/commit/0d467708c584a567598c8513f6fc281b210d6a53",
+        "author":  {
+                       "name":  "z1xel",
+                       "email":  "121463840+z1xel@users.noreply.github.com",
+                       "date":  "2026-10-26T18:44:22Z"
+                   },
+        "committer":  {
+                          "name":  "z1xel",
+                          "email":  "121463840+z1xel@users.noreply.github.com",
+                          "date":  "2026-10-26T18:44:22Z"
+                      },
+        "tree":  {
+                     "sha":  "0868ad7191d2d08b23c98b91f6d9baa3557e6877",
+                     "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/trees/0868ad7191d2d08b23c98b91f6d9baa3557e6877"
+                 },
+        "message":  "Allow wrapped map lore subtitles without changing Compendium spacing",
+        "parents":  [
+                        {
+                            "sha":  "c265e0c1de57a842d1eb69f495e018f03043a300",
+                            "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/c265e0c1de57a842d1eb69f495e018f03043a300",
+                            "html_url":  "https://github.com/z1xel/SoftSpoken/commit/c265e0c1de57a842d1eb69f495e018f03043a300"
+                        }
+                    ],
+        "verification":  {
+                             "verified":  false,
+                             "reason":  "unsigned",
+                             "signature":  null,
+                             "payload":  null,
+                             "verified_at":  null
+                         },
+        "event":  "committed"
+    },
+    {
+        "sha":  "99d8ca99980e011dac0216c5b0590b3a3ebb046b",
+        "node_id":  "C_kwDOVOzNm9oAKDk5ZDhjYTk5OTgwZTAxMWRhYzAyMTZjNWIwNTkwYjNhM2ViYjA0NmI",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/99d8ca99980e011dac0216c5b0590b3a3ebb046b",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/commit/99d8ca99980e011dac0216c5b0590b3a3ebb046b",
+        "author":  {
+                       "name":  "z1xel",
+                       "email":  "121463840+z1xel@users.noreply.github.com",
+                       "date":  "2026-10-26T18:44:44Z"
+                   },
+        "committer":  {
+                          "name":  "z1xel",
+                          "email":  "121463840+z1xel@users.noreply.github.com",
+                          "date":  "2026-10-26T18:44:44Z"
+                      },
+        "tree":  {
+                     "sha":  "e586d00f0ce483fbe89241be70db9e0c4e1c2a95",
+                     "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/trees/e586d00f0ce483fbe89241be70db9e0c4e1c2a95"
+                 },
+        "message":  "Enable adaptive subtitle spacing for narrow World Map reader",
+        "parents":  [
+                        {
+                            "sha":  "0d467708c584a567598c8513f6fc281b210d6a53",
+                            "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/0d467708c584a567598c8513f6fc281b210d6a53",
+                            "html_url":  "https://github.com/z1xel/SoftSpoken/commit/0d467708c584a567598c8513f6fc281b210d6a53"
+                        }
+                    ],
+        "verification":  {
+                             "verified":  false,
+                             "reason":  "unsigned",
+                             "signature":  null,
+                             "payload":  null,
+                             "verified_at":  null
+                         },
+        "event":  "committed"
+    },
+    {
+        "sha":  "b9430f44157b7fb9160a61cd200a416fd0ad1fcc",
+        "node_id":  "C_kwDOVOzNm9oAKGI5NDMwZjQ0MTU3YjdmYjkxNjBhNjFjZDIwMGE0MTZmZDBhZDFmY2M",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/b9430f44157b7fb9160a61cd200a416fd0ad1fcc",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/commit/b9430f44157b7fb9160a61cd200a416fd0ad1fcc",
+        "author":  {
+                       "name":  "z1xel",
+                       "email":  "121463840+z1xel@users.noreply.github.com",
+                       "date":  "2026-10-26T18:44:47Z"
+                   },
+        "committer":  {
+                          "name":  "z1xel",
+                          "email":  "121463840+z1xel@users.noreply.github.com",
+                          "date":  "2026-10-26T18:44:47Z"
+                      },
+        "tree":  {
+                     "sha":  "8ef469006296adc6e83ddcc4b09213eddc6b0d39",
+                     "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/trees/8ef469006296adc6e83ddcc4b09213eddc6b0d39"
+                 },
+        "message":  "Keep single-line lore subtitles at original height",
+        "parents":  [
+                        {
+                            "sha":  "99d8ca99980e011dac0216c5b0590b3a3ebb046b",
+                            "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/99d8ca99980e011dac0216c5b0590b3a3ebb046b",
+                            "html_url":  "https://github.com/z1xel/SoftSpoken/commit/99d8ca99980e011dac0216c5b0590b3a3ebb046b"
+                        }
+                    ],
+        "verification":  {
+                             "verified":  false,
+                             "reason":  "unsigned",
+                             "signature":  null,
+                             "payload":  null,
+                             "verified_at":  null
+                         },
+        "event":  "committed"
+    },
+    {
+        "sha":  "312d6b7ade153bb1b726a4264b480843f54d6b3c",
+        "node_id":  "C_kwDOVOzNm9oAKDMxMmQ2YjdhZGUxNTNiYjFiNzI2YTQyNjRiNDgwODQzZjU0ZDZiM2M",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/312d6b7ade153bb1b726a4264b480843f54d6b3c",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/commit/312d6b7ade153bb1b726a4264b480843f54d6b3c",
+        "author":  {
+                       "name":  "z1xel",
+                       "email":  "121463840+z1xel@users.noreply.github.com",
+                       "date":  "2026-10-26T18:47:04Z"
+                   },
+        "committer":  {
+                          "name":  "z1xel",
+                          "email":  "121463840+z1xel@users.noreply.github.com",
+                          "date":  "2026-10-26T18:47:04Z"
+                      },
+        "tree":  {
+                     "sha":  "6a8552a3c6a8877703f2a7e4293063f0abcf568f",
+                     "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/trees/6a8552a3c6a8877703f2a7e4293063f0abcf568f"
+                 },
+        "message":  "Avoid duplicate standalone lore page resize passes",
+        "parents":  [
+                        {
+                            "sha":  "b9430f44157b7fb9160a61cd200a416fd0ad1fcc",
+                            "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/b9430f44157b7fb9160a61cd200a416fd0ad1fcc",
+                            "html_url":  "https://github.com/z1xel/SoftSpoken/commit/b9430f44157b7fb9160a61cd200a416fd0ad1fcc"
+                        }
+                    ],
+        "verification":  {
+                             "verified":  false,
+                             "reason":  "unsigned",
+                             "signature":  null,
+                             "payload":  null,
+                             "verified_at":  null
+                         },
+        "event":  "committed"
+    },
+    {
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/issues/comments/6424543507",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/pull/18#issuecomment-6424543507",
+        "issue_url":  "https://api.github.com/repos/z1xel/SoftSpoken/issues/18",
+        "id":  6424543507,
+        "node_id":  "IC_kwDOVOzNm88AAAABfu7BEw",
+        "user":  {
+                     "login":  "z1xel",
+                     "id":  121463840,
+                     "node_id":  "U_kgDOBz1kIA",
+                     "avatar_url":  "https://avatars.githubusercontent.com/u/121463840?v=4",
+                     "gravatar_id":  "",
+                     "url":  "https://api.github.com/users/z1xel",
+                     "html_url":  "https://github.com/z1xel",
+                     "followers_url":  "https://api.github.com/users/z1xel/followers",
+                     "following_url":  "https://api.github.com/users/z1xel/following{/other_user}",
+                     "gists_url":  "https://api.github.com/users/z1xel/gists{/gist_id}",
+                     "starred_url":  "https://api.github.com/users/z1xel/starred{/owner}{/repo}",
+                     "subscriptions_url":  "https://api.github.com/users/z1xel/subscriptions",
+                     "organizations_url":  "https://api.github.com/users/z1xel/orgs",
+                     "repos_url":  "https://api.github.com/users/z1xel/repos",
+                     "events_url":  "https://api.github.com/users/z1xel/events{/privacy}",
+                     "received_events_url":  "https://api.github.com/users/z1xel/received_events",
+                     "type":  "User",
+                     "user_view_type":  "public",
+                     "site_admin":  false
+                 },
+        "created_at":  "2026-10-26T18:48:17Z",
+        "updated_at":  "2026-10-26T18:48:17Z",
+        "body":  "## Follow-up implementation pass\n\nInitial parchment appearance was reported **looking okay in-game**; this is a limited visual check, not a full functional QA pass.\n\nAdditional changes pushed on this branch:\n- Make the **map-only** subtitle/breadcrumb row expand when its text wraps, rather than overlapping the decorative divider on narrow screens. Single-line subtitles keep the original 16-unit height, and the normal Compendium remains untouched.\n- Remove a redundant standalone `OnSizeChanged` handler: `SSCTextView` already reflows when its page frame is resized, so there is now only one resize path.\n- Static review confirmed unchanged 338-unit width, original World Map anchoring, zone/city/subzone selection, map audio binding, Compendium shortcut, and the standard Compendium split-page coordinates.\n\n### Remaining focused in-game verification\n- [ ] Long titles/breadcrumbs (e.g. Eastern Kingdoms, zone names with long subtitles) wrap above the divider, not into the content.\n- [ ] Scroll via wheel/arrows/thumb to the end of long stories, then switch to a short story and back; no overshoot or stale offset.\n- [ ] Open in Compendium button correctly targets zone, city and subzone where available.\n- [ ] Collapse/reopen map panel, change map modes/UI scale, and verify the page and scrollbar resize correctly.\n- [ ] Compare regular Places/Books/Quests Compendium page layout with previous `main`: no regression.\n\nPR remains unmerged pending this functional testing.",
+        "author_association":  "OWNER",
+        "reactions":  {
+                          "url":  "https://api.github.com/repos/z1xel/SoftSpoken/issues/comments/6424543507/reactions",
+                          "total_count":  0,
+                          "+1":  0,
+                          "-1":  0,
+                          "laugh":  0,
+                          "hooray":  0,
+                          "confused":  0,
+                          "heart":  0,
+                          "rocket":  0,
+                          "eyes":  0
+                      },
+        "performed_via_github_app":  {
+                                         "id":  1144995,
+                                         "client_id":  "Iv23liVemv8A9if9v0F2",
+                                         "slug":  "chatgpt-codex-connector",
+                                         "node_id":  "A_kwHOAOQ6Gs4AEXij",
+                                         "owner":  {
+                                                       "login":  "openai",
+                                                       "id":  14957082,
+                                                       "node_id":  "MDEyOk9yZ2FuaXphdGlvbjE0OTU3MDgy",
+                                                       "avatar_url":  "https://avatars.githubusercontent.com/u/14957082?v=4",
+                                                       "gravatar_id":  "",
+                                                       "url":  "https://api.github.com/users/openai",
+                                                       "html_url":  "https://github.com/openai",
+                                                       "followers_url":  "https://api.github.com/users/openai/followers",
+                                                       "following_url":  "https://api.github.com/users/openai/following{/other_user}",
+                                                       "gists_url":  "https://api.github.com/users/openai/gists{/gist_id}",
+                                                       "starred_url":  "https://api.github.com/users/openai/starred{/owner}{/repo}",
+                                                       "subscriptions_url":  "https://api.github.com/users/openai/subscriptions",
+                                                       "organizations_url":  "https://api.github.com/users/openai/orgs",
+                                                       "repos_url":  "https://api.github.com/users/openai/repos",
+                                                       "events_url":  "https://api.github.com/users/openai/events{/privacy}",
+                                                       "received_events_url":  "https://api.github.com/users/openai/received_events",
+                                                       "type":  "Organization",
+                                                       "user_view_type":  "public",
+                                                       "site_admin":  false
+                                                   },
+                                         "name":  "ChatGPT Codex Connector",
+                                         "description":  "Bring ChatGPT and Codex to your GitHub repositories.",
+                                         "external_url":  "https://www.chatgpt.com",
+                                         "html_url":  "https://github.com/apps/chatgpt-codex-connector",
+                                         "created_at":  "2025-02-14T01:37:05Z",
+                                         "updated_at":  "2026-09-23T18:52:59Z",
+                                         "permissions":  {
+                                                             "actions":  "write",
+                                                             "checks":  "read",
+                                                             "contents":  "write",
+                                                             "emails":  "read",
+                                                             "issues":  "write",
+                                                             "metadata":  "read",
+                                                             "pull_requests":  "write",
+                                                             "statuses":  "read",
+                                                             "workflows":  "write"
+                                                         },
+                                         "events":  [
+                                                        "check_run",
+                                                        "check_suite",
+                                                        "commit_comment",
+                                                        "issues",
+                                                        "issue_comment",
+                                                        "pull_request",
+                                                        "pull_request_review",
+                                                        "pull_request_review_comment",
+                                                        "pull_request_review_thread",
+                                                        "repository",
+                                                        "status",
+                                                        "sub_issues"
+                                                    ]
+                                     },
+        "minimized":  null,
+        "event":  "commented",
+        "actor":  {
+                      "login":  "z1xel",
+                      "id":  121463840,
+                      "node_id":  "U_kgDOBz1kIA",
+                      "avatar_url":  "https://avatars.githubusercontent.com/u/121463840?v=4",
+                      "gravatar_id":  "",
+                      "url":  "https://api.github.com/users/z1xel",
+                      "html_url":  "https://github.com/z1xel",
+                      "followers_url":  "https://api.github.com/users/z1xel/followers",
+                      "following_url":  "https://api.github.com/users/z1xel/following{/other_user}",
+                      "gists_url":  "https://api.github.com/users/z1xel/gists{/gist_id}",
+                      "starred_url":  "https://api.github.com/users/z1xel/starred{/owner}{/repo}",
+                      "subscriptions_url":  "https://api.github.com/users/z1xel/subscriptions",
+                      "organizations_url":  "https://api.github.com/users/z1xel/orgs",
+                      "repos_url":  "https://api.github.com/users/z1xel/repos",
+                      "events_url":  "https://api.github.com/users/z1xel/events{/privacy}",
+                      "received_events_url":  "https://api.github.com/users/z1xel/received_events",
+                      "type":  "User",
+                      "user_view_type":  "public",
+                      "site_admin":  false
+                  }
+    },
+    {
+        "sha":  "1fab76baca3f1eb2f9e7af9086cb3e78f127c363",
+        "node_id":  "C_kwDOVOzNm9oAKDFmYWI3NmJhY2EzZjFlYjJmOWU3YWY5MDg2Y2IzZTc4ZjEyN2MzNjM",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/1fab76baca3f1eb2f9e7af9086cb3e78f127c363",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/commit/1fab76baca3f1eb2f9e7af9086cb3e78f127c363",
+        "author":  {
+                       "name":  "z1xel",
+                       "email":  "121463840+z1xel@users.noreply.github.com",
+                       "date":  "2026-10-26T19:35:02Z"
+                   },
+        "committer":  {
+                          "name":  "GitHub",
+                          "email":  "noreply@github.com",
+                          "date":  "2026-10-26T19:35:02Z"
+                      },
+        "tree":  {
+                     "sha":  "cea306da64b22b907ec3f27beba2caaba762be69",
+                     "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/trees/cea306da64b22b907ec3f27beba2caaba762be69"
+                 },
+        "message":  "Pull main (#19)\n\n* fix(ui): show SoftSpoken in minimap hover tooltip\n\n* fix(compendium): use discovered count for Stories branch toggle state",
+        "parents":  [
+                        {
+                            "sha":  "312d6b7ade153bb1b726a4264b480843f54d6b3c",
+                            "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/312d6b7ade153bb1b726a4264b480843f54d6b3c",
+                            "html_url":  "https://github.com/z1xel/SoftSpoken/commit/312d6b7ade153bb1b726a4264b480843f54d6b3c"
+                        }
+                    ],
+        "verification":  {
+                             "verified":  true,
+                             "reason":  "valid",
+                             "signature":  "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJq36tmCRC1aQ7uu5UhlAAAQBoQAAk0PsFjwjJKJE6uf9vlhheQ\n6O6ujvhqDdfRfJm8H03eYjce5mtF1owDhzfvZ/cxhAF0fmS98le8qjFwd9ugnJcW\nQVxAM8CgFHrW2dMhYsNeY5ZCecuUhf3n4pP/5/WPUCL0NvhGZe5k+xvCCm8lVwSi\nq5WZTt3pmVFvDp+JoSZDJs6NdwO/fJ7IQ9dl1GMESfnWQ+Hc6+iXgn2ZnGqihQSN\nywB3//AQ7HVajRMEgMdlSyrFObI7Eg9HOgJAG+H+ZmrXHJYgMTYBB8m2ett/SXyk\nIoAOoOeHe49k1JWBcz0C59Jqr+6UdWW31JAjYx/WO9OS/WNUYhxgBZI4kMTzxR85\nphK/L8k4C0+NnrGRCW3avY1+nnQlbIe6z5Y5XpQsCbmHDw2+OaT9PwQhFXSOJzUn\nTOZfYGEzQwE5NzJJKmMAS20bGuwkoptogHHxBxfMioByntFGUmAEXl++ZQryZlyS\nBLelAlGOJqC1Al1Vk9G2Hn92QfSp60hTzvAZk8CMWhfs78wXba6WiJqJu9l0hPKS\nk8Y1D8T8mIimKcnFDZST/dJHM0mL8oI6ok/EwKbiLlvnPZT18tEF5wgjx1SrzTYC\nI5tmL62ZdIy5D/i/YnL+cxbp/gvxeNW5XU7gVqmpv8qxGzHVIBpcz61czeWHt839\nc6cZdRCrZIQZ6Wb6lT12\n=cTXi\n-----END PGP SIGNATURE-----\n",
+                             "payload":  "tree cea306da64b22b907ec3f27beba2caaba762be69\nparent 312d6b7ade153bb1b726a4264b480843f54d6b3c\nauthor z1xel \u003c121463840+z1xel@users.noreply.github.com\u003e 1793043302 -0400\ncommitter GitHub \u003cnoreply@github.com\u003e 1793043302 -0400\n\nPull main (#19)\n\n* fix(ui): show SoftSpoken in minimap hover tooltip\n\n* fix(compendium): use discovered count for Stories branch toggle state",
+                             "verified_at":  "2026-10-26T19:35:03Z"
+                         },
+        "event":  "committed"
+    },
+    {
+        "sha":  "b98aadcbaae253a54dff32cc21283784a0f1f0fc",
+        "node_id":  "C_kwDOVOzNm9oAKGI5OGFhZGNiYWFlMjUzYTU0ZGZmMzJjYzIxMjgzNzg0YTBmMWYwZmM",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/b98aadcbaae253a54dff32cc21283784a0f1f0fc",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/commit/b98aadcbaae253a54dff32cc21283784a0f1f0fc",
+        "author":  {
+                       "name":  "z1xel",
+                       "email":  "121463840+z1xel@users.noreply.github.com",
+                       "date":  "2026-10-26T20:31:05Z"
+                   },
+        "committer":  {
+                          "name":  "z1xel",
+                          "email":  "121463840+z1xel@users.noreply.github.com",
+                          "date":  "2026-10-26T20:31:05Z"
+                      },
+        "tree":  {
+                     "sha":  "29f7528010b1ccf4a95af4730a0d3deeab645b64",
+                     "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/trees/29f7528010b1ccf4a95af4730a0d3deeab645b64"
+                 },
+        "message":  "Add compact portrait-frame skin with shared rock and close-button chrome",
+        "parents":  [
+                        {
+                            "sha":  "1fab76baca3f1eb2f9e7af9086cb3e78f127c363",
+                            "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/1fab76baca3f1eb2f9e7af9086cb3e78f127c363",
+                            "html_url":  "https://github.com/z1xel/SoftSpoken/commit/1fab76baca3f1eb2f9e7af9086cb3e78f127c363"
+                        }
+                    ],
+        "verification":  {
+                             "verified":  false,
+                             "reason":  "unsigned",
+                             "signature":  null,
+                             "payload":  null,
+                             "verified_at":  null
+                         },
+        "event":  "committed"
+    },
+    {
+        "sha":  "b735ba29142d7921991f02145b2583adcd8bbe25",
+        "node_id":  "C_kwDOVOzNm9oAKGI3MzViYTI5MTQyZDc5MjE5OTFmMDIxNDViMjU4M2FkY2Q4YmJlMjU",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/b735ba29142d7921991f02145b2583adcd8bbe25",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/commit/b735ba29142d7921991f02145b2583adcd8bbe25",
+        "author":  {
+                       "name":  "z1xel",
+                       "email":  "121463840+z1xel@users.noreply.github.com",
+                       "date":  "2026-10-26T20:31:51Z"
+                   },
+        "committer":  {
+                          "name":  "z1xel",
+                          "email":  "121463840+z1xel@users.noreply.github.com",
+                          "date":  "2026-10-26T20:31:51Z"
+                      },
+        "tree":  {
+                     "sha":  "8ce85218009530b30fcdc7542aaa2c69d1165393",
+                     "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/trees/8ce85218009530b30fcdc7542aaa2c69d1165393"
+                 },
+        "message":  "Use Compendium\u0027s compact rock and metal outer frame for map lore",
+        "parents":  [
+                        {
+                            "sha":  "b98aadcbaae253a54dff32cc21283784a0f1f0fc",
+                            "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/b98aadcbaae253a54dff32cc21283784a0f1f0fc",
+                            "html_url":  "https://github.com/z1xel/SoftSpoken/commit/b98aadcbaae253a54dff32cc21283784a0f1f0fc"
+                        }
+                    ],
+        "verification":  {
+                             "verified":  false,
+                             "reason":  "unsigned",
+                             "signature":  null,
+                             "payload":  null,
+                             "verified_at":  null
+                         },
+        "event":  "committed"
+    },
+    {
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/issues/comments/6426692557",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/pull/18#issuecomment-6426692557",
+        "issue_url":  "https://api.github.com/repos/z1xel/SoftSpoken/issues/18",
+        "id":  6426692557,
+        "node_id":  "IC_kwDOVOzNm88AAAABfw-LzQ",
+        "user":  {
+                     "login":  "z1xel",
+                     "id":  121463840,
+                     "node_id":  "U_kgDOBz1kIA",
+                     "avatar_url":  "https://avatars.githubusercontent.com/u/121463840?v=4",
+                     "gravatar_id":  "",
+                     "url":  "https://api.github.com/users/z1xel",
+                     "html_url":  "https://github.com/z1xel",
+                     "followers_url":  "https://api.github.com/users/z1xel/followers",
+                     "following_url":  "https://api.github.com/users/z1xel/following{/other_user}",
+                     "gists_url":  "https://api.github.com/users/z1xel/gists{/gist_id}",
+                     "starred_url":  "https://api.github.com/users/z1xel/starred{/owner}{/repo}",
+                     "subscriptions_url":  "https://api.github.com/users/z1xel/subscriptions",
+                     "organizations_url":  "https://api.github.com/users/z1xel/orgs",
+                     "repos_url":  "https://api.github.com/users/z1xel/repos",
+                     "events_url":  "https://api.github.com/users/z1xel/events{/privacy}",
+                     "received_events_url":  "https://api.github.com/users/z1xel/received_events",
+                     "type":  "User",
+                     "user_view_type":  "public",
+                     "site_admin":  false
+                 },
+        "created_at":  "2026-10-26T20:34:29Z",
+        "updated_at":  "2026-10-26T20:34:29Z",
+        "body":  "## World Map outer frame follow-up\n\nThe latest screenshots confirmed that the inner parchment/scrollbar matched, but the attachment still had the old `SSZUI.AddBorder` root. The **Compendium shell** is owned separately by `SSCPrototypeFrameSkin.Apply`, which supplies the Blizzard metal title-bar frame, close-button surround, and tiled `UI-Background-Rock-Classic`.\n\nPushed two changes:\n- `PrototypeFrameSkin.Apply(frame, title, options)` now supports a **compact** mode using the same metal/rock texture code, with a mirrored top-left corner but no large book portrait or minimizer. The normal Compendium call path and its original title dimensions remain unchanged.\n- `MapPanel.NewPanel` calls the shared shell with `title=\"Zone Lore\"`, `compact=true`, and a Close callback that still collapses the map panel rather than hiding it permanently. Removed the redundant generic outer border, title and close button.\n\n**In-game verification needed**\n- [ ] Rock texture fills the map attachment around its parchment, with no purple/transparent gaps.\n- [ ] Top-left and top-right metal corners connect to the title bar; bottom edges/sides are intact.\n- [ ] The single close button sits inside the top-right frame corner and collapses to the existing map toggle; reopening still works.\n- [ ] Compendium\u0027s original portrait, title bar, corner rendering, close and minimize controls remain unchanged.\n- [ ] Check overlapping-map mode and exterior docked mode, including at different UI scales.\n\nOnly the shell rendering and map\u0027s wrapper were changed in this pass; map lore/docking/voice logic is unchanged. **Not yet visually tested in-game.**",
+        "author_association":  "OWNER",
+        "reactions":  {
+                          "url":  "https://api.github.com/repos/z1xel/SoftSpoken/issues/comments/6426692557/reactions",
+                          "total_count":  0,
+                          "+1":  0,
+                          "-1":  0,
+                          "laugh":  0,
+                          "hooray":  0,
+                          "confused":  0,
+                          "heart":  0,
+                          "rocket":  0,
+                          "eyes":  0
+                      },
+        "performed_via_github_app":  {
+                                         "id":  1144995,
+                                         "client_id":  "Iv23liVemv8A9if9v0F2",
+                                         "slug":  "chatgpt-codex-connector",
+                                         "node_id":  "A_kwHOAOQ6Gs4AEXij",
+                                         "owner":  {
+                                                       "login":  "openai",
+                                                       "id":  14957082,
+                                                       "node_id":  "MDEyOk9yZ2FuaXphdGlvbjE0OTU3MDgy",
+                                                       "avatar_url":  "https://avatars.githubusercontent.com/u/14957082?v=4",
+                                                       "gravatar_id":  "",
+                                                       "url":  "https://api.github.com/users/openai",
+                                                       "html_url":  "https://github.com/openai",
+                                                       "followers_url":  "https://api.github.com/users/openai/followers",
+                                                       "following_url":  "https://api.github.com/users/openai/following{/other_user}",
+                                                       "gists_url":  "https://api.github.com/users/openai/gists{/gist_id}",
+                                                       "starred_url":  "https://api.github.com/users/openai/starred{/owner}{/repo}",
+                                                       "subscriptions_url":  "https://api.github.com/users/openai/subscriptions",
+                                                       "organizations_url":  "https://api.github.com/users/openai/orgs",
+                                                       "repos_url":  "https://api.github.com/users/openai/repos",
+                                                       "events_url":  "https://api.github.com/users/openai/events{/privacy}",
+                                                       "received_events_url":  "https://api.github.com/users/openai/received_events",
+                                                       "type":  "Organization",
+                                                       "user_view_type":  "public",
+                                                       "site_admin":  false
+                                                   },
+                                         "name":  "ChatGPT Codex Connector",
+                                         "description":  "Bring ChatGPT and Codex to your GitHub repositories.",
+                                         "external_url":  "https://www.chatgpt.com",
+                                         "html_url":  "https://github.com/apps/chatgpt-codex-connector",
+                                         "created_at":  "2025-02-14T01:37:05Z",
+                                         "updated_at":  "2026-09-23T18:52:59Z",
+                                         "permissions":  {
+                                                             "actions":  "write",
+                                                             "checks":  "read",
+                                                             "contents":  "write",
+                                                             "emails":  "read",
+                                                             "issues":  "write",
+                                                             "metadata":  "read",
+                                                             "pull_requests":  "write",
+                                                             "statuses":  "read",
+                                                             "workflows":  "write"
+                                                         },
+                                         "events":  [
+                                                        "check_run",
+                                                        "check_suite",
+                                                        "commit_comment",
+                                                        "issues",
+                                                        "issue_comment",
+                                                        "pull_request",
+                                                        "pull_request_review",
+                                                        "pull_request_review_comment",
+                                                        "pull_request_review_thread",
+                                                        "repository",
+                                                        "status",
+                                                        "sub_issues"
+                                                    ]
+                                     },
+        "minimized":  null,
+        "event":  "commented",
+        "actor":  {
+                      "login":  "z1xel",
+                      "id":  121463840,
+                      "node_id":  "U_kgDOBz1kIA",
+                      "avatar_url":  "https://avatars.githubusercontent.com/u/121463840?v=4",
+                      "gravatar_id":  "",
+                      "url":  "https://api.github.com/users/z1xel",
+                      "html_url":  "https://github.com/z1xel",
+                      "followers_url":  "https://api.github.com/users/z1xel/followers",
+                      "following_url":  "https://api.github.com/users/z1xel/following{/other_user}",
+                      "gists_url":  "https://api.github.com/users/z1xel/gists{/gist_id}",
+                      "starred_url":  "https://api.github.com/users/z1xel/starred{/owner}{/repo}",
+                      "subscriptions_url":  "https://api.github.com/users/z1xel/subscriptions",
+                      "organizations_url":  "https://api.github.com/users/z1xel/orgs",
+                      "repos_url":  "https://api.github.com/users/z1xel/repos",
+                      "events_url":  "https://api.github.com/users/z1xel/events{/privacy}",
+                      "received_events_url":  "https://api.github.com/users/z1xel/received_events",
+                      "type":  "User",
+                      "user_view_type":  "public",
+                      "site_admin":  false
+                  }
+    },
+    {
+        "sha":  "88a7614d0e182854eb373e2c7678e11ecc4e878d",
+        "node_id":  "C_kwDOVOzNm9oAKDg4YTc2MTRkMGUxODI4NTRlYjM3M2UyYzc2NzhlMTFlY2M0ZTg3OGQ",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/88a7614d0e182854eb373e2c7678e11ecc4e878d",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/commit/88a7614d0e182854eb373e2c7678e11ecc4e878d",
+        "author":  {
+                       "name":  "z1xel",
+                       "email":  "121463840+z1xel@users.noreply.github.com",
+                       "date":  "2026-10-26T20:48:14Z"
+                   },
+        "committer":  {
+                          "name":  "z1xel",
+                          "email":  "121463840+z1xel@users.noreply.github.com",
+                          "date":  "2026-10-26T20:48:14Z"
+                      },
+        "tree":  {
+                     "sha":  "cc82e20fd4d65243d6db1690caa3c2c2bf804317",
+                     "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/trees/cc82e20fd4d65243d6db1690caa3c2c2bf804317"
+                 },
+        "message":  "Align compact map frame corners with native Blizzard atlas and inset bottom caps",
+        "parents":  [
+                        {
+                            "sha":  "b735ba29142d7921991f02145b2583adcd8bbe25",
+                            "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/b735ba29142d7921991f02145b2583adcd8bbe25",
+                            "html_url":  "https://github.com/z1xel/SoftSpoken/commit/b735ba29142d7921991f02145b2583adcd8bbe25"
+                        }
+                    ],
+        "verification":  {
+                             "verified":  false,
+                             "reason":  "unsigned",
+                             "signature":  null,
+                             "payload":  null,
+                             "verified_at":  null
+                         },
+        "event":  "committed"
+    },
+    {
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/issues/comments/6427031244",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/pull/18#issuecomment-6427031244",
+        "issue_url":  "https://api.github.com/repos/z1xel/SoftSpoken/issues/18",
+        "id":  6427031244,
+        "node_id":  "IC_kwDOVOzNm88AAAABfxS2zA",
+        "user":  {
+                     "login":  "z1xel",
+                     "id":  121463840,
+                     "node_id":  "U_kgDOBz1kIA",
+                     "avatar_url":  "https://avatars.githubusercontent.com/u/121463840?v=4",
+                     "gravatar_id":  "",
+                     "url":  "https://api.github.com/users/z1xel",
+                     "html_url":  "https://github.com/z1xel",
+                     "followers_url":  "https://api.github.com/users/z1xel/followers",
+                     "following_url":  "https://api.github.com/users/z1xel/following{/other_user}",
+                     "gists_url":  "https://api.github.com/users/z1xel/gists{/gist_id}",
+                     "starred_url":  "https://api.github.com/users/z1xel/starred{/owner}{/repo}",
+                     "subscriptions_url":  "https://api.github.com/users/z1xel/subscriptions",
+                     "organizations_url":  "https://api.github.com/users/z1xel/orgs",
+                     "repos_url":  "https://api.github.com/users/z1xel/repos",
+                     "events_url":  "https://api.github.com/users/z1xel/events{/privacy}",
+                     "received_events_url":  "https://api.github.com/users/z1xel/received_events",
+                     "type":  "User",
+                     "user_view_type":  "public",
+                     "site_admin":  false
+                 },
+        "created_at":  "2026-10-26T20:51:25Z",
+        "updated_at":  "2026-10-26T20:51:25Z",
+        "body":  "## Compact-frame corner fix\n\nCommit `88a7614` updates `PrototypeFrameSkin.lua` for the **map attachment\u0027s compact mode only**:\n- Replace the reversed top-right image with Blizzard\u0027s real `UI-Frame-TopLeftCorner` 32├ù32 atlas region (`0.6328125, 0.8828125, 0.28125, 0.53125`).\n- Move the compact title strip to meet the left corner at x=26 (the native corner\u0027s right edge) and finish at the existing right corner.\n- Raise the original 14├ù14 bottom-left and 11├ù11 bottom-right corners above the border strips, and move both bottom caps up to the map panel\u0027s lower edge to avoid clipping.\n- Recalculate compact lower rail and vertical lengths to meet the corner sprites.\n- **Leave the normal Compendium geometry unchanged.**\n\nStatic checks passed against the current branch tip. **In-game visual checks remaining:** confirm the top-left seam and both bottom corners at the World Map\u0027s bottom edge; check the close button, compact frame when overlaid/docked, and ensure Compendium\u0027s full-size frame is unchanged.",
+        "author_association":  "OWNER",
+        "reactions":  {
+                          "url":  "https://api.github.com/repos/z1xel/SoftSpoken/issues/comments/6427031244/reactions",
+                          "total_count":  0,
+                          "+1":  0,
+                          "-1":  0,
+                          "laugh":  0,
+                          "hooray":  0,
+                          "confused":  0,
+                          "heart":  0,
+                          "rocket":  0,
+                          "eyes":  0
+                      },
+        "performed_via_github_app":  {
+                                         "id":  1144995,
+                                         "client_id":  "Iv23liVemv8A9if9v0F2",
+                                         "slug":  "chatgpt-codex-connector",
+                                         "node_id":  "A_kwHOAOQ6Gs4AEXij",
+                                         "owner":  {
+                                                       "login":  "openai",
+                                                       "id":  14957082,
+                                                       "node_id":  "MDEyOk9yZ2FuaXphdGlvbjE0OTU3MDgy",
+                                                       "avatar_url":  "https://avatars.githubusercontent.com/u/14957082?v=4",
+                                                       "gravatar_id":  "",
+                                                       "url":  "https://api.github.com/users/openai",
+                                                       "html_url":  "https://github.com/openai",
+                                                       "followers_url":  "https://api.github.com/users/openai/followers",
+                                                       "following_url":  "https://api.github.com/users/openai/following{/other_user}",
+                                                       "gists_url":  "https://api.github.com/users/openai/gists{/gist_id}",
+                                                       "starred_url":  "https://api.github.com/users/openai/starred{/owner}{/repo}",
+                                                       "subscriptions_url":  "https://api.github.com/users/openai/subscriptions",
+                                                       "organizations_url":  "https://api.github.com/users/openai/orgs",
+                                                       "repos_url":  "https://api.github.com/users/openai/repos",
+                                                       "events_url":  "https://api.github.com/users/openai/events{/privacy}",
+                                                       "received_events_url":  "https://api.github.com/users/openai/received_events",
+                                                       "type":  "Organization",
+                                                       "user_view_type":  "public",
+                                                       "site_admin":  false
+                                                   },
+                                         "name":  "ChatGPT Codex Connector",
+                                         "description":  "Bring ChatGPT and Codex to your GitHub repositories.",
+                                         "external_url":  "https://www.chatgpt.com",
+                                         "html_url":  "https://github.com/apps/chatgpt-codex-connector",
+                                         "created_at":  "2025-02-14T01:37:05Z",
+                                         "updated_at":  "2026-09-23T18:52:59Z",
+                                         "permissions":  {
+                                                             "actions":  "write",
+                                                             "checks":  "read",
+                                                             "contents":  "write",
+                                                             "emails":  "read",
+                                                             "issues":  "write",
+                                                             "metadata":  "read",
+                                                             "pull_requests":  "write",
+                                                             "statuses":  "read",
+                                                             "workflows":  "write"
+                                                         },
+                                         "events":  [
+                                                        "check_run",
+                                                        "check_suite",
+                                                        "commit_comment",
+                                                        "issues",
+                                                        "issue_comment",
+                                                        "pull_request",
+                                                        "pull_request_review",
+                                                        "pull_request_review_comment",
+                                                        "pull_request_review_thread",
+                                                        "repository",
+                                                        "status",
+                                                        "sub_issues"
+                                                    ]
+                                     },
+        "minimized":  null,
+        "event":  "commented",
+        "actor":  {
+                      "login":  "z1xel",
+                      "id":  121463840,
+                      "node_id":  "U_kgDOBz1kIA",
+                      "avatar_url":  "https://avatars.githubusercontent.com/u/121463840?v=4",
+                      "gravatar_id":  "",
+                      "url":  "https://api.github.com/users/z1xel",
+                      "html_url":  "https://github.com/z1xel",
+                      "followers_url":  "https://api.github.com/users/z1xel/followers",
+                      "following_url":  "https://api.github.com/users/z1xel/following{/other_user}",
+                      "gists_url":  "https://api.github.com/users/z1xel/gists{/gist_id}",
+                      "starred_url":  "https://api.github.com/users/z1xel/starred{/owner}{/repo}",
+                      "subscriptions_url":  "https://api.github.com/users/z1xel/subscriptions",
+                      "organizations_url":  "https://api.github.com/users/z1xel/orgs",
+                      "repos_url":  "https://api.github.com/users/z1xel/repos",
+                      "events_url":  "https://api.github.com/users/z1xel/events{/privacy}",
+                      "received_events_url":  "https://api.github.com/users/z1xel/received_events",
+                      "type":  "User",
+                      "user_view_type":  "public",
+                      "site_admin":  false
+                  }
+    },
+    {
+        "sha":  "fae6c621a00b07387d89dd759b604a2737405568",
+        "node_id":  "C_kwDOVOzNm9oAKGZhZTZjNjIxYTAwYjA3Mzg3ZDg5ZGQ3NTliNjA0YTI3Mzc0MDU1Njg",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/fae6c621a00b07387d89dd759b604a2737405568",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/commit/fae6c621a00b07387d89dd759b604a2737405568",
+        "author":  {
+                       "name":  "z1xel",
+                       "email":  "121463840+z1xel@users.noreply.github.com",
+                       "date":  "2026-10-26T21:05:21Z"
+                   },
+        "committer":  {
+                          "name":  "z1xel",
+                          "email":  "121463840+z1xel@users.noreply.github.com",
+                          "date":  "2026-10-26T21:05:21Z"
+                      },
+        "tree":  {
+                     "sha":  "43724b0a7c3fb0de5b6c94a86c1b514b8a150c7c",
+                     "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/trees/43724b0a7c3fb0de5b6c94a86c1b514b8a150c7c"
+                 },
+        "message":  "Fix compact map bottom trim layering and align native corner sprites",
+        "parents":  [
+                        {
+                            "sha":  "88a7614d0e182854eb373e2c7678e11ecc4e878d",
+                            "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/88a7614d0e182854eb373e2c7678e11ecc4e878d",
+                            "html_url":  "https://github.com/z1xel/SoftSpoken/commit/88a7614d0e182854eb373e2c7678e11ecc4e878d"
+                        }
+                    ],
+        "verification":  {
+                             "verified":  false,
+                             "reason":  "unsigned",
+                             "signature":  null,
+                             "payload":  null,
+                             "verified_at":  null
+                         },
+        "event":  "committed"
+    },
+    {
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/issues/comments/6427319207",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/pull/18#issuecomment-6427319207",
+        "issue_url":  "https://api.github.com/repos/z1xel/SoftSpoken/issues/18",
+        "id":  6427319207,
+        "node_id":  "IC_kwDOVOzNm88AAAABfxkbpw",
+        "user":  {
+                     "login":  "z1xel",
+                     "id":  121463840,
+                     "node_id":  "U_kgDOBz1kIA",
+                     "avatar_url":  "https://avatars.githubusercontent.com/u/121463840?v=4",
+                     "gravatar_id":  "",
+                     "url":  "https://api.github.com/users/z1xel",
+                     "html_url":  "https://github.com/z1xel",
+                     "followers_url":  "https://api.github.com/users/z1xel/followers",
+                     "following_url":  "https://api.github.com/users/z1xel/following{/other_user}",
+                     "gists_url":  "https://api.github.com/users/z1xel/gists{/gist_id}",
+                     "starred_url":  "https://api.github.com/users/z1xel/starred{/owner}{/repo}",
+                     "subscriptions_url":  "https://api.github.com/users/z1xel/subscriptions",
+                     "organizations_url":  "https://api.github.com/users/z1xel/orgs",
+                     "repos_url":  "https://api.github.com/users/z1xel/repos",
+                     "events_url":  "https://api.github.com/users/z1xel/events{/privacy}",
+                     "received_events_url":  "https://api.github.com/users/z1xel/received_events",
+                     "type":  "User",
+                     "user_view_type":  "public",
+                     "site_admin":  false
+                 },
+        "created_at":  "2026-10-26T21:06:10Z",
+        "updated_at":  "2026-10-26T21:06:10Z",
+        "body":  "## Compact bottom-corner follow-up ΓÇö commit `fae6c62`\n\nThe previous bottom caps were real Blizzard `UI-Frame` crops (14├ù14 left, 11├ù11 right), but moving them from `BORDER` to `OVERLAY` on the **parent frame** did not place them above the parchment/scrollbar **child frames**. The child frames were still covering the top of the corner art, leaving a flat/broken lower border.\n\nThis pass fixes the draw hierarchy rather than stretching/mirroring corner textures:\n- Adds one compact-only mouse-pass-through foreground frame, `sszCompactTrim`, above the page.\n- Draws both native lower corner sprites, the matching horizontal rail, and both connecting vertical rails on that same frame.\n- Reuses pooled texture segments during size changes.\n- Leaves the approved top corners/title bar, full Compendium frame, parchment, map width, docking, and gameplay logic unchanged.\n\n### In-game check\n- [ ] Both bottom caps are completely visible and connected to the horizontal rail.\n- [ ] Both vertical borders join their bottom caps with no bright seam or extra overhang.\n- [ ] Bottom frame is visible at full-map and windowed scale without obscuring the scrollbar down arrow, blocking clicks, or covering parchment text.\n- [ ] Compare the top/title area to the prior screenshot: identical.\n- [ ] Confirm the full Compendium\u0027s frame remains unchanged.\n\n**Status:** pushed and statically reviewed; not yet tested in-game.",
+        "author_association":  "OWNER",
+        "reactions":  {
+                          "url":  "https://api.github.com/repos/z1xel/SoftSpoken/issues/comments/6427319207/reactions",
+                          "total_count":  0,
+                          "+1":  0,
+                          "-1":  0,
+                          "laugh":  0,
+                          "hooray":  0,
+                          "confused":  0,
+                          "heart":  0,
+                          "rocket":  0,
+                          "eyes":  0
+                      },
+        "performed_via_github_app":  {
+                                         "id":  1144995,
+                                         "client_id":  "Iv23liVemv8A9if9v0F2",
+                                         "slug":  "chatgpt-codex-connector",
+                                         "node_id":  "A_kwHOAOQ6Gs4AEXij",
+                                         "owner":  {
+                                                       "login":  "openai",
+                                                       "id":  14957082,
+                                                       "node_id":  "MDEyOk9yZ2FuaXphdGlvbjE0OTU3MDgy",
+                                                       "avatar_url":  "https://avatars.githubusercontent.com/u/14957082?v=4",
+                                                       "gravatar_id":  "",
+                                                       "url":  "https://api.github.com/users/openai",
+                                                       "html_url":  "https://github.com/openai",
+                                                       "followers_url":  "https://api.github.com/users/openai/followers",
+                                                       "following_url":  "https://api.github.com/users/openai/following{/other_user}",
+                                                       "gists_url":  "https://api.github.com/users/openai/gists{/gist_id}",
+                                                       "starred_url":  "https://api.github.com/users/openai/starred{/owner}{/repo}",
+                                                       "subscriptions_url":  "https://api.github.com/users/openai/subscriptions",
+                                                       "organizations_url":  "https://api.github.com/users/openai/orgs",
+                                                       "repos_url":  "https://api.github.com/users/openai/repos",
+                                                       "events_url":  "https://api.github.com/users/openai/events{/privacy}",
+                                                       "received_events_url":  "https://api.github.com/users/openai/received_events",
+                                                       "type":  "Organization",
+                                                       "user_view_type":  "public",
+                                                       "site_admin":  false
+                                                   },
+                                         "name":  "ChatGPT Codex Connector",
+                                         "description":  "Bring ChatGPT and Codex to your GitHub repositories.",
+                                         "external_url":  "https://www.chatgpt.com",
+                                         "html_url":  "https://github.com/apps/chatgpt-codex-connector",
+                                         "created_at":  "2025-02-14T01:37:05Z",
+                                         "updated_at":  "2026-09-23T18:52:59Z",
+                                         "permissions":  {
+                                                             "actions":  "write",
+                                                             "checks":  "read",
+                                                             "contents":  "write",
+                                                             "emails":  "read",
+                                                             "issues":  "write",
+                                                             "metadata":  "read",
+                                                             "pull_requests":  "write",
+                                                             "statuses":  "read",
+                                                             "workflows":  "write"
+                                                         },
+                                         "events":  [
+                                                        "check_run",
+                                                        "check_suite",
+                                                        "commit_comment",
+                                                        "issues",
+                                                        "issue_comment",
+                                                        "pull_request",
+                                                        "pull_request_review",
+                                                        "pull_request_review_comment",
+                                                        "pull_request_review_thread",
+                                                        "repository",
+                                                        "status",
+                                                        "sub_issues"
+                                                    ]
+                                     },
+        "minimized":  null,
+        "event":  "commented",
+        "actor":  {
+                      "login":  "z1xel",
+                      "id":  121463840,
+                      "node_id":  "U_kgDOBz1kIA",
+                      "avatar_url":  "https://avatars.githubusercontent.com/u/121463840?v=4",
+                      "gravatar_id":  "",
+                      "url":  "https://api.github.com/users/z1xel",
+                      "html_url":  "https://github.com/z1xel",
+                      "followers_url":  "https://api.github.com/users/z1xel/followers",
+                      "following_url":  "https://api.github.com/users/z1xel/following{/other_user}",
+                      "gists_url":  "https://api.github.com/users/z1xel/gists{/gist_id}",
+                      "starred_url":  "https://api.github.com/users/z1xel/starred{/owner}{/repo}",
+                      "subscriptions_url":  "https://api.github.com/users/z1xel/subscriptions",
+                      "organizations_url":  "https://api.github.com/users/z1xel/orgs",
+                      "repos_url":  "https://api.github.com/users/z1xel/repos",
+                      "events_url":  "https://api.github.com/users/z1xel/events{/privacy}",
+                      "received_events_url":  "https://api.github.com/users/z1xel/received_events",
+                      "type":  "User",
+                      "user_view_type":  "public",
+                      "site_admin":  false
+                  }
+    },
+    {
+        "sha":  "fade03bc95e02e26812b0a0f7ce670583c2ee4ab",
+        "node_id":  "C_kwDOVOzNm9oAKGZhZGUwM2JjOTVlMDJlMjY4MTJiMGEwZjdjZTY3MDU4M2MyZWU0YWI",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/fade03bc95e02e26812b0a0f7ce670583c2ee4ab",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/commit/fade03bc95e02e26812b0a0f7ce670583c2ee4ab",
+        "author":  {
+                       "name":  "z1xel",
+                       "email":  "121463840+z1xel@users.noreply.github.com",
+                       "date":  "2026-10-26T22:11:05Z"
+                   },
+        "committer":  {
+                          "name":  "z1xel",
+                          "email":  "121463840+z1xel@users.noreply.github.com",
+                          "date":  "2026-10-26T22:11:05Z"
+                      },
+        "tree":  {
+                     "sha":  "4ece15839dd47f75985c0dfd9d0ddbc8cdd220ae",
+                     "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/trees/4ece15839dd47f75985c0dfd9d0ddbc8cdd220ae"
+                 },
+        "message":  "Anchor compact map bottom rail to frame edge and track resized geometry",
+        "parents":  [
+                        {
+                            "sha":  "fae6c621a00b07387d89dd759b604a2737405568",
+                            "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/fae6c621a00b07387d89dd759b604a2737405568",
+                            "html_url":  "https://github.com/z1xel/SoftSpoken/commit/fae6c621a00b07387d89dd759b604a2737405568"
+                        }
+                    ],
+        "verification":  {
+                             "verified":  false,
+                             "reason":  "unsigned",
+                             "signature":  null,
+                             "payload":  null,
+                             "verified_at":  null
+                         },
+        "event":  "committed"
+    },
+    {
+        "sha":  "9d98e79b79ef675bc410f7e24af5109188ef6ea4",
+        "node_id":  "C_kwDOVOzNm9oAKDlkOThlNzliNzllZjY3NWJjNDEwZjdlMjRhZjUxMDkxODhlZjZlYTQ",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/9d98e79b79ef675bc410f7e24af5109188ef6ea4",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/commit/9d98e79b79ef675bc410f7e24af5109188ef6ea4",
+        "author":  {
+                       "name":  "z1xel",
+                       "email":  "121463840+z1xel@users.noreply.github.com",
+                       "date":  "2026-10-26T22:11:21Z"
+                   },
+        "committer":  {
+                          "name":  "z1xel",
+                          "email":  "121463840+z1xel@users.noreply.github.com",
+                          "date":  "2026-10-26T22:11:21Z"
+                      },
+        "tree":  {
+                     "sha":  "1fafeba32ce1d1da64c4987bad0eab43f4710a92",
+                     "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/trees/1fafeba32ce1d1da64c4987bad0eab43f4710a92"
+                 },
+        "message":  "Refresh World Map compact border after anchor-driven size changes",
+        "parents":  [
+                        {
+                            "sha":  "fade03bc95e02e26812b0a0f7ce670583c2ee4ab",
+                            "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/fade03bc95e02e26812b0a0f7ce670583c2ee4ab",
+                            "html_url":  "https://github.com/z1xel/SoftSpoken/commit/fade03bc95e02e26812b0a0f7ce670583c2ee4ab"
+                        }
+                    ],
+        "verification":  {
+                             "verified":  false,
+                             "reason":  "unsigned",
+                             "signature":  null,
+                             "payload":  null,
+                             "verified_at":  null
+                         },
+        "event":  "committed"
+    },
+    {
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/issues/comments/6428553156",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/pull/18#issuecomment-6428553156",
+        "issue_url":  "https://api.github.com/repos/z1xel/SoftSpoken/issues/18",
+        "id":  6428553156,
+        "node_id":  "IC_kwDOVOzNm88AAAABfyvvxA",
+        "user":  {
+                     "login":  "z1xel",
+                     "id":  121463840,
+                     "node_id":  "U_kgDOBz1kIA",
+                     "avatar_url":  "https://avatars.githubusercontent.com/u/121463840?v=4",
+                     "gravatar_id":  "",
+                     "url":  "https://api.github.com/users/z1xel",
+                     "html_url":  "https://github.com/z1xel",
+                     "followers_url":  "https://api.github.com/users/z1xel/followers",
+                     "following_url":  "https://api.github.com/users/z1xel/following{/other_user}",
+                     "gists_url":  "https://api.github.com/users/z1xel/gists{/gist_id}",
+                     "starred_url":  "https://api.github.com/users/z1xel/starred{/owner}{/repo}",
+                     "subscriptions_url":  "https://api.github.com/users/z1xel/subscriptions",
+                     "organizations_url":  "https://api.github.com/users/z1xel/orgs",
+                     "repos_url":  "https://api.github.com/users/z1xel/repos",
+                     "events_url":  "https://api.github.com/users/z1xel/events{/privacy}",
+                     "received_events_url":  "https://api.github.com/users/z1xel/received_events",
+                     "type":  "User",
+                     "user_view_type":  "public",
+                     "site_admin":  false
+                 },
+        "created_at":  "2026-10-26T22:12:08Z",
+        "updated_at":  "2026-10-26T22:12:08Z",
+        "body":  "## Map attachment follow-up ΓÇö misplaced bottom rail (2026-10-26)\n\nThe latest screenshot reveals a more serious regression: a **horizontal metal bottom rail appears partway up the parchment**, while the attachment continues below it. This matches the compact trim\u0027s old dependence on `h-9` during `Reflow`; changes in map-anchor height could leave a previously measured border position in the middle.\n\nTwo focused commits on this PR:\n- `fade03bc`: anchor the **compact-only bottom rail directly to the frame\u0027s BOTTOMLEFT**, not to `TOPLEFT` with a cached `h-9` offset. The native trim sprite and 9px thickness remain unchanged.\n- `9d98e79`: add `Skin.RefreshCompact(frame)`, which compares the measured width/height with the last compact reflow. The map\u0027s **existing 0.25s watch** invokes it, but full texture reflow only occurs if geometry actually changes. This covers map clients that do not reliably fire `OnSizeChanged` after anchor-driven resizes.\n\nThe approved **top/title chrome is untouched**. The regular Compendium\u0027s bottom layout and frame code remain in the original noncompact path. No changed SavedVariables, map selections or audio logic.\n\n**Required in-game check**\n- [ ] The stray horizontal line across the *middle* of the parchment is gone, including after toggling map sizes and /reload.\n- [ ] Bottom trim follows the real panel bottom at all map heights.\n- [ ] Left/right verticals meet the bottom ornamentation cleanly.\n- [ ] Scrollbar arrows, mouse wheel, and text remain interactive.\n- [ ] Full Azeroth\u0027s Compendium frame and the map\u0027s title bar remain unchanged.\n\nStatic checks passed; exact in-game outcome remains unverified.",
+        "author_association":  "OWNER",
+        "reactions":  {
+                          "url":  "https://api.github.com/repos/z1xel/SoftSpoken/issues/comments/6428553156/reactions",
+                          "total_count":  0,
+                          "+1":  0,
+                          "-1":  0,
+                          "laugh":  0,
+                          "hooray":  0,
+                          "confused":  0,
+                          "heart":  0,
+                          "rocket":  0,
+                          "eyes":  0
+                      },
+        "performed_via_github_app":  {
+                                         "id":  1144995,
+                                         "client_id":  "Iv23liVemv8A9if9v0F2",
+                                         "slug":  "chatgpt-codex-connector",
+                                         "node_id":  "A_kwHOAOQ6Gs4AEXij",
+                                         "owner":  {
+                                                       "login":  "openai",
+                                                       "id":  14957082,
+                                                       "node_id":  "MDEyOk9yZ2FuaXphdGlvbjE0OTU3MDgy",
+                                                       "avatar_url":  "https://avatars.githubusercontent.com/u/14957082?v=4",
+                                                       "gravatar_id":  "",
+                                                       "url":  "https://api.github.com/users/openai",
+                                                       "html_url":  "https://github.com/openai",
+                                                       "followers_url":  "https://api.github.com/users/openai/followers",
+                                                       "following_url":  "https://api.github.com/users/openai/following{/other_user}",
+                                                       "gists_url":  "https://api.github.com/users/openai/gists{/gist_id}",
+                                                       "starred_url":  "https://api.github.com/users/openai/starred{/owner}{/repo}",
+                                                       "subscriptions_url":  "https://api.github.com/users/openai/subscriptions",
+                                                       "organizations_url":  "https://api.github.com/users/openai/orgs",
+                                                       "repos_url":  "https://api.github.com/users/openai/repos",
+                                                       "events_url":  "https://api.github.com/users/openai/events{/privacy}",
+                                                       "received_events_url":  "https://api.github.com/users/openai/received_events",
+                                                       "type":  "Organization",
+                                                       "user_view_type":  "public",
+                                                       "site_admin":  false
+                                                   },
+                                         "name":  "ChatGPT Codex Connector",
+                                         "description":  "Bring ChatGPT and Codex to your GitHub repositories.",
+                                         "external_url":  "https://www.chatgpt.com",
+                                         "html_url":  "https://github.com/apps/chatgpt-codex-connector",
+                                         "created_at":  "2025-02-14T01:37:05Z",
+                                         "updated_at":  "2026-09-23T18:52:59Z",
+                                         "permissions":  {
+                                                             "actions":  "write",
+                                                             "checks":  "read",
+                                                             "contents":  "write",
+                                                             "emails":  "read",
+                                                             "issues":  "write",
+                                                             "metadata":  "read",
+                                                             "pull_requests":  "write",
+                                                             "statuses":  "read",
+                                                             "workflows":  "write"
+                                                         },
+                                         "events":  [
+                                                        "check_run",
+                                                        "check_suite",
+                                                        "commit_comment",
+                                                        "issues",
+                                                        "issue_comment",
+                                                        "pull_request",
+                                                        "pull_request_review",
+                                                        "pull_request_review_comment",
+                                                        "pull_request_review_thread",
+                                                        "repository",
+                                                        "status",
+                                                        "sub_issues"
+                                                    ]
+                                     },
+        "minimized":  null,
+        "event":  "commented",
+        "actor":  {
+                      "login":  "z1xel",
+                      "id":  121463840,
+                      "node_id":  "U_kgDOBz1kIA",
+                      "avatar_url":  "https://avatars.githubusercontent.com/u/121463840?v=4",
+                      "gravatar_id":  "",
+                      "url":  "https://api.github.com/users/z1xel",
+                      "html_url":  "https://github.com/z1xel",
+                      "followers_url":  "https://api.github.com/users/z1xel/followers",
+                      "following_url":  "https://api.github.com/users/z1xel/following{/other_user}",
+                      "gists_url":  "https://api.github.com/users/z1xel/gists{/gist_id}",
+                      "starred_url":  "https://api.github.com/users/z1xel/starred{/owner}{/repo}",
+                      "subscriptions_url":  "https://api.github.com/users/z1xel/subscriptions",
+                      "organizations_url":  "https://api.github.com/users/z1xel/orgs",
+                      "repos_url":  "https://api.github.com/users/z1xel/repos",
+                      "events_url":  "https://api.github.com/users/z1xel/events{/privacy}",
+                      "received_events_url":  "https://api.github.com/users/z1xel/received_events",
+                      "type":  "User",
+                      "user_view_type":  "public",
+                      "site_admin":  false
+                  }
+    },
+    {
+        "sha":  "35e570feacbf629880a9ee924f1f3c7d1852e3cb",
+        "node_id":  "C_kwDOVOzNm9oAKDM1ZTU3MGZlYWNiZjYyOTg4MGE5ZWU5MjRmMWYzYzdkMTg1MmUzY2I",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/35e570feacbf629880a9ee924f1f3c7d1852e3cb",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/commit/35e570feacbf629880a9ee924f1f3c7d1852e3cb",
+        "author":  {
+                       "name":  "z1xel",
+                       "email":  "121463840+z1xel@users.noreply.github.com",
+                       "date":  "2026-10-26T22:27:41Z"
+                   },
+        "committer":  {
+                          "name":  "z1xel",
+                          "email":  "121463840+z1xel@users.noreply.github.com",
+                          "date":  "2026-10-26T22:27:41Z"
+                      },
+        "tree":  {
+                     "sha":  "3cf3f2e47ec7c44aba8cdb6b1e661833dff71f15",
+                     "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/trees/3cf3f2e47ec7c44aba8cdb6b1e661833dff71f15"
+                 },
+        "message":  "Align compact map left side with native bottom corner cap",
+        "parents":  [
+                        {
+                            "sha":  "9d98e79b79ef675bc410f7e24af5109188ef6ea4",
+                            "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/9d98e79b79ef675bc410f7e24af5109188ef6ea4",
+                            "html_url":  "https://github.com/z1xel/SoftSpoken/commit/9d98e79b79ef675bc410f7e24af5109188ef6ea4"
+                        }
+                    ],
+        "verification":  {
+                             "verified":  false,
+                             "reason":  "unsigned",
+                             "signature":  null,
+                             "payload":  null,
+                             "verified_at":  null
+                         },
+        "event":  "committed"
+    },
+    {
+        "sha":  "c344d1b05e242da62416bfef34a19f36236fc8e8",
+        "node_id":  "C_kwDOVOzNm9oAKGMzNDRkMWIwNWUyNDJkYTYyNDE2YmZlZjM0YTE5ZjM2MjM2ZmM4ZTg",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/c344d1b05e242da62416bfef34a19f36236fc8e8",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/commit/c344d1b05e242da62416bfef34a19f36236fc8e8",
+        "author":  {
+                       "name":  "z1xel",
+                       "email":  "121463840+z1xel@users.noreply.github.com",
+                       "date":  "2026-10-26T22:47:06Z"
+                   },
+        "committer":  {
+                          "name":  "z1xel",
+                          "email":  "121463840+z1xel@users.noreply.github.com",
+                          "date":  "2026-10-26T22:47:06Z"
+                      },
+        "tree":  {
+                     "sha":  "c370afd5b31750de2b091fc278a1e8a498b0ad13",
+                     "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/trees/c370afd5b31750de2b091fc278a1e8a498b0ad13"
+                 },
+        "message":  "Measure compact frame from displayed edges and anchor side trim to bottom caps",
+        "parents":  [
+                        {
+                            "sha":  "35e570feacbf629880a9ee924f1f3c7d1852e3cb",
+                            "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/35e570feacbf629880a9ee924f1f3c7d1852e3cb",
+                            "html_url":  "https://github.com/z1xel/SoftSpoken/commit/35e570feacbf629880a9ee924f1f3c7d1852e3cb"
+                        }
+                    ],
+        "verification":  {
+                             "verified":  false,
+                             "reason":  "unsigned",
+                             "signature":  null,
+                             "payload":  null,
+                             "verified_at":  null
+                         },
+        "event":  "committed"
+    },
+    {
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/issues/comments/6429152319",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/pull/18#issuecomment-6429152319",
+        "issue_url":  "https://api.github.com/repos/z1xel/SoftSpoken/issues/18",
+        "id":  6429152319,
+        "node_id":  "IC_kwDOVOzNm88AAAABfzUUPw",
+        "user":  {
+                     "login":  "z1xel",
+                     "id":  121463840,
+                     "node_id":  "U_kgDOBz1kIA",
+                     "avatar_url":  "https://avatars.githubusercontent.com/u/121463840?v=4",
+                     "gravatar_id":  "",
+                     "url":  "https://api.github.com/users/z1xel",
+                     "html_url":  "https://github.com/z1xel",
+                     "followers_url":  "https://api.github.com/users/z1xel/followers",
+                     "following_url":  "https://api.github.com/users/z1xel/following{/other_user}",
+                     "gists_url":  "https://api.github.com/users/z1xel/gists{/gist_id}",
+                     "starred_url":  "https://api.github.com/users/z1xel/starred{/owner}{/repo}",
+                     "subscriptions_url":  "https://api.github.com/users/z1xel/subscriptions",
+                     "organizations_url":  "https://api.github.com/users/z1xel/orgs",
+                     "repos_url":  "https://api.github.com/users/z1xel/repos",
+                     "events_url":  "https://api.github.com/users/z1xel/events{/privacy}",
+                     "received_events_url":  "https://api.github.com/users/z1xel/received_events",
+                     "type":  "User",
+                     "user_view_type":  "public",
+                     "site_admin":  false
+                 },
+        "created_at":  "2026-10-26T22:47:52Z",
+        "updated_at":  "2026-10-26T22:47:52Z",
+        "body":  "## Compact side borders: layering vs. geometry (commit `c344d1b`)\n\nExamined the current screenshot and the actual shipped `!UI-Frame.tga` (64├ù256 with nontransparent vertical rail artwork through the tile). The side decorations on **both** sides stop abruptly at roughly two 256-unit repeats; the bottom rail and corners remain visible. Since the compact foreground trim already draws both verticals and the bottom on the **same foreground frame**, changing layer again would not account for a missing final tile on both sides.\n\nThe shared `PrototypeScrollSkin.lua` uses `GetTop()-GetBottom()` instead of trusting `GetHeight()` on anchored World Map UI. The compact outer shell was still using `GetHeight()` for tile counts and resize checks. This commit:\n- measures the *compact-only* panel from its actual left/right and top/bottom edges; leaves the full Compendium measurements unchanged;\n- makes the geometry refresh compare that same edge-measured size;\n- pins the **final left/right side tile directly to the bottom corner** (14px left / 11px right), with all other tiles still starting from the top, avoiding an unfilled terminal strip;\n- preserves the top title and corners, bottom rail, 256-unit source texture, foreground layering, map docking, page and scrollbar.\n\nFor a 765-unit-tall example both sides need 3 tiles; calculated last start exactly equals the previous segment end, with zero gap. This is a source/geometry check only.\n\n**In-game validation needed:** inspect the last 300 pixels of both borders at the previous map scale; verify they run continuously down to their native corner caps, do not introduce a repeat seam and survive toggling map size / UI scale. Verify Compendium frame unchanged.",
+        "author_association":  "OWNER",
+        "reactions":  {
+                          "url":  "https://api.github.com/repos/z1xel/SoftSpoken/issues/comments/6429152319/reactions",
+                          "total_count":  0,
+                          "+1":  0,
+                          "-1":  0,
+                          "laugh":  0,
+                          "hooray":  0,
+                          "confused":  0,
+                          "heart":  0,
+                          "rocket":  0,
+                          "eyes":  0
+                      },
+        "performed_via_github_app":  {
+                                         "id":  1144995,
+                                         "client_id":  "Iv23liVemv8A9if9v0F2",
+                                         "slug":  "chatgpt-codex-connector",
+                                         "node_id":  "A_kwHOAOQ6Gs4AEXij",
+                                         "owner":  {
+                                                       "login":  "openai",
+                                                       "id":  14957082,
+                                                       "node_id":  "MDEyOk9yZ2FuaXphdGlvbjE0OTU3MDgy",
+                                                       "avatar_url":  "https://avatars.githubusercontent.com/u/14957082?v=4",
+                                                       "gravatar_id":  "",
+                                                       "url":  "https://api.github.com/users/openai",
+                                                       "html_url":  "https://github.com/openai",
+                                                       "followers_url":  "https://api.github.com/users/openai/followers",
+                                                       "following_url":  "https://api.github.com/users/openai/following{/other_user}",
+                                                       "gists_url":  "https://api.github.com/users/openai/gists{/gist_id}",
+                                                       "starred_url":  "https://api.github.com/users/openai/starred{/owner}{/repo}",
+                                                       "subscriptions_url":  "https://api.github.com/users/openai/subscriptions",
+                                                       "organizations_url":  "https://api.github.com/users/openai/orgs",
+                                                       "repos_url":  "https://api.github.com/users/openai/repos",
+                                                       "events_url":  "https://api.github.com/users/openai/events{/privacy}",
+                                                       "received_events_url":  "https://api.github.com/users/openai/received_events",
+                                                       "type":  "Organization",
+                                                       "user_view_type":  "public",
+                                                       "site_admin":  false
+                                                   },
+                                         "name":  "ChatGPT Codex Connector",
+                                         "description":  "Bring ChatGPT and Codex to your GitHub repositories.",
+                                         "external_url":  "https://www.chatgpt.com",
+                                         "html_url":  "https://github.com/apps/chatgpt-codex-connector",
+                                         "created_at":  "2025-02-14T01:37:05Z",
+                                         "updated_at":  "2026-09-23T18:52:59Z",
+                                         "permissions":  {
+                                                             "actions":  "write",
+                                                             "checks":  "read",
+                                                             "contents":  "write",
+                                                             "emails":  "read",
+                                                             "issues":  "write",
+                                                             "metadata":  "read",
+                                                             "pull_requests":  "write",
+                                                             "statuses":  "read",
+                                                             "workflows":  "write"
+                                                         },
+                                         "events":  [
+                                                        "check_run",
+                                                        "check_suite",
+                                                        "commit_comment",
+                                                        "issues",
+                                                        "issue_comment",
+                                                        "pull_request",
+                                                        "pull_request_review",
+                                                        "pull_request_review_comment",
+                                                        "pull_request_review_thread",
+                                                        "repository",
+                                                        "status",
+                                                        "sub_issues"
+                                                    ]
+                                     },
+        "minimized":  null,
+        "event":  "commented",
+        "actor":  {
+                      "login":  "z1xel",
+                      "id":  121463840,
+                      "node_id":  "U_kgDOBz1kIA",
+                      "avatar_url":  "https://avatars.githubusercontent.com/u/121463840?v=4",
+                      "gravatar_id":  "",
+                      "url":  "https://api.github.com/users/z1xel",
+                      "html_url":  "https://github.com/z1xel",
+                      "followers_url":  "https://api.github.com/users/z1xel/followers",
+                      "following_url":  "https://api.github.com/users/z1xel/following{/other_user}",
+                      "gists_url":  "https://api.github.com/users/z1xel/gists{/gist_id}",
+                      "starred_url":  "https://api.github.com/users/z1xel/starred{/owner}{/repo}",
+                      "subscriptions_url":  "https://api.github.com/users/z1xel/subscriptions",
+                      "organizations_url":  "https://api.github.com/users/z1xel/orgs",
+                      "repos_url":  "https://api.github.com/users/z1xel/repos",
+                      "events_url":  "https://api.github.com/users/z1xel/events{/privacy}",
+                      "received_events_url":  "https://api.github.com/users/z1xel/received_events",
+                      "type":  "User",
+                      "user_view_type":  "public",
+                      "site_admin":  false
+                  }
+    },
+    {
+        "sha":  "dae4e38ec74ed8002bc43e82c7ef2a0545bd3b61",
+        "node_id":  "C_kwDOVOzNm9oAKGRhZTRlMzhlYzc0ZWQ4MDAyYmM0M2U4MmM3ZWYyYTA1NDViZDNiNjE",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/dae4e38ec74ed8002bc43e82c7ef2a0545bd3b61",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/commit/dae4e38ec74ed8002bc43e82c7ef2a0545bd3b61",
+        "author":  {
+                       "name":  "z1xel",
+                       "email":  "121463840+z1xel@users.noreply.github.com",
+                       "date":  "2026-10-26T23:00:02Z"
+                   },
+        "committer":  {
+                          "name":  "z1xel",
+                          "email":  "121463840+z1xel@users.noreply.github.com",
+                          "date":  "2026-10-26T23:00:02Z"
+                      },
+        "tree":  {
+                     "sha":  "47b73ef15b64efad0f8d59e91449dbf99e5c7c34",
+                     "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/trees/47b73ef15b64efad0f8d59e91449dbf99e5c7c34"
+                 },
+        "message":  "Align compact map close button hover and click region with native artwork",
+        "parents":  [
+                        {
+                            "sha":  "c344d1b05e242da62416bfef34a19f36236fc8e8",
+                            "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/c344d1b05e242da62416bfef34a19f36236fc8e8",
+                            "html_url":  "https://github.com/z1xel/SoftSpoken/commit/c344d1b05e242da62416bfef34a19f36236fc8e8"
+                        }
+                    ],
+        "verification":  {
+                             "verified":  false,
+                             "reason":  "unsigned",
+                             "signature":  null,
+                             "payload":  null,
+                             "verified_at":  null
+                         },
+        "event":  "committed"
+    },
+    {
+        "sha":  "2adfeed2e5f2ac42f7b0552a3034d991d75511e5",
+        "node_id":  "C_kwDOVOzNm9oAKDJhZGZlZWQyZTVmMmFjNDJmN2IwNTUyYTMwMzRkOTkxZDc1NTExZTU",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/2adfeed2e5f2ac42f7b0552a3034d991d75511e5",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/commit/2adfeed2e5f2ac42f7b0552a3034d991d75511e5",
+        "author":  {
+                       "name":  "z1xel",
+                       "email":  "121463840+z1xel@users.noreply.github.com",
+                       "date":  "2026-10-26T23:00:23Z"
+                   },
+        "committer":  {
+                          "name":  "z1xel",
+                          "email":  "121463840+z1xel@users.noreply.github.com",
+                          "date":  "2026-10-26T23:00:23Z"
+                      },
+        "tree":  {
+                     "sha":  "07fe3ced85c63593405b8d37bf937302ce0b8d63",
+                     "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/trees/07fe3ced85c63593405b8d37bf937302ce0b8d63"
+                 },
+        "message":  "Keep compact Zone Lore close button above decorative frame and page",
+        "parents":  [
+                        {
+                            "sha":  "dae4e38ec74ed8002bc43e82c7ef2a0545bd3b61",
+                            "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/dae4e38ec74ed8002bc43e82c7ef2a0545bd3b61",
+                            "html_url":  "https://github.com/z1xel/SoftSpoken/commit/dae4e38ec74ed8002bc43e82c7ef2a0545bd3b61"
+                        }
+                    ],
+        "verification":  {
+                             "verified":  false,
+                             "reason":  "unsigned",
+                             "signature":  null,
+                             "payload":  null,
+                             "verified_at":  null
+                         },
+        "event":  "committed"
+    },
+    {
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/issues/comments/6429354811",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/pull/18#issuecomment-6429354811",
+        "issue_url":  "https://api.github.com/repos/z1xel/SoftSpoken/issues/18",
+        "id":  6429354811,
+        "node_id":  "IC_kwDOVOzNm88AAAABfzgrOw",
+        "user":  {
+                     "login":  "z1xel",
+                     "id":  121463840,
+                     "node_id":  "U_kgDOBz1kIA",
+                     "avatar_url":  "https://avatars.githubusercontent.com/u/121463840?v=4",
+                     "gravatar_id":  "",
+                     "url":  "https://api.github.com/users/z1xel",
+                     "html_url":  "https://github.com/z1xel",
+                     "followers_url":  "https://api.github.com/users/z1xel/followers",
+                     "following_url":  "https://api.github.com/users/z1xel/following{/other_user}",
+                     "gists_url":  "https://api.github.com/users/z1xel/gists{/gist_id}",
+                     "starred_url":  "https://api.github.com/users/z1xel/starred{/owner}{/repo}",
+                     "subscriptions_url":  "https://api.github.com/users/z1xel/subscriptions",
+                     "organizations_url":  "https://api.github.com/users/z1xel/orgs",
+                     "repos_url":  "https://api.github.com/users/z1xel/repos",
+                     "events_url":  "https://api.github.com/users/z1xel/events{/privacy}",
+                     "received_events_url":  "https://api.github.com/users/z1xel/received_events",
+                     "type":  "User",
+                     "user_view_type":  "public",
+                     "site_admin":  false
+                 },
+        "created_at":  "2026-10-26T23:00:59Z",
+        "updated_at":  "2026-10-26T23:00:59Z",
+        "body":  "## Compact Zone Lore close-button hover / hitbox (commits `dae4e38`, `2adfeed`)\n\nUser confirmed the vertical frame side fix is now correct, but the native red X has an **offset hover highlight and click target** in the World Map attachment.\n\nChanged **only the compact variant**:\n- Explicitly anchor the native button\u0027s normal, pushed, and highlight textures to the **same 32├ù32 button frame**.\n- Confine its clickable rectangle to the 24├ù24 central graphic (4-unit insets), without shifting the visible X or the shared title frame.\n- Promote the close button to `panel + 15` *after* constructing the map parchment/scrollbar, above the `panel + 10` compact border overlay. This should prevent children/trim from interfering with the button.\n- Keep its existing `M.SetMapPanelCollapsed(true)` callback and full Compendium close button behavior unchanged.\n\n**In-game check:** hover directly over the red X (highlight should sit on the same sprite), click its visible center to collapse, click surrounding silver metal (should do nothing), reopen via the map toggle, repeat after /reload and under a different UI scale. Check full Compendium close button unchanged.\n\nStatic checks passed, **not yet verified in-game**.",
+        "author_association":  "OWNER",
+        "reactions":  {
+                          "url":  "https://api.github.com/repos/z1xel/SoftSpoken/issues/comments/6429354811/reactions",
+                          "total_count":  0,
+                          "+1":  0,
+                          "-1":  0,
+                          "laugh":  0,
+                          "hooray":  0,
+                          "confused":  0,
+                          "heart":  0,
+                          "rocket":  0,
+                          "eyes":  0
+                      },
+        "performed_via_github_app":  {
+                                         "id":  1144995,
+                                         "client_id":  "Iv23liVemv8A9if9v0F2",
+                                         "slug":  "chatgpt-codex-connector",
+                                         "node_id":  "A_kwHOAOQ6Gs4AEXij",
+                                         "owner":  {
+                                                       "login":  "openai",
+                                                       "id":  14957082,
+                                                       "node_id":  "MDEyOk9yZ2FuaXphdGlvbjE0OTU3MDgy",
+                                                       "avatar_url":  "https://avatars.githubusercontent.com/u/14957082?v=4",
+                                                       "gravatar_id":  "",
+                                                       "url":  "https://api.github.com/users/openai",
+                                                       "html_url":  "https://github.com/openai",
+                                                       "followers_url":  "https://api.github.com/users/openai/followers",
+                                                       "following_url":  "https://api.github.com/users/openai/following{/other_user}",
+                                                       "gists_url":  "https://api.github.com/users/openai/gists{/gist_id}",
+                                                       "starred_url":  "https://api.github.com/users/openai/starred{/owner}{/repo}",
+                                                       "subscriptions_url":  "https://api.github.com/users/openai/subscriptions",
+                                                       "organizations_url":  "https://api.github.com/users/openai/orgs",
+                                                       "repos_url":  "https://api.github.com/users/openai/repos",
+                                                       "events_url":  "https://api.github.com/users/openai/events{/privacy}",
+                                                       "received_events_url":  "https://api.github.com/users/openai/received_events",
+                                                       "type":  "Organization",
+                                                       "user_view_type":  "public",
+                                                       "site_admin":  false
+                                                   },
+                                         "name":  "ChatGPT Codex Connector",
+                                         "description":  "Bring ChatGPT and Codex to your GitHub repositories.",
+                                         "external_url":  "https://www.chatgpt.com",
+                                         "html_url":  "https://github.com/apps/chatgpt-codex-connector",
+                                         "created_at":  "2025-02-14T01:37:05Z",
+                                         "updated_at":  "2026-09-23T18:52:59Z",
+                                         "permissions":  {
+                                                             "actions":  "write",
+                                                             "checks":  "read",
+                                                             "contents":  "write",
+                                                             "emails":  "read",
+                                                             "issues":  "write",
+                                                             "metadata":  "read",
+                                                             "pull_requests":  "write",
+                                                             "statuses":  "read",
+                                                             "workflows":  "write"
+                                                         },
+                                         "events":  [
+                                                        "check_run",
+                                                        "check_suite",
+                                                        "commit_comment",
+                                                        "issues",
+                                                        "issue_comment",
+                                                        "pull_request",
+                                                        "pull_request_review",
+                                                        "pull_request_review_comment",
+                                                        "pull_request_review_thread",
+                                                        "repository",
+                                                        "status",
+                                                        "sub_issues"
+                                                    ]
+                                     },
+        "minimized":  null,
+        "event":  "commented",
+        "actor":  {
+                      "login":  "z1xel",
+                      "id":  121463840,
+                      "node_id":  "U_kgDOBz1kIA",
+                      "avatar_url":  "https://avatars.githubusercontent.com/u/121463840?v=4",
+                      "gravatar_id":  "",
+                      "url":  "https://api.github.com/users/z1xel",
+                      "html_url":  "https://github.com/z1xel",
+                      "followers_url":  "https://api.github.com/users/z1xel/followers",
+                      "following_url":  "https://api.github.com/users/z1xel/following{/other_user}",
+                      "gists_url":  "https://api.github.com/users/z1xel/gists{/gist_id}",
+                      "starred_url":  "https://api.github.com/users/z1xel/starred{/owner}{/repo}",
+                      "subscriptions_url":  "https://api.github.com/users/z1xel/subscriptions",
+                      "organizations_url":  "https://api.github.com/users/z1xel/orgs",
+                      "repos_url":  "https://api.github.com/users/z1xel/repos",
+                      "events_url":  "https://api.github.com/users/z1xel/events{/privacy}",
+                      "received_events_url":  "https://api.github.com/users/z1xel/received_events",
+                      "type":  "User",
+                      "user_view_type":  "public",
+                      "site_admin":  false
+                  }
+    },
+    {
+        "id":  34313928917,
+        "node_id":  "ME_lADOVOzNm88AAAABaFuvWc8AAAAH_UUA1Q",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/issues/events/34313928917",
+        "actor":  {
+                      "login":  "z1xel",
+                      "id":  121463840,
+                      "node_id":  "U_kgDOBz1kIA",
+                      "avatar_url":  "https://avatars.githubusercontent.com/u/121463840?v=4",
+                      "gravatar_id":  "",
+                      "url":  "https://api.github.com/users/z1xel",
+                      "html_url":  "https://github.com/z1xel",
+                      "followers_url":  "https://api.github.com/users/z1xel/followers",
+                      "following_url":  "https://api.github.com/users/z1xel/following{/other_user}",
+                      "gists_url":  "https://api.github.com/users/z1xel/gists{/gist_id}",
+                      "starred_url":  "https://api.github.com/users/z1xel/starred{/owner}{/repo}",
+                      "subscriptions_url":  "https://api.github.com/users/z1xel/subscriptions",
+                      "organizations_url":  "https://api.github.com/users/z1xel/orgs",
+                      "repos_url":  "https://api.github.com/users/z1xel/repos",
+                      "events_url":  "https://api.github.com/users/z1xel/events{/privacy}",
+                      "received_events_url":  "https://api.github.com/users/z1xel/received_events",
+                      "type":  "User",
+                      "user_view_type":  "public",
+                      "site_admin":  false
+                  },
+        "event":  "merged",
+        "commit_id":  "119fd528205f356bcacba80e6a939b3f724dd2e3",
+        "commit_url":  "https://api.github.com/repos/z1xel/SoftSpoken/commits/119fd528205f356bcacba80e6a939b3f724dd2e3",
+        "created_at":  "2026-10-26T23:11:18Z",
+        "performed_via_github_app":  null
+    },
+    {
+        "id":  34313928998,
+        "node_id":  "CE_lADOVOzNm88AAAABaFuvWc8AAAAH_UUBJg",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/issues/events/34313928998",
+        "actor":  {
+                      "login":  "z1xel",
+                      "id":  121463840,
+                      "node_id":  "U_kgDOBz1kIA",
+                      "avatar_url":  "https://avatars.githubusercontent.com/u/121463840?v=4",
+                      "gravatar_id":  "",
+                      "url":  "https://api.github.com/users/z1xel",
+                      "html_url":  "https://github.com/z1xel",
+                      "followers_url":  "https://api.github.com/users/z1xel/followers",
+                      "following_url":  "https://api.github.com/users/z1xel/following{/other_user}",
+                      "gists_url":  "https://api.github.com/users/z1xel/gists{/gist_id}",
+                      "starred_url":  "https://api.github.com/users/z1xel/starred{/owner}{/repo}",
+                      "subscriptions_url":  "https://api.github.com/users/z1xel/subscriptions",
+                      "organizations_url":  "https://api.github.com/users/z1xel/orgs",
+                      "repos_url":  "https://api.github.com/users/z1xel/repos",
+                      "events_url":  "https://api.github.com/users/z1xel/events{/privacy}",
+                      "received_events_url":  "https://api.github.com/users/z1xel/received_events",
+                      "type":  "User",
+                      "user_view_type":  "public",
+                      "site_admin":  false
+                  },
+        "event":  "closed",
+        "commit_id":  null,
+        "commit_url":  null,
+        "created_at":  "2026-10-26T23:11:19Z",
+        "state_reason":  null,
+        "intent":  null,
+        "performed_via_github_app":  null
+    },
+    {
+        "id":  34313973037,
+        "node_id":  "HRDE_lADOVOzNm88AAAABaFuvWc8AAAAH_UWtLQ",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/issues/events/34313973037",
+        "actor":  {
+                      "login":  "z1xel",
+                      "id":  121463840,
+                      "node_id":  "U_kgDOBz1kIA",
+                      "avatar_url":  "https://avatars.githubusercontent.com/u/121463840?v=4",
+                      "gravatar_id":  "",
+                      "url":  "https://api.github.com/users/z1xel",
+                      "html_url":  "https://github.com/z1xel",
+                      "followers_url":  "https://api.github.com/users/z1xel/followers",
+                      "following_url":  "https://api.github.com/users/z1xel/following{/other_user}",
+                      "gists_url":  "https://api.github.com/users/z1xel/gists{/gist_id}",
+                      "starred_url":  "https://api.github.com/users/z1xel/starred{/owner}{/repo}",
+                      "subscriptions_url":  "https://api.github.com/users/z1xel/subscriptions",
+                      "organizations_url":  "https://api.github.com/users/z1xel/orgs",
+                      "repos_url":  "https://api.github.com/users/z1xel/repos",
+                      "events_url":  "https://api.github.com/users/z1xel/events{/privacy}",
+                      "received_events_url":  "https://api.github.com/users/z1xel/received_events",
+                      "type":  "User",
+                      "user_view_type":  "public",
+                      "site_admin":  false
+                  },
+        "event":  "head_ref_deleted",
+        "commit_id":  null,
+        "commit_url":  null,
+        "created_at":  "2026-10-26T23:12:03Z",
+        "performed_via_github_app":  null
+    }
+]

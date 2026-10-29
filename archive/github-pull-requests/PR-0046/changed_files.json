@@ -1,0 +1,14 @@
+[
+    {
+        "sha":  "def1462dd6845e1ea7b7df674f10015450e19470",
+        "filename":  "README.md",
+        "status":  "modified",
+        "additions":  1,
+        "deletions":  1,
+        "changes":  2,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/c37c5bccad6bf7cf167682ad875e21bcba3df761/README.md",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/c37c5bccad6bf7cf167682ad875e21bcba3df761/README.md",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/README.md?ref=c37c5bccad6bf7cf167682ad875e21bcba3df761",
+        "patch":  "@@ -129,7 +129,7 @@ The **Spoken Audio: Quests ΓÇô All** package on CurseForge is intended for addon\n \n ### Additional Quest Audio\n \n-SoftSpoken Stories also supports additional recordings through the `SSS_VOFallback` pack (remaining Vanilla/VanillaExtra audio not covered by Spoken) and AI VoiceOver\u0027s Turtle WoW audio. Install the `SSS_VOFallback` folder directly inside `Interface\\\\AddOns`; no manual priority edits are required.\n+SoftSpoken Stories also supports additional recordings through the `SSS_VOFallback` pack (remaining Vanilla/VanillaExtra audio not covered by Spoken) and AI VoiceOver\u0027s Turtle WoW audio. Install the `SSS_VOFallback` folder directly inside `Interface\\AddOns`; no manual priority edits are required.\n \n When multiple supported packs are installed, SoftSpoken prioritizes recordings in the following order:\n "
+    }
+]

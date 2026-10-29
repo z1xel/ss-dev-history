@@ -1,0 +1,248 @@
+[
+    {
+        "sha":  "292cc4592b78cc55a485055534ed31e7ccdffbfe",
+        "node_id":  "C_kwDOVOzNm9oAKDI5MmNjNDU5MmI3OGNjNTVhNDg1MDU1NTM0ZWQzMWU3Y2NkZmZiZmU",
+        "commit":  {
+                       "author":  {
+                                      "name":  "z1xel",
+                                      "email":  "121463840+z1xel@users.noreply.github.com",
+                                      "date":  "2026-10-23T18:36:07Z"
+                                  },
+                       "committer":  {
+                                         "name":  "z1xel",
+                                         "email":  "121463840+z1xel@users.noreply.github.com",
+                                         "date":  "2026-10-23T18:36:07Z"
+                                     },
+                       "message":  "Expose Core\u0027s single 1.12 client Version service",
+                       "tree":  {
+                                    "sha":  "6552cef37251984d0bf1a88c3bbb78b12079b191",
+                                    "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/trees/6552cef37251984d0bf1a88c3bbb78b12079b191"
+                                },
+                       "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/292cc4592b78cc55a485055534ed31e7ccdffbfe",
+                       "comment_count":  0,
+                       "verification":  {
+                                            "verified":  false,
+                                            "reason":  "unsigned",
+                                            "signature":  null,
+                                            "payload":  null,
+                                            "verified_at":  null
+                                        }
+                   },
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/commits/292cc4592b78cc55a485055534ed31e7ccdffbfe",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/commit/292cc4592b78cc55a485055534ed31e7ccdffbfe",
+        "comments_url":  "https://api.github.com/repos/z1xel/SoftSpoken/commits/292cc4592b78cc55a485055534ed31e7ccdffbfe/comments",
+        "author":  {
+                       "login":  "z1xel",
+                       "id":  121463840,
+                       "node_id":  "U_kgDOBz1kIA",
+                       "avatar_url":  "https://avatars.githubusercontent.com/u/121463840?v=4",
+                       "gravatar_id":  "",
+                       "url":  "https://api.github.com/users/z1xel",
+                       "html_url":  "https://github.com/z1xel",
+                       "followers_url":  "https://api.github.com/users/z1xel/followers",
+                       "following_url":  "https://api.github.com/users/z1xel/following{/other_user}",
+                       "gists_url":  "https://api.github.com/users/z1xel/gists{/gist_id}",
+                       "starred_url":  "https://api.github.com/users/z1xel/starred{/owner}{/repo}",
+                       "subscriptions_url":  "https://api.github.com/users/z1xel/subscriptions",
+                       "organizations_url":  "https://api.github.com/users/z1xel/orgs",
+                       "repos_url":  "https://api.github.com/users/z1xel/repos",
+                       "events_url":  "https://api.github.com/users/z1xel/events{/privacy}",
+                       "received_events_url":  "https://api.github.com/users/z1xel/received_events",
+                       "type":  "User",
+                       "user_view_type":  "public",
+                       "site_admin":  false
+                   },
+        "committer":  {
+                          "login":  "z1xel",
+                          "id":  121463840,
+                          "node_id":  "U_kgDOBz1kIA",
+                          "avatar_url":  "https://avatars.githubusercontent.com/u/121463840?v=4",
+                          "gravatar_id":  "",
+                          "url":  "https://api.github.com/users/z1xel",
+                          "html_url":  "https://github.com/z1xel",
+                          "followers_url":  "https://api.github.com/users/z1xel/followers",
+                          "following_url":  "https://api.github.com/users/z1xel/following{/other_user}",
+                          "gists_url":  "https://api.github.com/users/z1xel/gists{/gist_id}",
+                          "starred_url":  "https://api.github.com/users/z1xel/starred{/owner}{/repo}",
+                          "subscriptions_url":  "https://api.github.com/users/z1xel/subscriptions",
+                          "organizations_url":  "https://api.github.com/users/z1xel/orgs",
+                          "repos_url":  "https://api.github.com/users/z1xel/repos",
+                          "events_url":  "https://api.github.com/users/z1xel/events{/privacy}",
+                          "received_events_url":  "https://api.github.com/users/z1xel/received_events",
+                          "type":  "User",
+                          "user_view_type":  "public",
+                          "site_admin":  false
+                      },
+        "parents":  [
+                        {
+                            "sha":  "6f01cc4fd013bb90dc9e2b1260af49aa3f241bcd",
+                            "url":  "https://api.github.com/repos/z1xel/SoftSpoken/commits/6f01cc4fd013bb90dc9e2b1260af49aa3f241bcd",
+                            "html_url":  "https://github.com/z1xel/SoftSpoken/commit/6f01cc4fd013bb90dc9e2b1260af49aa3f241bcd"
+                        }
+                    ]
+    },
+    {
+        "sha":  "e04d75676cb2fee3d72d094dd57b921235ab8498",
+        "node_id":  "C_kwDOVOzNm9oAKGUwNGQ3NTY3NmNiMmZlZTNkNzJkMDk0ZGQ1N2I5MjEyMzVhYjg0OTg",
+        "commit":  {
+                       "author":  {
+                                      "name":  "z1xel",
+                                      "email":  "121463840+z1xel@users.noreply.github.com",
+                                      "date":  "2026-10-23T18:36:10Z"
+                                  },
+                       "committer":  {
+                                         "name":  "z1xel",
+                                         "email":  "121463840+z1xel@users.noreply.github.com",
+                                         "date":  "2026-10-23T18:36:10Z"
+                                     },
+                       "message":  "Use Core Version instead of duplicating Quests client detection",
+                       "tree":  {
+                                    "sha":  "c0778a32352bf108f11f6862f394ad8dd8d451e3",
+                                    "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/trees/c0778a32352bf108f11f6862f394ad8dd8d451e3"
+                                },
+                       "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/e04d75676cb2fee3d72d094dd57b921235ab8498",
+                       "comment_count":  0,
+                       "verification":  {
+                                            "verified":  false,
+                                            "reason":  "unsigned",
+                                            "signature":  null,
+                                            "payload":  null,
+                                            "verified_at":  null
+                                        }
+                   },
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/commits/e04d75676cb2fee3d72d094dd57b921235ab8498",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/commit/e04d75676cb2fee3d72d094dd57b921235ab8498",
+        "comments_url":  "https://api.github.com/repos/z1xel/SoftSpoken/commits/e04d75676cb2fee3d72d094dd57b921235ab8498/comments",
+        "author":  {
+                       "login":  "z1xel",
+                       "id":  121463840,
+                       "node_id":  "U_kgDOBz1kIA",
+                       "avatar_url":  "https://avatars.githubusercontent.com/u/121463840?v=4",
+                       "gravatar_id":  "",
+                       "url":  "https://api.github.com/users/z1xel",
+                       "html_url":  "https://github.com/z1xel",
+                       "followers_url":  "https://api.github.com/users/z1xel/followers",
+                       "following_url":  "https://api.github.com/users/z1xel/following{/other_user}",
+                       "gists_url":  "https://api.github.com/users/z1xel/gists{/gist_id}",
+                       "starred_url":  "https://api.github.com/users/z1xel/starred{/owner}{/repo}",
+                       "subscriptions_url":  "https://api.github.com/users/z1xel/subscriptions",
+                       "organizations_url":  "https://api.github.com/users/z1xel/orgs",
+                       "repos_url":  "https://api.github.com/users/z1xel/repos",
+                       "events_url":  "https://api.github.com/users/z1xel/events{/privacy}",
+                       "received_events_url":  "https://api.github.com/users/z1xel/received_events",
+                       "type":  "User",
+                       "user_view_type":  "public",
+                       "site_admin":  false
+                   },
+        "committer":  {
+                          "login":  "z1xel",
+                          "id":  121463840,
+                          "node_id":  "U_kgDOBz1kIA",
+                          "avatar_url":  "https://avatars.githubusercontent.com/u/121463840?v=4",
+                          "gravatar_id":  "",
+                          "url":  "https://api.github.com/users/z1xel",
+                          "html_url":  "https://github.com/z1xel",
+                          "followers_url":  "https://api.github.com/users/z1xel/followers",
+                          "following_url":  "https://api.github.com/users/z1xel/following{/other_user}",
+                          "gists_url":  "https://api.github.com/users/z1xel/gists{/gist_id}",
+                          "starred_url":  "https://api.github.com/users/z1xel/starred{/owner}{/repo}",
+                          "subscriptions_url":  "https://api.github.com/users/z1xel/subscriptions",
+                          "organizations_url":  "https://api.github.com/users/z1xel/orgs",
+                          "repos_url":  "https://api.github.com/users/z1xel/repos",
+                          "events_url":  "https://api.github.com/users/z1xel/events{/privacy}",
+                          "received_events_url":  "https://api.github.com/users/z1xel/received_events",
+                          "type":  "User",
+                          "user_view_type":  "public",
+                          "site_admin":  false
+                      },
+        "parents":  [
+                        {
+                            "sha":  "292cc4592b78cc55a485055534ed31e7ccdffbfe",
+                            "url":  "https://api.github.com/repos/z1xel/SoftSpoken/commits/292cc4592b78cc55a485055534ed31e7ccdffbfe",
+                            "html_url":  "https://github.com/z1xel/SoftSpoken/commit/292cc4592b78cc55a485055534ed31e7ccdffbfe"
+                        }
+                    ]
+    },
+    {
+        "sha":  "a6c7a74c3b61f8cd6428675be6fb0d5b07a82b34",
+        "node_id":  "C_kwDOVOzNm9oAKGE2YzdhNzRjM2I2MWY4Y2Q2NDI4Njc1YmU2ZmIwZDViMDdhODJiMzQ",
+        "commit":  {
+                       "author":  {
+                                      "name":  "z1xel",
+                                      "email":  "121463840+z1xel@users.noreply.github.com",
+                                      "date":  "2026-10-23T18:36:53Z"
+                                  },
+                       "committer":  {
+                                         "name":  "z1xel",
+                                         "email":  "121463840+z1xel@users.noreply.github.com",
+                                         "date":  "2026-10-23T18:36:53Z"
+                                     },
+                       "message":  "Prune unreachable modern-client branches while preserving 1.12 extensions",
+                       "tree":  {
+                                    "sha":  "48645f353c36dd5499f28e8bab5596e52416442d",
+                                    "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/trees/48645f353c36dd5499f28e8bab5596e52416442d"
+                                },
+                       "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/a6c7a74c3b61f8cd6428675be6fb0d5b07a82b34",
+                       "comment_count":  0,
+                       "verification":  {
+                                            "verified":  false,
+                                            "reason":  "unsigned",
+                                            "signature":  null,
+                                            "payload":  null,
+                                            "verified_at":  null
+                                        }
+                   },
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/commits/a6c7a74c3b61f8cd6428675be6fb0d5b07a82b34",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/commit/a6c7a74c3b61f8cd6428675be6fb0d5b07a82b34",
+        "comments_url":  "https://api.github.com/repos/z1xel/SoftSpoken/commits/a6c7a74c3b61f8cd6428675be6fb0d5b07a82b34/comments",
+        "author":  {
+                       "login":  "z1xel",
+                       "id":  121463840,
+                       "node_id":  "U_kgDOBz1kIA",
+                       "avatar_url":  "https://avatars.githubusercontent.com/u/121463840?v=4",
+                       "gravatar_id":  "",
+                       "url":  "https://api.github.com/users/z1xel",
+                       "html_url":  "https://github.com/z1xel",
+                       "followers_url":  "https://api.github.com/users/z1xel/followers",
+                       "following_url":  "https://api.github.com/users/z1xel/following{/other_user}",
+                       "gists_url":  "https://api.github.com/users/z1xel/gists{/gist_id}",
+                       "starred_url":  "https://api.github.com/users/z1xel/starred{/owner}{/repo}",
+                       "subscriptions_url":  "https://api.github.com/users/z1xel/subscriptions",
+                       "organizations_url":  "https://api.github.com/users/z1xel/orgs",
+                       "repos_url":  "https://api.github.com/users/z1xel/repos",
+                       "events_url":  "https://api.github.com/users/z1xel/events{/privacy}",
+                       "received_events_url":  "https://api.github.com/users/z1xel/received_events",
+                       "type":  "User",
+                       "user_view_type":  "public",
+                       "site_admin":  false
+                   },
+        "committer":  {
+                          "login":  "z1xel",
+                          "id":  121463840,
+                          "node_id":  "U_kgDOBz1kIA",
+                          "avatar_url":  "https://avatars.githubusercontent.com/u/121463840?v=4",
+                          "gravatar_id":  "",
+                          "url":  "https://api.github.com/users/z1xel",
+                          "html_url":  "https://github.com/z1xel",
+                          "followers_url":  "https://api.github.com/users/z1xel/followers",
+                          "following_url":  "https://api.github.com/users/z1xel/following{/other_user}",
+                          "gists_url":  "https://api.github.com/users/z1xel/gists{/gist_id}",
+                          "starred_url":  "https://api.github.com/users/z1xel/starred{/owner}{/repo}",
+                          "subscriptions_url":  "https://api.github.com/users/z1xel/subscriptions",
+                          "organizations_url":  "https://api.github.com/users/z1xel/orgs",
+                          "repos_url":  "https://api.github.com/users/z1xel/repos",
+                          "events_url":  "https://api.github.com/users/z1xel/events{/privacy}",
+                          "received_events_url":  "https://api.github.com/users/z1xel/received_events",
+                          "type":  "User",
+                          "user_view_type":  "public",
+                          "site_admin":  false
+                      },
+        "parents":  [
+                        {
+                            "sha":  "e04d75676cb2fee3d72d094dd57b921235ab8498",
+                            "url":  "https://api.github.com/repos/z1xel/SoftSpoken/commits/e04d75676cb2fee3d72d094dd57b921235ab8498",
+                            "html_url":  "https://github.com/z1xel/SoftSpoken/commit/e04d75676cb2fee3d72d094dd57b921235ab8498"
+                        }
+                    ]
+    }
+]

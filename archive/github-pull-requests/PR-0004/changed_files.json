@@ -1,0 +1,14 @@
+[
+    {
+        "sha":  "0dc88dc4c5e5d8e09dc3f818bfd13ccd5dca0266",
+        "filename":  "SoftSpoken_Books/UI/Readables.lua",
+        "status":  "modified",
+        "additions":  17,
+        "deletions":  4,
+        "changes":  21,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/c868522f8b09faf4f8fc405bf60ba5647a6395ef/SoftSpoken_Books%2FUI%2FReadables.lua",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/c868522f8b09faf4f8fc405bf60ba5647a6395ef/SoftSpoken_Books%2FUI%2FReadables.lua",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/SoftSpoken_Books%2FUI%2FReadables.lua?ref=c868522f8b09faf4f8fc405bf60ba5647a6395ef",
+        "patch":  "@@ -109,10 +109,21 @@ local function Index()\n end\n \n local function Found(id) return B:IsBookFound(id) end\n-local function Voiced(id)\n+-- Like upstream Readables: a book is voiced when ANY page has a recording.\n+-- Cache its first playable page only until the next Compendium refresh.\n+local voiced={}\n+local function FirstVoiced(id)\n+    if voiced[id]~=nil then return voiced[id] or nil end\n     local book=Books()[id]\n-    return book and book.pages and book.pages[1] and B:HasAudio(book.pages[1]) or false\n+    for _,pageId in ipairs(book and book.pages or {}) do\n+        if B:HasAudio(pageId) then\n+            voiced[id]=pageId\n+            return pageId\n+        end\n+    end\n+    voiced[id]=false\n end\n+local function Voiced(id) return FirstVoiced(id)~=nil end\n local function OnlyFound() return Settings().compendiumFoundOnly==true end\n local function OnlyVoiced() return Settings().compendiumVoicedOnly==true end\n local function Unlocked() return Settings().unlockUnfound==true end\n@@ -425,9 +436,9 @@ local function ShowEntry()\n         -- places the character visited. Muted ink distinguishes this note.\n         local other=OtherKnownLocations(id,place)\n         if other then table.insert(parts,\"|cff84694a\"..other..\"|r\") end\n-        local first=book.pages and book.pages[1]\n+        local first=FirstVoiced(id)\n         page:Show({title=Title(id),subtitle=location,\n-            text=table.concat(parts,\"\\n\\n\"),audio=(first and Voiced(id)) and {id,first} or nil})\n+            text=table.concat(parts,\"\\n\\n\"),audio=first and {id,first} or nil})\n         return\n     end\n     local found,total=selected.found or 0,selected.total or 0\n@@ -494,6 +505,7 @@ local function EquipPlay(pageObject)\n end\n \n function B:RefreshReadablesPlayback()\n+    voiced={}\n     if page and page.play and page.play.Refresh then page.play:Refresh() end\n end\n local function Build(panelFrame)\n@@ -564,6 +576,7 @@ function B:ReadablesLocationChanged()\n end\n function B:RefreshReadables(scrollToSelection)\n     if not list then return end\n+    voiced={}\n     local items=list:Render()\n     if scrollToSelection then list:ScrollToSelection(items) end\n     ShowEntry()"
+    }
+]

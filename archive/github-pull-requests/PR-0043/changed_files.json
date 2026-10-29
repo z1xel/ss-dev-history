@@ -1,0 +1,14 @@
+[
+    {
+        "sha":  "0671d82b07ec728244b0758cdf52333e55735c13",
+        "filename":  "README.md",
+        "status":  "modified",
+        "additions":  3,
+        "deletions":  3,
+        "changes":  6,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/bdc65cf1d49fcdca1ca50fd21a9c1ae462f25f2f/README.md",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/bdc65cf1d49fcdca1ca50fd21a9c1ae462f25f2f/README.md",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/README.md?ref=bdc65cf1d49fcdca1ca50fd21a9c1ae462f25f2f",
+        "patch":  "@@ -47,9 +47,9 @@ Each module has a dedicated tab within the Compendium, containing a catalogue of\n \n By default, the Compendium follows a **discovery-based approach**, intended to complement exploration and preserve the experience of a blind playthrough. Content is progressively unlocked through your adventures:\n \n-- **Stories:** Quests are recorded as they\u0027re accepted, with completion dialogue becoming available once the quest has been completed.\n-- **Places:** Lore is unlocked as you encounter and discover locations throughout Azeroth.\n-- **Writings:** Books and other readable objects are unlocked as you discover and inspect them.\n+- **[Stories](#stories):** Quests are recorded as they\u0027re accepted, with completion dialogue becoming available once the quest has been completed.\n+- **[Places](#places):** Lore is unlocked as you encounter and discover locations throughout Azeroth.\n+- **[Writings](#writings):** Books and other readable objects are unlocked as you discover and inspect them.\n \n Undiscovered entries remain locked, allowing the Compendium to grow alongside your character\u0027s journey rather than reveal everything from the outset.\n "
+    }
+]

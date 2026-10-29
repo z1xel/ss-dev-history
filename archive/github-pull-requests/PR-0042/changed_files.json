@@ -1,0 +1,14 @@
+[
+    {
+        "sha":  "1c7ecde0460e044b879cf6d2653b30c5f52bac9c",
+        "filename":  "LICENSE",
+        "status":  "modified",
+        "additions":  2,
+        "deletions":  2,
+        "changes":  4,
+        "blob_url":  "https://github.com/z1xel/SoftSpoken/blob/56d07a23fde74c957109749f3b61b338333a63c3/LICENSE",
+        "raw_url":  "https://github.com/z1xel/SoftSpoken/raw/56d07a23fde74c957109749f3b61b338333a63c3/LICENSE",
+        "contents_url":  "https://api.github.com/repos/z1xel/SoftSpoken/contents/LICENSE?ref=56d07a23fde74c957109749f3b61b338333a63c3",
+        "patch":  "@@ -1,7 +1,7 @@\n MIT License\n \n-Copyright (c) 2026 z1xel (SoftSpoken authoring)\n-Copyright (c) 2026 Rusty Key (Spoken authoring)\n+Copyright (c) 2026 z1xel (SoftSpoken development)\n+Copyright (c) 2026 Rusty Key (original Spoken development)\n Copyright (c) 2026 other Spoken \u0026 SoftSpoken contributors (their original contributions)\n \n Permission is hereby granted, free of charge, to any person obtaining a copy"
+    }
+]

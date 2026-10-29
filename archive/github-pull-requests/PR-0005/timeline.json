@@ -1,0 +1,169 @@
+[
+    {
+        "sha":  "b58c542f68d75cca38f48392edb5ba61bbeed417",
+        "node_id":  "C_kwDOVOzNm9oAKGI1OGM1NDJmNjhkNzVjY2EzOGY0ODM5MmVkYjViYTYxYmJlZWQ0MTc",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/b58c542f68d75cca38f48392edb5ba61bbeed417",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/commit/b58c542f68d75cca38f48392edb5ba61bbeed417",
+        "author":  {
+                       "name":  "z1xel",
+                       "email":  "121463840+z1xel@users.noreply.github.com",
+                       "date":  "2026-10-23T17:02:01Z"
+                   },
+        "committer":  {
+                          "name":  "z1xel",
+                          "email":  "121463840+z1xel@users.noreply.github.com",
+                          "date":  "2026-10-23T17:02:01Z"
+                      },
+        "tree":  {
+                     "sha":  "9f53b53d4fa663cab9ed00624b4aa518ba8590db",
+                     "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/trees/9f53b53d4fa663cab9ed00624b4aa518ba8590db"
+                 },
+        "message":  "Centralize 1.12 client shims in Core and simplify Quest compatibility",
+        "parents":  [
+                        {
+                            "sha":  "2e2d820856cda6fecae2d8121d7d50f78129e899",
+                            "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/2e2d820856cda6fecae2d8121d7d50f78129e899",
+                            "html_url":  "https://github.com/z1xel/SoftSpoken/commit/2e2d820856cda6fecae2d8121d7d50f78129e899"
+                        }
+                    ],
+        "verification":  {
+                             "verified":  false,
+                             "reason":  "unsigned",
+                             "signature":  null,
+                             "payload":  null,
+                             "verified_at":  null
+                         },
+        "event":  "committed"
+    },
+    {
+        "sha":  "fce2aa5cb16b287c4347e99433787dc8559af396",
+        "node_id":  "C_kwDOVOzNm9oAKGZjZTJhYTVjYjE2YjI4N2M0MzQ3ZTk5NDMzNzg3ZGM4NTU5YWYzOTY",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/fce2aa5cb16b287c4347e99433787dc8559af396",
+        "html_url":  "https://github.com/z1xel/SoftSpoken/commit/fce2aa5cb16b287c4347e99433787dc8559af396",
+        "author":  {
+                       "name":  "z1xel",
+                       "email":  "121463840+z1xel@users.noreply.github.com",
+                       "date":  "2026-10-23T17:32:07Z"
+                   },
+        "committer":  {
+                          "name":  "GitHub",
+                          "email":  "noreply@github.com",
+                          "date":  "2026-10-23T17:32:07Z"
+                      },
+        "tree":  {
+                     "sha":  "ca25824ebaa26675ffd0cac9ebd39b273a426c96",
+                     "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/trees/ca25824ebaa26675ffd0cac9ebd39b273a426c96"
+                 },
+        "message":  "Add quest data and text modules (#6)\n\nCo-authored-by: z1xel \u003cramirezthiago@71gmail.com\u003e",
+        "parents":  [
+                        {
+                            "sha":  "b58c542f68d75cca38f48392edb5ba61bbeed417",
+                            "url":  "https://api.github.com/repos/z1xel/SoftSpoken/git/commits/b58c542f68d75cca38f48392edb5ba61bbeed417",
+                            "html_url":  "https://github.com/z1xel/SoftSpoken/commit/b58c542f68d75cca38f48392edb5ba61bbeed417"
+                        }
+                    ],
+        "verification":  {
+                             "verified":  true,
+                             "reason":  "valid",
+                             "signature":  "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJq25oXCRC1aQ7uu5UhlAAAXngQAJdzxJncEhOZODAHk0Zt/Ek9\nYCOV4rvOxPFOTptWTAjMDs40rpWgdeFZGOA80kDs8+gt/1XVH4OsTRb8t1W+gI96\nL782wldRy75tj1vFL7lZ6m9S2vtGz0if21QTBoqGIexjHZ5XbcGE0jc2/y9CTWR1\nWc/Eh91H3zYRsDwAW4KHffOGxpIq4ss6rTpKNI56w4XzM5CM3fSmsm178ezh2wAY\nUiVRrmmL+W8TXQQyhOPXDbEQRReWRgnOvFuC3EsRlhZWNqaLUpksWgmQHOdSZqCs\nwTZU91/fNxKR5lhx5XaXie+ecn9V+dWWR/63Kip8cK+iuY19X9NOBVZGTbzEYGNP\nGqurtBAVNCLV4/yNG1gw1DL41+fiUKkanPXjNSi7lpinKsYqWzozgQcU4dI9B2fR\nOF4RjTVZACOg67cBHhKmFiv+FW56C0GRfG/LaeLl6RGfOL85xIVy4TL5STo2Kao9\n63gppMW8WM7rXlna0EG233AHDhw8pMKrJEITWy4axMhUfH3qFmjwMDlVyw+/MJbC\nAiE3BnY0UJN94gbN2xhBOwpitVwUQVEpSW8fkkle3jmQo8gw5FRDNAXE6dSrUg3a\nlBN7LKNdNP7K+DoPyuane2DIUOnbo6bfZOeR8PDravG/ZEpc1xJQe2+Ezf4mffuH\nz/qEolTwvxXyOPoilMrO\n=4tJX\n-----END PGP SIGNATURE-----\n",
+                             "payload":  "tree ca25824ebaa26675ffd0cac9ebd39b273a426c96\nparent b58c542f68d75cca38f48392edb5ba61bbeed417\nauthor z1xel \u003c121463840+z1xel@users.noreply.github.com\u003e 1792776727 -0400\ncommitter GitHub \u003cnoreply@github.com\u003e 1792776727 -0400\n\nAdd quest data and text modules (#6)\n\nCo-authored-by: z1xel \u003cramirezthiago@71gmail.com\u003e",
+                             "verified_at":  "2026-10-23T17:32:08Z"
+                         },
+        "event":  "committed"
+    },
+    {
+        "id":  34078144820,
+        "node_id":  "ME_lADOVOzNm88AAAABZcZUM88AAAAH7zc5NA",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/issues/events/34078144820",
+        "actor":  {
+                      "login":  "z1xel",
+                      "id":  121463840,
+                      "node_id":  "U_kgDOBz1kIA",
+                      "avatar_url":  "https://avatars.githubusercontent.com/u/121463840?v=4",
+                      "gravatar_id":  "",
+                      "url":  "https://api.github.com/users/z1xel",
+                      "html_url":  "https://github.com/z1xel",
+                      "followers_url":  "https://api.github.com/users/z1xel/followers",
+                      "following_url":  "https://api.github.com/users/z1xel/following{/other_user}",
+                      "gists_url":  "https://api.github.com/users/z1xel/gists{/gist_id}",
+                      "starred_url":  "https://api.github.com/users/z1xel/starred{/owner}{/repo}",
+                      "subscriptions_url":  "https://api.github.com/users/z1xel/subscriptions",
+                      "organizations_url":  "https://api.github.com/users/z1xel/orgs",
+                      "repos_url":  "https://api.github.com/users/z1xel/repos",
+                      "events_url":  "https://api.github.com/users/z1xel/events{/privacy}",
+                      "received_events_url":  "https://api.github.com/users/z1xel/received_events",
+                      "type":  "User",
+                      "user_view_type":  "public",
+                      "site_admin":  false
+                  },
+        "event":  "merged",
+        "commit_id":  "088289b3af4b301eb4595619931bf6f30fe55dd3",
+        "commit_url":  "https://api.github.com/repos/z1xel/SoftSpoken/commits/088289b3af4b301eb4595619931bf6f30fe55dd3",
+        "created_at":  "2026-10-23T17:58:06Z",
+        "performed_via_github_app":  null
+    },
+    {
+        "id":  34078144923,
+        "node_id":  "CE_lADOVOzNm88AAAABZcZUM88AAAAH7zc5mw",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/issues/events/34078144923",
+        "actor":  {
+                      "login":  "z1xel",
+                      "id":  121463840,
+                      "node_id":  "U_kgDOBz1kIA",
+                      "avatar_url":  "https://avatars.githubusercontent.com/u/121463840?v=4",
+                      "gravatar_id":  "",
+                      "url":  "https://api.github.com/users/z1xel",
+                      "html_url":  "https://github.com/z1xel",
+                      "followers_url":  "https://api.github.com/users/z1xel/followers",
+                      "following_url":  "https://api.github.com/users/z1xel/following{/other_user}",
+                      "gists_url":  "https://api.github.com/users/z1xel/gists{/gist_id}",
+                      "starred_url":  "https://api.github.com/users/z1xel/starred{/owner}{/repo}",
+                      "subscriptions_url":  "https://api.github.com/users/z1xel/subscriptions",
+                      "organizations_url":  "https://api.github.com/users/z1xel/orgs",
+                      "repos_url":  "https://api.github.com/users/z1xel/repos",
+                      "events_url":  "https://api.github.com/users/z1xel/events{/privacy}",
+                      "received_events_url":  "https://api.github.com/users/z1xel/received_events",
+                      "type":  "User",
+                      "user_view_type":  "public",
+                      "site_admin":  false
+                  },
+        "event":  "closed",
+        "commit_id":  null,
+        "commit_url":  null,
+        "created_at":  "2026-10-23T17:58:06Z",
+        "state_reason":  null,
+        "intent":  null,
+        "performed_via_github_app":  null
+    },
+    {
+        "id":  34078164544,
+        "node_id":  "HRDE_lADOVOzNm88AAAABZcZUM88AAAAH7zeGQA",
+        "url":  "https://api.github.com/repos/z1xel/SoftSpoken/issues/events/34078164544",
+        "actor":  {
+                      "login":  "z1xel",
+                      "id":  121463840,
+                      "node_id":  "U_kgDOBz1kIA",
+                      "avatar_url":  "https://avatars.githubusercontent.com/u/121463840?v=4",
+                      "gravatar_id":  "",
+                      "url":  "https://api.github.com/users/z1xel",
+                      "html_url":  "https://github.com/z1xel",
+                      "followers_url":  "https://api.github.com/users/z1xel/followers",
+                      "following_url":  "https://api.github.com/users/z1xel/following{/other_user}",
+                      "gists_url":  "https://api.github.com/users/z1xel/gists{/gist_id}",
+                      "starred_url":  "https://api.github.com/users/z1xel/starred{/owner}{/repo}",
+                      "subscriptions_url":  "https://api.github.com/users/z1xel/subscriptions",
+                      "organizations_url":  "https://api.github.com/users/z1xel/orgs",
+                      "repos_url":  "https://api.github.com/users/z1xel/repos",
+                      "events_url":  "https://api.github.com/users/z1xel/events{/privacy}",
+                      "received_events_url":  "https://api.github.com/users/z1xel/received_events",
+                      "type":  "User",
+                      "user_view_type":  "public",
+                      "site_admin":  false
+                  },
+        "event":  "head_ref_deleted",
+        "commit_id":  null,
+        "commit_url":  null,
+        "created_at":  "2026-10-23T17:58:21Z",
+        "performed_via_github_app":  null
+    }
+]
