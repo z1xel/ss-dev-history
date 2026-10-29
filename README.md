@@ -79,7 +79,7 @@ In the meantime, bug reports, testing, and suggestions are greatly appreciated.
 
 ## Installation
 
-1. Download **[SoftSpoken-v0.8.0-beta.1.zip](https://github.com/z1xel/SoftSpoken/releases/download/v0.8.00-beta.1/SoftSpoken-v0.8.0-beta.1.zip)** and extract it.
+1. Download **[SoftSpoken-v0.8.0-beta.1.zip](https://github.com/z1xel/SoftSpoken/releases/download/v0.8.0-beta.1/SoftSpoken-v0.8.0-beta.1.zip)** and extract it.
 2. Find the following four addon folders in the extracted contents and copy them into your World of Warcraft 1.12 `Interface\AddOns` directory:
 
    ```text
@@ -125,7 +125,7 @@ I've also prepared **SSS_VOFallback** (SoftSpoken Stories VoiceOver Fallback), a
 | Voice pack | Description | Download |
 |---|---|---|
 | **Turtle WoW VoiceOver** | AI-generated narration for Turtle WoW's custom quests and NPC dialogue. | [Download Turtle WoW Voice Data](https://github.com/lightbladeninja/wow-voiceover/releases/download/v1.5.0/AI_VoiceOverData_Turtle.zip) |
-| **SSS_VOFallback** | Additional Vanilla and VanillaExtra recordings that fill gaps in Spoken's quest and gossip coverage. | [SSS_VOFallback Pack](https://github.com/z1xel/SoftSpoken/releases/download/v0.8.00-beta.1/SSS_VOFallback.zip) |
+| **SSS_VOFallback** | Additional Vanilla and VanillaExtra recordings that fill gaps in Spoken's quest and gossip coverage. | [SSS_VOFallback Pack](https://github.com/z1xel/SoftSpoken/releases/download/v0.8.0-beta.1/SSS_VOFallback.zip) |
 
 **Installation:** Place the `AI_VoiceOverData_Turtle` and/or `SSS_VOFallback` folders directly inside `Interface\AddOns`, alongside the SoftSpoken modules.
 
